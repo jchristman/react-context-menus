@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-PROJECT_DIRECTORY="react-dnd"
+PROJECT_DIRECTORY="react-context-menus"
 SITE_DIRECTORY="$PROJECT_DIRECTORY-site"
-GITHUB_REPO="git@github.com:gaearon/react-dnd.git"
-GH_PAGES_SITE="http://gaearon.github.io/react-dnd/"
+GITHUB_REPO="https://github.com/jchristman/react-context-menus.git"
+GH_PAGES_SITE="http://jchristman.github.io/react-context-menus/"
 
 # Move to parent dir
 cd ../
@@ -20,8 +20,8 @@ if [ ! -d "$SITE_DIRECTORY" ]; then
   fi
   git clone "$GITHUB_REPO" "$SITE_DIRECTORY"
   cd "$SITE_DIRECTORY"
-  git checkout origin/gh-pages
-  git checkout -b gh-pages
+  git branch gh-pages
+  git checkout gh-pages
   git push --set-upstream origin gh-pages
   cd ../
 fi
@@ -42,8 +42,8 @@ then
 fi
 
 cd "$SITE_DIRECTORY"
+git checkout gh-pages
 git reset --hard
-git checkout -- .
 git clean -dfx
 git fetch
 git rebase
