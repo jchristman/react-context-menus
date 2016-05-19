@@ -50,11 +50,11 @@ module.exports =
 	exports.__esModule = true;
 	exports.default = renderPath;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _IndexPage = __webpack_require__(118);
+	var _IndexPage = __webpack_require__(134);
 
 	var _IndexPage2 = _interopRequireDefault(_IndexPage);
 
@@ -67,6 +67,15 @@ module.exports =
 
 /***/ },
 /* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(203);
+
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -121,7 +130,7 @@ module.exports =
 	module.exports = invariant;
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports) {
 
 	/**
@@ -171,15 +180,6 @@ module.exports =
 	}
 
 	module.exports = assign;
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(186);
-
 
 /***/ },
 /* 4 */
@@ -302,27 +302,27 @@ module.exports =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(17);
-	var ReactBrowserEventEmitter = __webpack_require__(32);
+	var ReactBrowserEventEmitter = __webpack_require__(33);
 	var ReactCurrentOwner = __webpack_require__(13);
-	var ReactDOMFeatureFlags = __webpack_require__(88);
+	var ReactDOMFeatureFlags = __webpack_require__(89);
 	var ReactElement = __webpack_require__(7);
-	var ReactEmptyComponentRegistry = __webpack_require__(96);
+	var ReactEmptyComponentRegistry = __webpack_require__(97);
 	var ReactInstanceHandles = __webpack_require__(20);
-	var ReactInstanceMap = __webpack_require__(26);
-	var ReactMarkupChecksum = __webpack_require__(99);
+	var ReactInstanceMap = __webpack_require__(27);
+	var ReactMarkupChecksum = __webpack_require__(100);
 	var ReactPerf = __webpack_require__(9);
 	var ReactReconciler = __webpack_require__(18);
-	var ReactUpdateQueue = __webpack_require__(53);
+	var ReactUpdateQueue = __webpack_require__(54);
 	var ReactUpdates = __webpack_require__(10);
 
-	var assign = __webpack_require__(2);
-	var emptyObject = __webpack_require__(22);
-	var containsNode = __webpack_require__(68);
-	var instantiateReactComponent = __webpack_require__(60);
-	var invariant = __webpack_require__(1);
-	var setInnerHTML = __webpack_require__(39);
-	var shouldUpdateReactComponent = __webpack_require__(63);
-	var validateDOMNesting = __webpack_require__(65);
+	var assign = __webpack_require__(3);
+	var emptyObject = __webpack_require__(23);
+	var containsNode = __webpack_require__(69);
+	var instantiateReactComponent = __webpack_require__(61);
+	var invariant = __webpack_require__(2);
+	var setInnerHTML = __webpack_require__(40);
+	var shouldUpdateReactComponent = __webpack_require__(64);
+	var validateDOMNesting = __webpack_require__(66);
 	var warning = __webpack_require__(4);
 
 	var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -1158,8 +1158,8 @@ module.exports =
 
 	var ReactCurrentOwner = __webpack_require__(13);
 
-	var assign = __webpack_require__(2);
-	var canDefineProperty = __webpack_require__(37);
+	var assign = __webpack_require__(3);
+	var canDefineProperty = __webpack_require__(38);
 
 	// The Symbol used to tag the ReactElement type. If there is no native Symbol
 	// nor polyfill, then a plain number is used for performance.
@@ -1598,14 +1598,14 @@ module.exports =
 
 	'use strict';
 
-	var CallbackQueue = __webpack_require__(47);
+	var CallbackQueue = __webpack_require__(48);
 	var PooledClass = __webpack_require__(15);
 	var ReactPerf = __webpack_require__(9);
 	var ReactReconciler = __webpack_require__(18);
-	var Transaction = __webpack_require__(36);
+	var Transaction = __webpack_require__(37);
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 
 	var dirtyComponents = [];
 	var asapCallbackQueue = CallbackQueue.getPooled();
@@ -1869,7 +1869,7 @@ module.exports =
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(30);
+	var keyMirror = __webpack_require__(31);
 
 	var PropagationPhases = keyMirror({ bubbled: null, captured: null });
 
@@ -2041,7 +2041,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Static poolers. Several custom versions for each potential number of
@@ -2154,7 +2154,7 @@ module.exports =
 
 	'use strict';
 
-	module.exports = __webpack_require__(87);
+	module.exports = __webpack_require__(88);
 
 
 /***/ },
@@ -2175,7 +2175,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	function checkMask(value, bitmask) {
 	  return (value & bitmask) === bitmask;
@@ -2413,7 +2413,7 @@ module.exports =
 
 	'use strict';
 
-	var ReactRef = __webpack_require__(206);
+	var ReactRef = __webpack_require__(223);
 
 	/**
 	 * Helper to call ReactRef.attachRefs with this composite component, split out
@@ -2528,7 +2528,7 @@ module.exports =
 
 	var PooledClass = __webpack_require__(15);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var emptyFunction = __webpack_require__(11);
 	var warning = __webpack_require__(4);
 
@@ -2711,9 +2711,9 @@ module.exports =
 
 	'use strict';
 
-	var ReactRootIndex = __webpack_require__(104);
+	var ReactRootIndex = __webpack_require__(105);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	var SEPARATOR = '.';
 	var SEPARATOR_LENGTH = SEPARATOR.length;
@@ -3006,12 +3006,12 @@ module.exports =
 
 	'use strict';
 
-	var Region = __webpack_require__(28)
+	var Region = __webpack_require__(29)
 
-	__webpack_require__(232)
-	__webpack_require__(231)
+	__webpack_require__(249)
+	__webpack_require__(248)
 
-	var COMPUTE_ALIGN_REGION = __webpack_require__(234)
+	var COMPUTE_ALIGN_REGION = __webpack_require__(251)
 
 	/**
 	 * region-align module exposes methods for aligning {@link Element} and {@link Region} instances
@@ -3190,6 +3190,23 @@ module.exports =
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _context_menu = __webpack_require__(141);
+
+	var _context_menu2 = _interopRequireDefault(_context_menu);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _context_menu2.default;
+	module.exports = exports['default'];
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
@@ -3212,12 +3229,12 @@ module.exports =
 	module.exports = emptyObject;
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
 
 	var MenuItemCell = React.createClass({
@@ -3274,7 +3291,7 @@ module.exports =
 	module.exports = MenuItemCell;
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3290,13 +3307,13 @@ module.exports =
 
 	'use strict';
 
-	var EventPluginRegistry = __webpack_require__(83);
-	var EventPluginUtils = __webpack_require__(183);
-	var ReactErrorUtils = __webpack_require__(97);
+	var EventPluginRegistry = __webpack_require__(84);
+	var EventPluginUtils = __webpack_require__(200);
+	var ReactErrorUtils = __webpack_require__(98);
 
-	var accumulateInto = __webpack_require__(106);
-	var forEachAccumulated = __webpack_require__(107);
-	var invariant = __webpack_require__(1);
+	var accumulateInto = __webpack_require__(107);
+	var forEachAccumulated = __webpack_require__(108);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	/**
@@ -3558,7 +3575,7 @@ module.exports =
 	module.exports = EventPluginHub;
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3575,12 +3592,12 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventPluginHub = __webpack_require__(24);
+	var EventPluginHub = __webpack_require__(25);
 
 	var warning = __webpack_require__(4);
 
-	var accumulateInto = __webpack_require__(106);
-	var forEachAccumulated = __webpack_require__(107);
+	var accumulateInto = __webpack_require__(107);
+	var forEachAccumulated = __webpack_require__(108);
 
 	var PropagationPhases = EventConstants.PropagationPhases;
 	var getListener = EventPluginHub.getListener;
@@ -3698,7 +3715,7 @@ module.exports =
 	module.exports = EventPropagators;
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports) {
 
 	/**
@@ -3750,7 +3767,7 @@ module.exports =
 	module.exports = ReactInstanceMap;
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3769,7 +3786,7 @@ module.exports =
 
 	var SyntheticEvent = __webpack_require__(19);
 
-	var getEventTarget = __webpack_require__(58);
+	var getEventTarget = __webpack_require__(59);
 
 	/**
 	 * @interface UIEvent
@@ -3815,13 +3832,13 @@ module.exports =
 	module.exports = SyntheticUIEvent;
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(236)
+	module.exports = __webpack_require__(253)
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3835,39 +3852,14 @@ module.exports =
 	};
 
 	var APIPages = exports.APIPages = [{
-	    title: 'Quick Start',
+	    title: 'Documentation',
 	    pages: {
-	        OVERVIEW: {
-	            location: 'docs-overview.html',
-	            title: 'Overview'
-	        },
-	        TUTORIAL: {
-	            location: 'docs-tutorial.html',
-	            title: 'Tutorial'
-	        },
-	        TESTING: {
-	            location: 'docs-testing.html',
-	            title: 'Testing'
-	        },
-	        FAQ: {
-	            location: 'docs-faq.html',
-	            title: 'FAQ'
-	        },
-	        TROUBLESHOOTING: {
-	            location: 'docs-troubleshooting.html',
-	            title: 'Troubleshooting'
+	        API: {
+	            location: 'docs-api.html',
+	            title: 'API'
 	        }
 	    }
-	} /*, {
-	     title: 'Top-Level API',
-	     pages: {
-	         CONTEXT_MENU: {
-	             location: 'context-menu.html',
-	             title: 'ContextMenu'
-	         }
-	     }
-	  }*/
-	];
+	}];
 
 	var ExamplePages = exports.ExamplePages = [{
 	    title: 'Connecting Targets',
@@ -3892,7 +3884,7 @@ module.exports =
 	}, {
 	    title: 'Dynamic Menus',
 	    pages: {
-	        DYNAMIC: {
+	        DYNAMIC_MENUS: {
 	            location: 'examples-dynamic-menus.html',
 	            title: 'Dynamic Menus'
 	        },
@@ -3903,11 +3895,11 @@ module.exports =
 	    }
 	}];
 
-	var DOCS_DEFAULT = exports.DOCS_DEFAULT = APIPages[0].pages.OVERVIEW;
+	var DOCS_DEFAULT = exports.DOCS_DEFAULT = APIPages[0].pages.API;
 	var EXAMPLES_DEFAULT = exports.EXAMPLES_DEFAULT = ExamplePages[0].pages.SINGLE_TARGET;
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3924,7 +3916,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Constructs an enumeration with keys equal to their value.
@@ -3960,7 +3952,7 @@ module.exports =
 	module.exports = keyMirror;
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3969,25 +3961,25 @@ module.exports =
 
 	function emptyFn() {}
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
 	var Region = __webpack_require__(21);
-	var inTriangle = __webpack_require__(152);
-	var hasTouch = __webpack_require__(73);
+	var inTriangle = __webpack_require__(169);
+	var hasTouch = __webpack_require__(74);
 
-	var normalize = __webpack_require__(79);
+	var normalize = __webpack_require__(80);
 
-	var getMenuOffset = __webpack_require__(78);
-	var getConstrainRegion = __webpack_require__(77);
-	var getItemStyleProps = __webpack_require__(161);
-	var renderSubMenu = __webpack_require__(167);
-	var renderChildren = __webpack_require__(166);
-	var prepareItem = __webpack_require__(164);
+	var getMenuOffset = __webpack_require__(79);
+	var getConstrainRegion = __webpack_require__(78);
+	var getItemStyleProps = __webpack_require__(178);
+	var renderSubMenu = __webpack_require__(184);
+	var renderChildren = __webpack_require__(183);
+	var prepareItem = __webpack_require__(181);
 
-	var propTypes = __webpack_require__(165);
-	var ScrollContainer = __webpack_require__(158);
+	var propTypes = __webpack_require__(182);
+	var ScrollContainer = __webpack_require__(175);
 
-	var MenuItem = __webpack_require__(43);
+	var MenuItem = __webpack_require__(44);
 
 	var MenuClass = React.createClass({
 
@@ -4511,12 +4503,12 @@ module.exports =
 	    }
 	});
 
-	MenuClass.themes = __webpack_require__(157);
+	MenuClass.themes = __webpack_require__(174);
 
 	module.exports = MenuClass;
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4534,14 +4526,14 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventPluginHub = __webpack_require__(24);
-	var EventPluginRegistry = __webpack_require__(83);
-	var ReactEventEmitterMixin = __webpack_require__(199);
+	var EventPluginHub = __webpack_require__(25);
+	var EventPluginRegistry = __webpack_require__(84);
+	var ReactEventEmitterMixin = __webpack_require__(216);
 	var ReactPerf = __webpack_require__(9);
-	var ViewportMetrics = __webpack_require__(105);
+	var ViewportMetrics = __webpack_require__(106);
 
-	var assign = __webpack_require__(2);
-	var isEventSupported = __webpack_require__(61);
+	var assign = __webpack_require__(3);
+	var isEventSupported = __webpack_require__(62);
 
 	/**
 	 * Summary of `ReactBrowserEventEmitter` event handling:
@@ -4845,7 +4837,7 @@ module.exports =
 	module.exports = ReactBrowserEventEmitter;
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4874,7 +4866,7 @@ module.exports =
 	module.exports = ReactPropTypeLocationNames;
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4890,7 +4882,7 @@ module.exports =
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(30);
+	var keyMirror = __webpack_require__(31);
 
 	var ReactPropTypeLocations = keyMirror({
 	  prop: null,
@@ -4901,7 +4893,7 @@ module.exports =
 	module.exports = ReactPropTypeLocations;
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4918,10 +4910,10 @@ module.exports =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(27);
-	var ViewportMetrics = __webpack_require__(105);
+	var SyntheticUIEvent = __webpack_require__(28);
+	var ViewportMetrics = __webpack_require__(106);
 
-	var getEventModifierState = __webpack_require__(57);
+	var getEventModifierState = __webpack_require__(58);
 
 	/**
 	 * @interface MouseEvent
@@ -4979,7 +4971,7 @@ module.exports =
 	module.exports = SyntheticMouseEvent;
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4995,7 +4987,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * `Transaction` creates a black box that is able to wrap any method such that
@@ -5215,7 +5207,7 @@ module.exports =
 	module.exports = Transaction;
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5244,7 +5236,7 @@ module.exports =
 	module.exports = canDefineProperty;
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports) {
 
 	/**
@@ -5287,7 +5279,7 @@ module.exports =
 	module.exports = escapeTextContentForBrowser;
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5382,26 +5374,26 @@ module.exports =
 	module.exports = setInnerHTML;
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NavBar = __webpack_require__(121);
+	var _NavBar = __webpack_require__(137);
 
 	var _NavBar2 = _interopRequireDefault(_NavBar);
 
-	var _Cover = __webpack_require__(120);
+	var _Cover = __webpack_require__(136);
 
 	var _Cover2 = _interopRequireDefault(_Cover);
 
-	__webpack_require__(148);
+	__webpack_require__(165);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5435,18 +5427,18 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(150);
+	__webpack_require__(167);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5495,18 +5487,18 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CodeBlock = __webpack_require__(119);
+	var _CodeBlock = __webpack_require__(135);
 
 	var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
@@ -5582,24 +5574,24 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _reactDom = __webpack_require__(16);
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
-	var normalize = __webpack_require__(79);
-	var EVENT_NAMES = __webpack_require__(154);
+	var normalize = __webpack_require__(80);
+	var EVENT_NAMES = __webpack_require__(171);
 
-	var getMenuOffset = __webpack_require__(78);
+	var getMenuOffset = __webpack_require__(79);
 
-	var prepareChildren = __webpack_require__(155);
+	var prepareChildren = __webpack_require__(172);
 
-	var Menu = __webpack_require__(31);
-	var MenuItemCell = __webpack_require__(23);
+	var Menu = __webpack_require__(32);
+	var MenuItemCell = __webpack_require__(24);
 
 	var emptyFn = function emptyFn() {};
 
@@ -5895,7 +5887,7 @@ module.exports =
 	module.exports = MenuItem;
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5916,15 +5908,15 @@ module.exports =
 	}
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var toUpperFirst = __webpack_require__(46)
+	var toUpperFirst = __webpack_require__(47)
 	var prefixes     = ["ms", "Moz", "Webkit", "O"]
 
-	var el = __webpack_require__(44)
+	var el = __webpack_require__(45)
 
 	var ELEMENT
 	var PREFIX
@@ -5955,7 +5947,7 @@ module.exports =
 	}
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5967,7 +5959,7 @@ module.exports =
 	}
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5985,8 +5977,8 @@ module.exports =
 
 	var PooledClass = __webpack_require__(15);
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * A specialized pseudo-event module to help keep track of components waiting to
@@ -6065,7 +6057,7 @@ module.exports =
 	module.exports = CallbackQueue;
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6085,7 +6077,7 @@ module.exports =
 	var DOMProperty = __webpack_require__(17);
 	var ReactPerf = __webpack_require__(9);
 
-	var quoteAttributeValueForBrowser = __webpack_require__(229);
+	var quoteAttributeValueForBrowser = __webpack_require__(246);
 	var warning = __webpack_require__(4);
 
 	// Simplified subset
@@ -6295,7 +6287,7 @@ module.exports =
 	module.exports = DOMPropertyOperations;
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6312,10 +6304,10 @@ module.exports =
 
 	'use strict';
 
-	var ReactPropTypes = __webpack_require__(103);
-	var ReactPropTypeLocations = __webpack_require__(34);
+	var ReactPropTypes = __webpack_require__(104);
+	var ReactPropTypeLocations = __webpack_require__(35);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	var hasReadOnlyValue = {
@@ -6434,7 +6426,7 @@ module.exports =
 	module.exports = LinkedValueUtils;
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6450,7 +6442,7 @@ module.exports =
 
 	'use strict';
 
-	var ReactDOMIDOperations = __webpack_require__(52);
+	var ReactDOMIDOperations = __webpack_require__(53);
 	var ReactMount = __webpack_require__(6);
 
 	/**
@@ -6480,7 +6472,7 @@ module.exports =
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6496,7 +6488,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	var injected = false;
 
@@ -6536,7 +6528,7 @@ module.exports =
 	module.exports = ReactComponentEnvironment;
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6553,12 +6545,12 @@ module.exports =
 
 	'use strict';
 
-	var DOMChildrenOperations = __webpack_require__(82);
-	var DOMPropertyOperations = __webpack_require__(48);
+	var DOMChildrenOperations = __webpack_require__(83);
+	var DOMPropertyOperations = __webpack_require__(49);
 	var ReactMount = __webpack_require__(6);
 	var ReactPerf = __webpack_require__(9);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Errors for properties that should not be updated with `updatePropertyByID()`.
@@ -6635,7 +6627,7 @@ module.exports =
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6653,11 +6645,11 @@ module.exports =
 
 	var ReactCurrentOwner = __webpack_require__(13);
 	var ReactElement = __webpack_require__(7);
-	var ReactInstanceMap = __webpack_require__(26);
+	var ReactInstanceMap = __webpack_require__(27);
 	var ReactUpdates = __webpack_require__(10);
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	function enqueueUpdate(internalInstance) {
@@ -6897,7 +6889,7 @@ module.exports =
 	module.exports = ReactUpdateQueue;
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports) {
 
 	/**
@@ -6916,7 +6908,7 @@ module.exports =
 	module.exports = '0.14.8';
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6934,10 +6926,10 @@ module.exports =
 	'use strict';
 
 	var ReactCurrentOwner = __webpack_require__(13);
-	var ReactInstanceMap = __webpack_require__(26);
+	var ReactInstanceMap = __webpack_require__(27);
 	var ReactMount = __webpack_require__(6);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	/**
@@ -6970,7 +6962,7 @@ module.exports =
 	module.exports = findDOMNode;
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports) {
 
 	/**
@@ -7025,7 +7017,7 @@ module.exports =
 	module.exports = getEventCharCode;
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	/**
@@ -7074,7 +7066,7 @@ module.exports =
 	module.exports = getEventModifierState;
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports) {
 
 	/**
@@ -7108,7 +7100,7 @@ module.exports =
 	module.exports = getEventTarget;
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	/**
@@ -7153,7 +7145,7 @@ module.exports =
 	module.exports = getIteratorFn;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7170,12 +7162,12 @@ module.exports =
 
 	'use strict';
 
-	var ReactCompositeComponent = __webpack_require__(189);
-	var ReactEmptyComponent = __webpack_require__(95);
-	var ReactNativeComponent = __webpack_require__(101);
+	var ReactCompositeComponent = __webpack_require__(206);
+	var ReactEmptyComponent = __webpack_require__(96);
+	var ReactNativeComponent = __webpack_require__(102);
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	// To avoid a cyclic dependency, we create the final class in this module
@@ -7270,7 +7262,7 @@ module.exports =
 	module.exports = instantiateReactComponent;
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7335,7 +7327,7 @@ module.exports =
 	module.exports = isEventSupported;
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7352,8 +7344,8 @@ module.exports =
 	'use strict';
 
 	var ExecutionEnvironment = __webpack_require__(5);
-	var escapeTextContentForBrowser = __webpack_require__(38);
-	var setInnerHTML = __webpack_require__(39);
+	var escapeTextContentForBrowser = __webpack_require__(39);
+	var setInnerHTML = __webpack_require__(40);
 
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -7380,7 +7372,7 @@ module.exports =
 	module.exports = setTextContent;
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports) {
 
 	/**
@@ -7428,7 +7420,7 @@ module.exports =
 	module.exports = shouldUpdateReactComponent;
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7448,8 +7440,8 @@ module.exports =
 	var ReactElement = __webpack_require__(7);
 	var ReactInstanceHandles = __webpack_require__(20);
 
-	var getIteratorFn = __webpack_require__(59);
-	var invariant = __webpack_require__(1);
+	var getIteratorFn = __webpack_require__(60);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	var SEPARATOR = ReactInstanceHandles.SEPARATOR;
@@ -7622,7 +7614,7 @@ module.exports =
 	module.exports = traverseAllChildren;
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7638,7 +7630,7 @@ module.exports =
 
 	'use strict';
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var emptyFunction = __webpack_require__(11);
 	var warning = __webpack_require__(4);
 
@@ -7990,18 +7982,18 @@ module.exports =
 	module.exports = validateDOMNesting;
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(151);
+	__webpack_require__(168);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8082,7 +8074,7 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8171,7 +8163,7 @@ module.exports =
 	module.exports = EventListener;
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8188,7 +8180,7 @@ module.exports =
 
 	'use strict';
 
-	var isTextNode = __webpack_require__(134);
+	var isTextNode = __webpack_require__(151);
 
 	/*eslint-disable no-bitwise */
 
@@ -8231,7 +8223,7 @@ module.exports =
 	module.exports = containsNode;
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports) {
 
 	/**
@@ -8262,7 +8254,7 @@ module.exports =
 	module.exports = focusNode;
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports) {
 
 	/**
@@ -8302,7 +8294,7 @@ module.exports =
 	module.exports = getActiveElement;
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8322,7 +8314,7 @@ module.exports =
 
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Dummy container used to detect which wraps are necessary.
@@ -8402,7 +8394,7 @@ module.exports =
 	module.exports = getMarkupWrap;
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports) {
 
 	/**
@@ -8457,13 +8449,13 @@ module.exports =
 	module.exports = shallowEqual;
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports) {
 
 	module.exports = 'ontouchstart' in global || (global.DocumentTouch && document instanceof DocumentTouch)
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -8506,14 +8498,14 @@ module.exports =
 	})
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
-	var MenuItemCell = __webpack_require__(23);
+	var MenuItemCell = __webpack_require__(24);
 
 	module.exports = function (props, column) {
 	    var style = assign({}, props.defaultCellStyle, props.cellStyle);
@@ -8526,12 +8518,12 @@ module.exports =
 	};
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
 
 	var emptyFn = function emptyFn() {};
@@ -8596,7 +8588,7 @@ module.exports =
 	module.exports = MenuSeparator;
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8604,7 +8596,7 @@ module.exports =
 	var _reactDom = __webpack_require__(16);
 
 	var Region = __webpack_require__(21);
-	var selectParent = __webpack_require__(111);
+	var selectParent = __webpack_require__(112);
 
 	module.exports = function (constrainTo) {
 	    var constrainRegion;
@@ -8626,13 +8618,13 @@ module.exports =
 	};
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var Region = __webpack_require__(21);
-	var selectParent = __webpack_require__(111);
+	var selectParent = __webpack_require__(112);
 
 	module.exports = function (domNode) {
 
@@ -8651,16 +8643,16 @@ module.exports =
 	};
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var hasOwn      = __webpack_require__(172)
-	var getPrefixed = __webpack_require__(170)
+	var hasOwn      = __webpack_require__(189)
+	var getPrefixed = __webpack_require__(187)
 
-	var map      = __webpack_require__(173)
-	var plugable = __webpack_require__(174)
+	var map      = __webpack_require__(190)
+	var plugable = __webpack_require__(191)
 
 	function plugins(key, value){
 
@@ -8721,7 +8713,7 @@ module.exports =
 	module.exports = plugable(RESULT)
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8769,7 +8761,7 @@ module.exports =
 
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports) {
 
 	/**
@@ -8913,7 +8905,7 @@ module.exports =
 	module.exports = CSSProperty;
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8930,13 +8922,13 @@ module.exports =
 
 	'use strict';
 
-	var Danger = __webpack_require__(180);
-	var ReactMultiChildUpdateTypes = __webpack_require__(100);
+	var Danger = __webpack_require__(197);
+	var ReactMultiChildUpdateTypes = __webpack_require__(101);
 	var ReactPerf = __webpack_require__(9);
 
-	var setInnerHTML = __webpack_require__(39);
-	var setTextContent = __webpack_require__(62);
-	var invariant = __webpack_require__(1);
+	var setInnerHTML = __webpack_require__(40);
+	var setTextContent = __webpack_require__(63);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Inserts `childNode` as a child of `parentNode` at the `index`.
@@ -9047,7 +9039,7 @@ module.exports =
 	module.exports = DOMChildrenOperations;
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9064,7 +9056,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Injectable ordering of event plugins.
@@ -9272,7 +9264,7 @@ module.exports =
 	module.exports = EventPluginRegistry;
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9292,7 +9284,7 @@ module.exports =
 	var ReactElement = __webpack_require__(7);
 
 	var emptyFunction = __webpack_require__(11);
-	var traverseAllChildren = __webpack_require__(64);
+	var traverseAllChildren = __webpack_require__(65);
 
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
 	var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -9459,7 +9451,7 @@ module.exports =
 	module.exports = ReactChildren;
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9475,16 +9467,16 @@ module.exports =
 
 	'use strict';
 
-	var ReactComponent = __webpack_require__(86);
+	var ReactComponent = __webpack_require__(87);
 	var ReactElement = __webpack_require__(7);
-	var ReactPropTypeLocations = __webpack_require__(34);
-	var ReactPropTypeLocationNames = __webpack_require__(33);
-	var ReactNoopUpdateQueue = __webpack_require__(102);
+	var ReactPropTypeLocations = __webpack_require__(35);
+	var ReactPropTypeLocationNames = __webpack_require__(34);
+	var ReactNoopUpdateQueue = __webpack_require__(103);
 
-	var assign = __webpack_require__(2);
-	var emptyObject = __webpack_require__(22);
-	var invariant = __webpack_require__(1);
-	var keyMirror = __webpack_require__(30);
+	var assign = __webpack_require__(3);
+	var emptyObject = __webpack_require__(23);
+	var invariant = __webpack_require__(2);
+	var keyMirror = __webpack_require__(31);
 	var keyOf = __webpack_require__(14);
 	var warning = __webpack_require__(4);
 
@@ -10235,7 +10227,7 @@ module.exports =
 	module.exports = ReactClass;
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10251,11 +10243,11 @@ module.exports =
 
 	'use strict';
 
-	var ReactNoopUpdateQueue = __webpack_require__(102);
+	var ReactNoopUpdateQueue = __webpack_require__(103);
 
-	var canDefineProperty = __webpack_require__(37);
-	var emptyObject = __webpack_require__(22);
-	var invariant = __webpack_require__(1);
+	var canDefineProperty = __webpack_require__(38);
+	var emptyObject = __webpack_require__(23);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	/**
@@ -10362,7 +10354,7 @@ module.exports =
 	module.exports = ReactComponent;
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10381,17 +10373,17 @@ module.exports =
 	'use strict';
 
 	var ReactCurrentOwner = __webpack_require__(13);
-	var ReactDOMTextComponent = __webpack_require__(91);
-	var ReactDefaultInjection = __webpack_require__(93);
+	var ReactDOMTextComponent = __webpack_require__(92);
+	var ReactDefaultInjection = __webpack_require__(94);
 	var ReactInstanceHandles = __webpack_require__(20);
 	var ReactMount = __webpack_require__(6);
 	var ReactPerf = __webpack_require__(9);
 	var ReactReconciler = __webpack_require__(18);
 	var ReactUpdates = __webpack_require__(10);
-	var ReactVersion = __webpack_require__(54);
+	var ReactVersion = __webpack_require__(55);
 
-	var findDOMNode = __webpack_require__(55);
-	var renderSubtreeIntoContainer = __webpack_require__(230);
+	var findDOMNode = __webpack_require__(56);
+	var renderSubtreeIntoContainer = __webpack_require__(247);
 	var warning = __webpack_require__(4);
 
 	ReactDefaultInjection.inject();
@@ -10459,7 +10451,7 @@ module.exports =
 	module.exports = React;
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports) {
 
 	/**
@@ -10482,7 +10474,7 @@ module.exports =
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10498,11 +10490,11 @@ module.exports =
 
 	'use strict';
 
-	var LinkedValueUtils = __webpack_require__(49);
+	var LinkedValueUtils = __webpack_require__(50);
 	var ReactMount = __webpack_require__(6);
 	var ReactUpdates = __webpack_require__(10);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var warning = __webpack_require__(4);
 
 	var valueContextKey = '__ReactDOMSelect_value$' + Math.random().toString(36).slice(2);
@@ -10675,7 +10667,7 @@ module.exports =
 	module.exports = ReactDOMSelect;
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10691,9 +10683,9 @@ module.exports =
 
 	'use strict';
 
-	var ReactDefaultInjection = __webpack_require__(93);
-	var ReactServerRendering = __webpack_require__(208);
-	var ReactVersion = __webpack_require__(54);
+	var ReactDefaultInjection = __webpack_require__(94);
+	var ReactServerRendering = __webpack_require__(225);
+	var ReactVersion = __webpack_require__(55);
 
 	ReactDefaultInjection.inject();
 
@@ -10706,7 +10698,7 @@ module.exports =
 	module.exports = ReactDOMServer;
 
 /***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10723,15 +10715,15 @@ module.exports =
 
 	'use strict';
 
-	var DOMChildrenOperations = __webpack_require__(82);
-	var DOMPropertyOperations = __webpack_require__(48);
-	var ReactComponentBrowserEnvironment = __webpack_require__(50);
+	var DOMChildrenOperations = __webpack_require__(83);
+	var DOMPropertyOperations = __webpack_require__(49);
+	var ReactComponentBrowserEnvironment = __webpack_require__(51);
 	var ReactMount = __webpack_require__(6);
 
-	var assign = __webpack_require__(2);
-	var escapeTextContentForBrowser = __webpack_require__(38);
-	var setTextContent = __webpack_require__(62);
-	var validateDOMNesting = __webpack_require__(65);
+	var assign = __webpack_require__(3);
+	var escapeTextContentForBrowser = __webpack_require__(39);
+	var setTextContent = __webpack_require__(63);
+	var validateDOMNesting = __webpack_require__(66);
 
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -10838,7 +10830,7 @@ module.exports =
 	module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10855,9 +10847,9 @@ module.exports =
 	'use strict';
 
 	var ReactUpdates = __webpack_require__(10);
-	var Transaction = __webpack_require__(36);
+	var Transaction = __webpack_require__(37);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var emptyFunction = __webpack_require__(11);
 
 	var RESET_BATCHED_UPDATES = {
@@ -10910,7 +10902,7 @@ module.exports =
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10926,27 +10918,27 @@ module.exports =
 
 	'use strict';
 
-	var BeforeInputEventPlugin = __webpack_require__(176);
-	var ChangeEventPlugin = __webpack_require__(178);
-	var ClientReactRootIndex = __webpack_require__(179);
-	var DefaultEventPluginOrder = __webpack_require__(181);
-	var EnterLeaveEventPlugin = __webpack_require__(182);
+	var BeforeInputEventPlugin = __webpack_require__(193);
+	var ChangeEventPlugin = __webpack_require__(195);
+	var ClientReactRootIndex = __webpack_require__(196);
+	var DefaultEventPluginOrder = __webpack_require__(198);
+	var EnterLeaveEventPlugin = __webpack_require__(199);
 	var ExecutionEnvironment = __webpack_require__(5);
-	var HTMLDOMPropertyConfig = __webpack_require__(185);
-	var ReactBrowserComponentMixin = __webpack_require__(187);
-	var ReactComponentBrowserEnvironment = __webpack_require__(50);
-	var ReactDefaultBatchingStrategy = __webpack_require__(92);
-	var ReactDOMComponent = __webpack_require__(191);
-	var ReactDOMTextComponent = __webpack_require__(91);
-	var ReactEventListener = __webpack_require__(200);
-	var ReactInjection = __webpack_require__(201);
+	var HTMLDOMPropertyConfig = __webpack_require__(202);
+	var ReactBrowserComponentMixin = __webpack_require__(204);
+	var ReactComponentBrowserEnvironment = __webpack_require__(51);
+	var ReactDefaultBatchingStrategy = __webpack_require__(93);
+	var ReactDOMComponent = __webpack_require__(208);
+	var ReactDOMTextComponent = __webpack_require__(92);
+	var ReactEventListener = __webpack_require__(217);
+	var ReactInjection = __webpack_require__(218);
 	var ReactInstanceHandles = __webpack_require__(20);
 	var ReactMount = __webpack_require__(6);
-	var ReactReconcileTransaction = __webpack_require__(205);
-	var SelectEventPlugin = __webpack_require__(211);
-	var ServerReactRootIndex = __webpack_require__(212);
-	var SimpleEventPlugin = __webpack_require__(213);
-	var SVGDOMPropertyConfig = __webpack_require__(210);
+	var ReactReconcileTransaction = __webpack_require__(222);
+	var SelectEventPlugin = __webpack_require__(228);
+	var ServerReactRootIndex = __webpack_require__(229);
+	var SimpleEventPlugin = __webpack_require__(230);
+	var SVGDOMPropertyConfig = __webpack_require__(227);
 
 	var alreadyInjected = false;
 
@@ -11001,7 +10993,7 @@ module.exports =
 	  if ((undefined) !== 'production') {
 	    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
 	    if (/[?&]react_perf\b/.test(url)) {
-	      var ReactDefaultPerf = __webpack_require__(197);
+	      var ReactDefaultPerf = __webpack_require__(214);
 	      ReactDefaultPerf.start();
 	    }
 	  }
@@ -11012,7 +11004,7 @@ module.exports =
 	};
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11036,13 +11028,13 @@ module.exports =
 	'use strict';
 
 	var ReactElement = __webpack_require__(7);
-	var ReactPropTypeLocations = __webpack_require__(34);
-	var ReactPropTypeLocationNames = __webpack_require__(33);
+	var ReactPropTypeLocations = __webpack_require__(35);
+	var ReactPropTypeLocationNames = __webpack_require__(34);
 	var ReactCurrentOwner = __webpack_require__(13);
 
-	var canDefineProperty = __webpack_require__(37);
-	var getIteratorFn = __webpack_require__(59);
-	var invariant = __webpack_require__(1);
+	var canDefineProperty = __webpack_require__(38);
+	var getIteratorFn = __webpack_require__(60);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	function getDeclarationErrorAddendum() {
@@ -11298,7 +11290,7 @@ module.exports =
 	module.exports = ReactElementValidator;
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11315,10 +11307,10 @@ module.exports =
 	'use strict';
 
 	var ReactElement = __webpack_require__(7);
-	var ReactEmptyComponentRegistry = __webpack_require__(96);
+	var ReactEmptyComponentRegistry = __webpack_require__(97);
 	var ReactReconciler = __webpack_require__(18);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 
 	var placeholderElement;
 
@@ -11358,7 +11350,7 @@ module.exports =
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports) {
 
 	/**
@@ -11411,7 +11403,7 @@ module.exports =
 	module.exports = ReactEmptyComponentRegistry;
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11493,7 +11485,7 @@ module.exports =
 	module.exports = ReactErrorUtils;
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11509,11 +11501,11 @@ module.exports =
 
 	'use strict';
 
-	var ReactDOMSelection = __webpack_require__(195);
+	var ReactDOMSelection = __webpack_require__(212);
 
-	var containsNode = __webpack_require__(68);
-	var focusNode = __webpack_require__(69);
-	var getActiveElement = __webpack_require__(70);
+	var containsNode = __webpack_require__(69);
+	var focusNode = __webpack_require__(70);
+	var getActiveElement = __webpack_require__(71);
 
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -11622,7 +11614,7 @@ module.exports =
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11638,7 +11630,7 @@ module.exports =
 
 	'use strict';
 
-	var adler32 = __webpack_require__(222);
+	var adler32 = __webpack_require__(239);
 
 	var TAG_END = /\/?>/;
 
@@ -11672,7 +11664,7 @@ module.exports =
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11688,7 +11680,7 @@ module.exports =
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(30);
+	var keyMirror = __webpack_require__(31);
 
 	/**
 	 * When a component's children are updated, a series of update configuration
@@ -11709,7 +11701,7 @@ module.exports =
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11725,8 +11717,8 @@ module.exports =
 
 	'use strict';
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 
 	var autoGenerateWrapperClass = null;
 	var genericComponentClass = null;
@@ -11808,7 +11800,7 @@ module.exports =
 	module.exports = ReactNativeComponent;
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11931,7 +11923,7 @@ module.exports =
 	module.exports = ReactNoopUpdateQueue;
 
 /***/ },
-/* 103 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11948,10 +11940,10 @@ module.exports =
 	'use strict';
 
 	var ReactElement = __webpack_require__(7);
-	var ReactPropTypeLocationNames = __webpack_require__(33);
+	var ReactPropTypeLocationNames = __webpack_require__(34);
 
 	var emptyFunction = __webpack_require__(11);
-	var getIteratorFn = __webpack_require__(59);
+	var getIteratorFn = __webpack_require__(60);
 
 	/**
 	 * Collection of methods that allow declaration and validation of props that are
@@ -12292,7 +12284,7 @@ module.exports =
 	module.exports = ReactPropTypes;
 
 /***/ },
-/* 104 */
+/* 105 */
 /***/ function(module, exports) {
 
 	/**
@@ -12326,7 +12318,7 @@ module.exports =
 	module.exports = ReactRootIndex;
 
 /***/ },
-/* 105 */
+/* 106 */
 /***/ function(module, exports) {
 
 	/**
@@ -12358,7 +12350,7 @@ module.exports =
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12374,7 +12366,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 *
@@ -12422,7 +12414,7 @@ module.exports =
 	module.exports = accumulateInto;
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports) {
 
 	/**
@@ -12456,7 +12448,7 @@ module.exports =
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12494,7 +12486,7 @@ module.exports =
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports) {
 
 	/**
@@ -12539,7 +12531,7 @@ module.exports =
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12571,17 +12563,17 @@ module.exports =
 	}
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var curry   = __webpack_require__(239)
+	var curry   = __webpack_require__(256)
 	var matches
 
 	module.exports = curry(function(selector, node){
 
-		matches = matches || __webpack_require__(240)
+		matches = matches || __webpack_require__(257)
 
 	    while (node = node.parentElement){
 	        if (matches.call(node, selector)){
@@ -12591,7 +12583,1561 @@ module.exports =
 	})
 
 /***/ },
-/* 112 */
+/* 113 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
+	//     http://underscorejs.org
+	//     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	//     Underscore may be freely distributed under the MIT license.
+
+	(function() {
+
+	  // Baseline setup
+	  // --------------
+
+	  // Establish the root object, `window` in the browser, or `exports` on the server.
+	  var root = this;
+
+	  // Save the previous value of the `_` variable.
+	  var previousUnderscore = root._;
+
+	  // Save bytes in the minified (but not gzipped) version:
+	  var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
+
+	  // Create quick reference variables for speed access to core prototypes.
+	  var
+	    push             = ArrayProto.push,
+	    slice            = ArrayProto.slice,
+	    toString         = ObjProto.toString,
+	    hasOwnProperty   = ObjProto.hasOwnProperty;
+
+	  // All **ECMAScript 5** native function implementations that we hope to use
+	  // are declared here.
+	  var
+	    nativeIsArray      = Array.isArray,
+	    nativeKeys         = Object.keys,
+	    nativeBind         = FuncProto.bind,
+	    nativeCreate       = Object.create;
+
+	  // Naked function reference for surrogate-prototype-swapping.
+	  var Ctor = function(){};
+
+	  // Create a safe reference to the Underscore object for use below.
+	  var _ = function(obj) {
+	    if (obj instanceof _) return obj;
+	    if (!(this instanceof _)) return new _(obj);
+	    this._wrapped = obj;
+	  };
+
+	  // Export the Underscore object for **Node.js**, with
+	  // backwards-compatibility for the old `require()` API. If we're in
+	  // the browser, add `_` as a global object.
+	  if (true) {
+	    if (typeof module !== 'undefined' && module.exports) {
+	      exports = module.exports = _;
+	    }
+	    exports._ = _;
+	  } else {
+	    root._ = _;
+	  }
+
+	  // Current version.
+	  _.VERSION = '1.8.3';
+
+	  // Internal function that returns an efficient (for current engines) version
+	  // of the passed-in callback, to be repeatedly applied in other Underscore
+	  // functions.
+	  var optimizeCb = function(func, context, argCount) {
+	    if (context === void 0) return func;
+	    switch (argCount == null ? 3 : argCount) {
+	      case 1: return function(value) {
+	        return func.call(context, value);
+	      };
+	      case 2: return function(value, other) {
+	        return func.call(context, value, other);
+	      };
+	      case 3: return function(value, index, collection) {
+	        return func.call(context, value, index, collection);
+	      };
+	      case 4: return function(accumulator, value, index, collection) {
+	        return func.call(context, accumulator, value, index, collection);
+	      };
+	    }
+	    return function() {
+	      return func.apply(context, arguments);
+	    };
+	  };
+
+	  // A mostly-internal function to generate callbacks that can be applied
+	  // to each element in a collection, returning the desired result — either
+	  // identity, an arbitrary callback, a property matcher, or a property accessor.
+	  var cb = function(value, context, argCount) {
+	    if (value == null) return _.identity;
+	    if (_.isFunction(value)) return optimizeCb(value, context, argCount);
+	    if (_.isObject(value)) return _.matcher(value);
+	    return _.property(value);
+	  };
+	  _.iteratee = function(value, context) {
+	    return cb(value, context, Infinity);
+	  };
+
+	  // An internal function for creating assigner functions.
+	  var createAssigner = function(keysFunc, undefinedOnly) {
+	    return function(obj) {
+	      var length = arguments.length;
+	      if (length < 2 || obj == null) return obj;
+	      for (var index = 1; index < length; index++) {
+	        var source = arguments[index],
+	            keys = keysFunc(source),
+	            l = keys.length;
+	        for (var i = 0; i < l; i++) {
+	          var key = keys[i];
+	          if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+	        }
+	      }
+	      return obj;
+	    };
+	  };
+
+	  // An internal function for creating a new object that inherits from another.
+	  var baseCreate = function(prototype) {
+	    if (!_.isObject(prototype)) return {};
+	    if (nativeCreate) return nativeCreate(prototype);
+	    Ctor.prototype = prototype;
+	    var result = new Ctor;
+	    Ctor.prototype = null;
+	    return result;
+	  };
+
+	  var property = function(key) {
+	    return function(obj) {
+	      return obj == null ? void 0 : obj[key];
+	    };
+	  };
+
+	  // Helper for collection methods to determine whether a collection
+	  // should be iterated as an array or as an object
+	  // Related: http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength
+	  // Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094
+	  var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
+	  var getLength = property('length');
+	  var isArrayLike = function(collection) {
+	    var length = getLength(collection);
+	    return typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
+	  };
+
+	  // Collection Functions
+	  // --------------------
+
+	  // The cornerstone, an `each` implementation, aka `forEach`.
+	  // Handles raw objects in addition to array-likes. Treats all
+	  // sparse array-likes as if they were dense.
+	  _.each = _.forEach = function(obj, iteratee, context) {
+	    iteratee = optimizeCb(iteratee, context);
+	    var i, length;
+	    if (isArrayLike(obj)) {
+	      for (i = 0, length = obj.length; i < length; i++) {
+	        iteratee(obj[i], i, obj);
+	      }
+	    } else {
+	      var keys = _.keys(obj);
+	      for (i = 0, length = keys.length; i < length; i++) {
+	        iteratee(obj[keys[i]], keys[i], obj);
+	      }
+	    }
+	    return obj;
+	  };
+
+	  // Return the results of applying the iteratee to each element.
+	  _.map = _.collect = function(obj, iteratee, context) {
+	    iteratee = cb(iteratee, context);
+	    var keys = !isArrayLike(obj) && _.keys(obj),
+	        length = (keys || obj).length,
+	        results = Array(length);
+	    for (var index = 0; index < length; index++) {
+	      var currentKey = keys ? keys[index] : index;
+	      results[index] = iteratee(obj[currentKey], currentKey, obj);
+	    }
+	    return results;
+	  };
+
+	  // Create a reducing function iterating left or right.
+	  function createReduce(dir) {
+	    // Optimized iterator function as using arguments.length
+	    // in the main function will deoptimize the, see #1991.
+	    function iterator(obj, iteratee, memo, keys, index, length) {
+	      for (; index >= 0 && index < length; index += dir) {
+	        var currentKey = keys ? keys[index] : index;
+	        memo = iteratee(memo, obj[currentKey], currentKey, obj);
+	      }
+	      return memo;
+	    }
+
+	    return function(obj, iteratee, memo, context) {
+	      iteratee = optimizeCb(iteratee, context, 4);
+	      var keys = !isArrayLike(obj) && _.keys(obj),
+	          length = (keys || obj).length,
+	          index = dir > 0 ? 0 : length - 1;
+	      // Determine the initial value if none is provided.
+	      if (arguments.length < 3) {
+	        memo = obj[keys ? keys[index] : index];
+	        index += dir;
+	      }
+	      return iterator(obj, iteratee, memo, keys, index, length);
+	    };
+	  }
+
+	  // **Reduce** builds up a single result from a list of values, aka `inject`,
+	  // or `foldl`.
+	  _.reduce = _.foldl = _.inject = createReduce(1);
+
+	  // The right-associative version of reduce, also known as `foldr`.
+	  _.reduceRight = _.foldr = createReduce(-1);
+
+	  // Return the first value which passes a truth test. Aliased as `detect`.
+	  _.find = _.detect = function(obj, predicate, context) {
+	    var key;
+	    if (isArrayLike(obj)) {
+	      key = _.findIndex(obj, predicate, context);
+	    } else {
+	      key = _.findKey(obj, predicate, context);
+	    }
+	    if (key !== void 0 && key !== -1) return obj[key];
+	  };
+
+	  // Return all the elements that pass a truth test.
+	  // Aliased as `select`.
+	  _.filter = _.select = function(obj, predicate, context) {
+	    var results = [];
+	    predicate = cb(predicate, context);
+	    _.each(obj, function(value, index, list) {
+	      if (predicate(value, index, list)) results.push(value);
+	    });
+	    return results;
+	  };
+
+	  // Return all the elements for which a truth test fails.
+	  _.reject = function(obj, predicate, context) {
+	    return _.filter(obj, _.negate(cb(predicate)), context);
+	  };
+
+	  // Determine whether all of the elements match a truth test.
+	  // Aliased as `all`.
+	  _.every = _.all = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var keys = !isArrayLike(obj) && _.keys(obj),
+	        length = (keys || obj).length;
+	    for (var index = 0; index < length; index++) {
+	      var currentKey = keys ? keys[index] : index;
+	      if (!predicate(obj[currentKey], currentKey, obj)) return false;
+	    }
+	    return true;
+	  };
+
+	  // Determine if at least one element in the object matches a truth test.
+	  // Aliased as `any`.
+	  _.some = _.any = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var keys = !isArrayLike(obj) && _.keys(obj),
+	        length = (keys || obj).length;
+	    for (var index = 0; index < length; index++) {
+	      var currentKey = keys ? keys[index] : index;
+	      if (predicate(obj[currentKey], currentKey, obj)) return true;
+	    }
+	    return false;
+	  };
+
+	  // Determine if the array or object contains a given item (using `===`).
+	  // Aliased as `includes` and `include`.
+	  _.contains = _.includes = _.include = function(obj, item, fromIndex, guard) {
+	    if (!isArrayLike(obj)) obj = _.values(obj);
+	    if (typeof fromIndex != 'number' || guard) fromIndex = 0;
+	    return _.indexOf(obj, item, fromIndex) >= 0;
+	  };
+
+	  // Invoke a method (with arguments) on every item in a collection.
+	  _.invoke = function(obj, method) {
+	    var args = slice.call(arguments, 2);
+	    var isFunc = _.isFunction(method);
+	    return _.map(obj, function(value) {
+	      var func = isFunc ? method : value[method];
+	      return func == null ? func : func.apply(value, args);
+	    });
+	  };
+
+	  // Convenience version of a common use case of `map`: fetching a property.
+	  _.pluck = function(obj, key) {
+	    return _.map(obj, _.property(key));
+	  };
+
+	  // Convenience version of a common use case of `filter`: selecting only objects
+	  // containing specific `key:value` pairs.
+	  _.where = function(obj, attrs) {
+	    return _.filter(obj, _.matcher(attrs));
+	  };
+
+	  // Convenience version of a common use case of `find`: getting the first object
+	  // containing specific `key:value` pairs.
+	  _.findWhere = function(obj, attrs) {
+	    return _.find(obj, _.matcher(attrs));
+	  };
+
+	  // Return the maximum element (or element-based computation).
+	  _.max = function(obj, iteratee, context) {
+	    var result = -Infinity, lastComputed = -Infinity,
+	        value, computed;
+	    if (iteratee == null && obj != null) {
+	      obj = isArrayLike(obj) ? obj : _.values(obj);
+	      for (var i = 0, length = obj.length; i < length; i++) {
+	        value = obj[i];
+	        if (value > result) {
+	          result = value;
+	        }
+	      }
+	    } else {
+	      iteratee = cb(iteratee, context);
+	      _.each(obj, function(value, index, list) {
+	        computed = iteratee(value, index, list);
+	        if (computed > lastComputed || computed === -Infinity && result === -Infinity) {
+	          result = value;
+	          lastComputed = computed;
+	        }
+	      });
+	    }
+	    return result;
+	  };
+
+	  // Return the minimum element (or element-based computation).
+	  _.min = function(obj, iteratee, context) {
+	    var result = Infinity, lastComputed = Infinity,
+	        value, computed;
+	    if (iteratee == null && obj != null) {
+	      obj = isArrayLike(obj) ? obj : _.values(obj);
+	      for (var i = 0, length = obj.length; i < length; i++) {
+	        value = obj[i];
+	        if (value < result) {
+	          result = value;
+	        }
+	      }
+	    } else {
+	      iteratee = cb(iteratee, context);
+	      _.each(obj, function(value, index, list) {
+	        computed = iteratee(value, index, list);
+	        if (computed < lastComputed || computed === Infinity && result === Infinity) {
+	          result = value;
+	          lastComputed = computed;
+	        }
+	      });
+	    }
+	    return result;
+	  };
+
+	  // Shuffle a collection, using the modern version of the
+	  // [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher–Yates_shuffle).
+	  _.shuffle = function(obj) {
+	    var set = isArrayLike(obj) ? obj : _.values(obj);
+	    var length = set.length;
+	    var shuffled = Array(length);
+	    for (var index = 0, rand; index < length; index++) {
+	      rand = _.random(0, index);
+	      if (rand !== index) shuffled[index] = shuffled[rand];
+	      shuffled[rand] = set[index];
+	    }
+	    return shuffled;
+	  };
+
+	  // Sample **n** random values from a collection.
+	  // If **n** is not specified, returns a single random element.
+	  // The internal `guard` argument allows it to work with `map`.
+	  _.sample = function(obj, n, guard) {
+	    if (n == null || guard) {
+	      if (!isArrayLike(obj)) obj = _.values(obj);
+	      return obj[_.random(obj.length - 1)];
+	    }
+	    return _.shuffle(obj).slice(0, Math.max(0, n));
+	  };
+
+	  // Sort the object's values by a criterion produced by an iteratee.
+	  _.sortBy = function(obj, iteratee, context) {
+	    iteratee = cb(iteratee, context);
+	    return _.pluck(_.map(obj, function(value, index, list) {
+	      return {
+	        value: value,
+	        index: index,
+	        criteria: iteratee(value, index, list)
+	      };
+	    }).sort(function(left, right) {
+	      var a = left.criteria;
+	      var b = right.criteria;
+	      if (a !== b) {
+	        if (a > b || a === void 0) return 1;
+	        if (a < b || b === void 0) return -1;
+	      }
+	      return left.index - right.index;
+	    }), 'value');
+	  };
+
+	  // An internal function used for aggregate "group by" operations.
+	  var group = function(behavior) {
+	    return function(obj, iteratee, context) {
+	      var result = {};
+	      iteratee = cb(iteratee, context);
+	      _.each(obj, function(value, index) {
+	        var key = iteratee(value, index, obj);
+	        behavior(result, value, key);
+	      });
+	      return result;
+	    };
+	  };
+
+	  // Groups the object's values by a criterion. Pass either a string attribute
+	  // to group by, or a function that returns the criterion.
+	  _.groupBy = group(function(result, value, key) {
+	    if (_.has(result, key)) result[key].push(value); else result[key] = [value];
+	  });
+
+	  // Indexes the object's values by a criterion, similar to `groupBy`, but for
+	  // when you know that your index values will be unique.
+	  _.indexBy = group(function(result, value, key) {
+	    result[key] = value;
+	  });
+
+	  // Counts instances of an object that group by a certain criterion. Pass
+	  // either a string attribute to count by, or a function that returns the
+	  // criterion.
+	  _.countBy = group(function(result, value, key) {
+	    if (_.has(result, key)) result[key]++; else result[key] = 1;
+	  });
+
+	  // Safely create a real, live array from anything iterable.
+	  _.toArray = function(obj) {
+	    if (!obj) return [];
+	    if (_.isArray(obj)) return slice.call(obj);
+	    if (isArrayLike(obj)) return _.map(obj, _.identity);
+	    return _.values(obj);
+	  };
+
+	  // Return the number of elements in an object.
+	  _.size = function(obj) {
+	    if (obj == null) return 0;
+	    return isArrayLike(obj) ? obj.length : _.keys(obj).length;
+	  };
+
+	  // Split a collection into two arrays: one whose elements all satisfy the given
+	  // predicate, and one whose elements all do not satisfy the predicate.
+	  _.partition = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var pass = [], fail = [];
+	    _.each(obj, function(value, key, obj) {
+	      (predicate(value, key, obj) ? pass : fail).push(value);
+	    });
+	    return [pass, fail];
+	  };
+
+	  // Array Functions
+	  // ---------------
+
+	  // Get the first element of an array. Passing **n** will return the first N
+	  // values in the array. Aliased as `head` and `take`. The **guard** check
+	  // allows it to work with `_.map`.
+	  _.first = _.head = _.take = function(array, n, guard) {
+	    if (array == null) return void 0;
+	    if (n == null || guard) return array[0];
+	    return _.initial(array, array.length - n);
+	  };
+
+	  // Returns everything but the last entry of the array. Especially useful on
+	  // the arguments object. Passing **n** will return all the values in
+	  // the array, excluding the last N.
+	  _.initial = function(array, n, guard) {
+	    return slice.call(array, 0, Math.max(0, array.length - (n == null || guard ? 1 : n)));
+	  };
+
+	  // Get the last element of an array. Passing **n** will return the last N
+	  // values in the array.
+	  _.last = function(array, n, guard) {
+	    if (array == null) return void 0;
+	    if (n == null || guard) return array[array.length - 1];
+	    return _.rest(array, Math.max(0, array.length - n));
+	  };
+
+	  // Returns everything but the first entry of the array. Aliased as `tail` and `drop`.
+	  // Especially useful on the arguments object. Passing an **n** will return
+	  // the rest N values in the array.
+	  _.rest = _.tail = _.drop = function(array, n, guard) {
+	    return slice.call(array, n == null || guard ? 1 : n);
+	  };
+
+	  // Trim out all falsy values from an array.
+	  _.compact = function(array) {
+	    return _.filter(array, _.identity);
+	  };
+
+	  // Internal implementation of a recursive `flatten` function.
+	  var flatten = function(input, shallow, strict, startIndex) {
+	    var output = [], idx = 0;
+	    for (var i = startIndex || 0, length = getLength(input); i < length; i++) {
+	      var value = input[i];
+	      if (isArrayLike(value) && (_.isArray(value) || _.isArguments(value))) {
+	        //flatten current level of array or arguments object
+	        if (!shallow) value = flatten(value, shallow, strict);
+	        var j = 0, len = value.length;
+	        output.length += len;
+	        while (j < len) {
+	          output[idx++] = value[j++];
+	        }
+	      } else if (!strict) {
+	        output[idx++] = value;
+	      }
+	    }
+	    return output;
+	  };
+
+	  // Flatten out an array, either recursively (by default), or just one level.
+	  _.flatten = function(array, shallow) {
+	    return flatten(array, shallow, false);
+	  };
+
+	  // Return a version of the array that does not contain the specified value(s).
+	  _.without = function(array) {
+	    return _.difference(array, slice.call(arguments, 1));
+	  };
+
+	  // Produce a duplicate-free version of the array. If the array has already
+	  // been sorted, you have the option of using a faster algorithm.
+	  // Aliased as `unique`.
+	  _.uniq = _.unique = function(array, isSorted, iteratee, context) {
+	    if (!_.isBoolean(isSorted)) {
+	      context = iteratee;
+	      iteratee = isSorted;
+	      isSorted = false;
+	    }
+	    if (iteratee != null) iteratee = cb(iteratee, context);
+	    var result = [];
+	    var seen = [];
+	    for (var i = 0, length = getLength(array); i < length; i++) {
+	      var value = array[i],
+	          computed = iteratee ? iteratee(value, i, array) : value;
+	      if (isSorted) {
+	        if (!i || seen !== computed) result.push(value);
+	        seen = computed;
+	      } else if (iteratee) {
+	        if (!_.contains(seen, computed)) {
+	          seen.push(computed);
+	          result.push(value);
+	        }
+	      } else if (!_.contains(result, value)) {
+	        result.push(value);
+	      }
+	    }
+	    return result;
+	  };
+
+	  // Produce an array that contains the union: each distinct element from all of
+	  // the passed-in arrays.
+	  _.union = function() {
+	    return _.uniq(flatten(arguments, true, true));
+	  };
+
+	  // Produce an array that contains every item shared between all the
+	  // passed-in arrays.
+	  _.intersection = function(array) {
+	    var result = [];
+	    var argsLength = arguments.length;
+	    for (var i = 0, length = getLength(array); i < length; i++) {
+	      var item = array[i];
+	      if (_.contains(result, item)) continue;
+	      for (var j = 1; j < argsLength; j++) {
+	        if (!_.contains(arguments[j], item)) break;
+	      }
+	      if (j === argsLength) result.push(item);
+	    }
+	    return result;
+	  };
+
+	  // Take the difference between one array and a number of other arrays.
+	  // Only the elements present in just the first array will remain.
+	  _.difference = function(array) {
+	    var rest = flatten(arguments, true, true, 1);
+	    return _.filter(array, function(value){
+	      return !_.contains(rest, value);
+	    });
+	  };
+
+	  // Zip together multiple lists into a single array -- elements that share
+	  // an index go together.
+	  _.zip = function() {
+	    return _.unzip(arguments);
+	  };
+
+	  // Complement of _.zip. Unzip accepts an array of arrays and groups
+	  // each array's elements on shared indices
+	  _.unzip = function(array) {
+	    var length = array && _.max(array, getLength).length || 0;
+	    var result = Array(length);
+
+	    for (var index = 0; index < length; index++) {
+	      result[index] = _.pluck(array, index);
+	    }
+	    return result;
+	  };
+
+	  // Converts lists into objects. Pass either a single array of `[key, value]`
+	  // pairs, or two parallel arrays of the same length -- one of keys, and one of
+	  // the corresponding values.
+	  _.object = function(list, values) {
+	    var result = {};
+	    for (var i = 0, length = getLength(list); i < length; i++) {
+	      if (values) {
+	        result[list[i]] = values[i];
+	      } else {
+	        result[list[i][0]] = list[i][1];
+	      }
+	    }
+	    return result;
+	  };
+
+	  // Generator function to create the findIndex and findLastIndex functions
+	  function createPredicateIndexFinder(dir) {
+	    return function(array, predicate, context) {
+	      predicate = cb(predicate, context);
+	      var length = getLength(array);
+	      var index = dir > 0 ? 0 : length - 1;
+	      for (; index >= 0 && index < length; index += dir) {
+	        if (predicate(array[index], index, array)) return index;
+	      }
+	      return -1;
+	    };
+	  }
+
+	  // Returns the first index on an array-like that passes a predicate test
+	  _.findIndex = createPredicateIndexFinder(1);
+	  _.findLastIndex = createPredicateIndexFinder(-1);
+
+	  // Use a comparator function to figure out the smallest index at which
+	  // an object should be inserted so as to maintain order. Uses binary search.
+	  _.sortedIndex = function(array, obj, iteratee, context) {
+	    iteratee = cb(iteratee, context, 1);
+	    var value = iteratee(obj);
+	    var low = 0, high = getLength(array);
+	    while (low < high) {
+	      var mid = Math.floor((low + high) / 2);
+	      if (iteratee(array[mid]) < value) low = mid + 1; else high = mid;
+	    }
+	    return low;
+	  };
+
+	  // Generator function to create the indexOf and lastIndexOf functions
+	  function createIndexFinder(dir, predicateFind, sortedIndex) {
+	    return function(array, item, idx) {
+	      var i = 0, length = getLength(array);
+	      if (typeof idx == 'number') {
+	        if (dir > 0) {
+	            i = idx >= 0 ? idx : Math.max(idx + length, i);
+	        } else {
+	            length = idx >= 0 ? Math.min(idx + 1, length) : idx + length + 1;
+	        }
+	      } else if (sortedIndex && idx && length) {
+	        idx = sortedIndex(array, item);
+	        return array[idx] === item ? idx : -1;
+	      }
+	      if (item !== item) {
+	        idx = predicateFind(slice.call(array, i, length), _.isNaN);
+	        return idx >= 0 ? idx + i : -1;
+	      }
+	      for (idx = dir > 0 ? i : length - 1; idx >= 0 && idx < length; idx += dir) {
+	        if (array[idx] === item) return idx;
+	      }
+	      return -1;
+	    };
+	  }
+
+	  // Return the position of the first occurrence of an item in an array,
+	  // or -1 if the item is not included in the array.
+	  // If the array is large and already in sort order, pass `true`
+	  // for **isSorted** to use binary search.
+	  _.indexOf = createIndexFinder(1, _.findIndex, _.sortedIndex);
+	  _.lastIndexOf = createIndexFinder(-1, _.findLastIndex);
+
+	  // Generate an integer Array containing an arithmetic progression. A port of
+	  // the native Python `range()` function. See
+	  // [the Python documentation](http://docs.python.org/library/functions.html#range).
+	  _.range = function(start, stop, step) {
+	    if (stop == null) {
+	      stop = start || 0;
+	      start = 0;
+	    }
+	    step = step || 1;
+
+	    var length = Math.max(Math.ceil((stop - start) / step), 0);
+	    var range = Array(length);
+
+	    for (var idx = 0; idx < length; idx++, start += step) {
+	      range[idx] = start;
+	    }
+
+	    return range;
+	  };
+
+	  // Function (ahem) Functions
+	  // ------------------
+
+	  // Determines whether to execute a function as a constructor
+	  // or a normal function with the provided arguments
+	  var executeBound = function(sourceFunc, boundFunc, context, callingContext, args) {
+	    if (!(callingContext instanceof boundFunc)) return sourceFunc.apply(context, args);
+	    var self = baseCreate(sourceFunc.prototype);
+	    var result = sourceFunc.apply(self, args);
+	    if (_.isObject(result)) return result;
+	    return self;
+	  };
+
+	  // Create a function bound to a given object (assigning `this`, and arguments,
+	  // optionally). Delegates to **ECMAScript 5**'s native `Function.bind` if
+	  // available.
+	  _.bind = function(func, context) {
+	    if (nativeBind && func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
+	    if (!_.isFunction(func)) throw new TypeError('Bind must be called on a function');
+	    var args = slice.call(arguments, 2);
+	    var bound = function() {
+	      return executeBound(func, bound, context, this, args.concat(slice.call(arguments)));
+	    };
+	    return bound;
+	  };
+
+	  // Partially apply a function by creating a version that has had some of its
+	  // arguments pre-filled, without changing its dynamic `this` context. _ acts
+	  // as a placeholder, allowing any combination of arguments to be pre-filled.
+	  _.partial = function(func) {
+	    var boundArgs = slice.call(arguments, 1);
+	    var bound = function() {
+	      var position = 0, length = boundArgs.length;
+	      var args = Array(length);
+	      for (var i = 0; i < length; i++) {
+	        args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
+	      }
+	      while (position < arguments.length) args.push(arguments[position++]);
+	      return executeBound(func, bound, this, this, args);
+	    };
+	    return bound;
+	  };
+
+	  // Bind a number of an object's methods to that object. Remaining arguments
+	  // are the method names to be bound. Useful for ensuring that all callbacks
+	  // defined on an object belong to it.
+	  _.bindAll = function(obj) {
+	    var i, length = arguments.length, key;
+	    if (length <= 1) throw new Error('bindAll must be passed function names');
+	    for (i = 1; i < length; i++) {
+	      key = arguments[i];
+	      obj[key] = _.bind(obj[key], obj);
+	    }
+	    return obj;
+	  };
+
+	  // Memoize an expensive function by storing its results.
+	  _.memoize = function(func, hasher) {
+	    var memoize = function(key) {
+	      var cache = memoize.cache;
+	      var address = '' + (hasher ? hasher.apply(this, arguments) : key);
+	      if (!_.has(cache, address)) cache[address] = func.apply(this, arguments);
+	      return cache[address];
+	    };
+	    memoize.cache = {};
+	    return memoize;
+	  };
+
+	  // Delays a function for the given number of milliseconds, and then calls
+	  // it with the arguments supplied.
+	  _.delay = function(func, wait) {
+	    var args = slice.call(arguments, 2);
+	    return setTimeout(function(){
+	      return func.apply(null, args);
+	    }, wait);
+	  };
+
+	  // Defers a function, scheduling it to run after the current call stack has
+	  // cleared.
+	  _.defer = _.partial(_.delay, _, 1);
+
+	  // Returns a function, that, when invoked, will only be triggered at most once
+	  // during a given window of time. Normally, the throttled function will run
+	  // as much as it can, without ever going more than once per `wait` duration;
+	  // but if you'd like to disable the execution on the leading edge, pass
+	  // `{leading: false}`. To disable execution on the trailing edge, ditto.
+	  _.throttle = function(func, wait, options) {
+	    var context, args, result;
+	    var timeout = null;
+	    var previous = 0;
+	    if (!options) options = {};
+	    var later = function() {
+	      previous = options.leading === false ? 0 : _.now();
+	      timeout = null;
+	      result = func.apply(context, args);
+	      if (!timeout) context = args = null;
+	    };
+	    return function() {
+	      var now = _.now();
+	      if (!previous && options.leading === false) previous = now;
+	      var remaining = wait - (now - previous);
+	      context = this;
+	      args = arguments;
+	      if (remaining <= 0 || remaining > wait) {
+	        if (timeout) {
+	          clearTimeout(timeout);
+	          timeout = null;
+	        }
+	        previous = now;
+	        result = func.apply(context, args);
+	        if (!timeout) context = args = null;
+	      } else if (!timeout && options.trailing !== false) {
+	        timeout = setTimeout(later, remaining);
+	      }
+	      return result;
+	    };
+	  };
+
+	  // Returns a function, that, as long as it continues to be invoked, will not
+	  // be triggered. The function will be called after it stops being called for
+	  // N milliseconds. If `immediate` is passed, trigger the function on the
+	  // leading edge, instead of the trailing.
+	  _.debounce = function(func, wait, immediate) {
+	    var timeout, args, context, timestamp, result;
+
+	    var later = function() {
+	      var last = _.now() - timestamp;
+
+	      if (last < wait && last >= 0) {
+	        timeout = setTimeout(later, wait - last);
+	      } else {
+	        timeout = null;
+	        if (!immediate) {
+	          result = func.apply(context, args);
+	          if (!timeout) context = args = null;
+	        }
+	      }
+	    };
+
+	    return function() {
+	      context = this;
+	      args = arguments;
+	      timestamp = _.now();
+	      var callNow = immediate && !timeout;
+	      if (!timeout) timeout = setTimeout(later, wait);
+	      if (callNow) {
+	        result = func.apply(context, args);
+	        context = args = null;
+	      }
+
+	      return result;
+	    };
+	  };
+
+	  // Returns the first function passed as an argument to the second,
+	  // allowing you to adjust arguments, run code before and after, and
+	  // conditionally execute the original function.
+	  _.wrap = function(func, wrapper) {
+	    return _.partial(wrapper, func);
+	  };
+
+	  // Returns a negated version of the passed-in predicate.
+	  _.negate = function(predicate) {
+	    return function() {
+	      return !predicate.apply(this, arguments);
+	    };
+	  };
+
+	  // Returns a function that is the composition of a list of functions, each
+	  // consuming the return value of the function that follows.
+	  _.compose = function() {
+	    var args = arguments;
+	    var start = args.length - 1;
+	    return function() {
+	      var i = start;
+	      var result = args[start].apply(this, arguments);
+	      while (i--) result = args[i].call(this, result);
+	      return result;
+	    };
+	  };
+
+	  // Returns a function that will only be executed on and after the Nth call.
+	  _.after = function(times, func) {
+	    return function() {
+	      if (--times < 1) {
+	        return func.apply(this, arguments);
+	      }
+	    };
+	  };
+
+	  // Returns a function that will only be executed up to (but not including) the Nth call.
+	  _.before = function(times, func) {
+	    var memo;
+	    return function() {
+	      if (--times > 0) {
+	        memo = func.apply(this, arguments);
+	      }
+	      if (times <= 1) func = null;
+	      return memo;
+	    };
+	  };
+
+	  // Returns a function that will be executed at most one time, no matter how
+	  // often you call it. Useful for lazy initialization.
+	  _.once = _.partial(_.before, 2);
+
+	  // Object Functions
+	  // ----------------
+
+	  // Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
+	  var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
+	  var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
+	                      'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
+
+	  function collectNonEnumProps(obj, keys) {
+	    var nonEnumIdx = nonEnumerableProps.length;
+	    var constructor = obj.constructor;
+	    var proto = (_.isFunction(constructor) && constructor.prototype) || ObjProto;
+
+	    // Constructor is a special case.
+	    var prop = 'constructor';
+	    if (_.has(obj, prop) && !_.contains(keys, prop)) keys.push(prop);
+
+	    while (nonEnumIdx--) {
+	      prop = nonEnumerableProps[nonEnumIdx];
+	      if (prop in obj && obj[prop] !== proto[prop] && !_.contains(keys, prop)) {
+	        keys.push(prop);
+	      }
+	    }
+	  }
+
+	  // Retrieve the names of an object's own properties.
+	  // Delegates to **ECMAScript 5**'s native `Object.keys`
+	  _.keys = function(obj) {
+	    if (!_.isObject(obj)) return [];
+	    if (nativeKeys) return nativeKeys(obj);
+	    var keys = [];
+	    for (var key in obj) if (_.has(obj, key)) keys.push(key);
+	    // Ahem, IE < 9.
+	    if (hasEnumBug) collectNonEnumProps(obj, keys);
+	    return keys;
+	  };
+
+	  // Retrieve all the property names of an object.
+	  _.allKeys = function(obj) {
+	    if (!_.isObject(obj)) return [];
+	    var keys = [];
+	    for (var key in obj) keys.push(key);
+	    // Ahem, IE < 9.
+	    if (hasEnumBug) collectNonEnumProps(obj, keys);
+	    return keys;
+	  };
+
+	  // Retrieve the values of an object's properties.
+	  _.values = function(obj) {
+	    var keys = _.keys(obj);
+	    var length = keys.length;
+	    var values = Array(length);
+	    for (var i = 0; i < length; i++) {
+	      values[i] = obj[keys[i]];
+	    }
+	    return values;
+	  };
+
+	  // Returns the results of applying the iteratee to each element of the object
+	  // In contrast to _.map it returns an object
+	  _.mapObject = function(obj, iteratee, context) {
+	    iteratee = cb(iteratee, context);
+	    var keys =  _.keys(obj),
+	          length = keys.length,
+	          results = {},
+	          currentKey;
+	      for (var index = 0; index < length; index++) {
+	        currentKey = keys[index];
+	        results[currentKey] = iteratee(obj[currentKey], currentKey, obj);
+	      }
+	      return results;
+	  };
+
+	  // Convert an object into a list of `[key, value]` pairs.
+	  _.pairs = function(obj) {
+	    var keys = _.keys(obj);
+	    var length = keys.length;
+	    var pairs = Array(length);
+	    for (var i = 0; i < length; i++) {
+	      pairs[i] = [keys[i], obj[keys[i]]];
+	    }
+	    return pairs;
+	  };
+
+	  // Invert the keys and values of an object. The values must be serializable.
+	  _.invert = function(obj) {
+	    var result = {};
+	    var keys = _.keys(obj);
+	    for (var i = 0, length = keys.length; i < length; i++) {
+	      result[obj[keys[i]]] = keys[i];
+	    }
+	    return result;
+	  };
+
+	  // Return a sorted list of the function names available on the object.
+	  // Aliased as `methods`
+	  _.functions = _.methods = function(obj) {
+	    var names = [];
+	    for (var key in obj) {
+	      if (_.isFunction(obj[key])) names.push(key);
+	    }
+	    return names.sort();
+	  };
+
+	  // Extend a given object with all the properties in passed-in object(s).
+	  _.extend = createAssigner(_.allKeys);
+
+	  // Assigns a given object with all the own properties in the passed-in object(s)
+	  // (https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+	  _.extendOwn = _.assign = createAssigner(_.keys);
+
+	  // Returns the first key on an object that passes a predicate test
+	  _.findKey = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var keys = _.keys(obj), key;
+	    for (var i = 0, length = keys.length; i < length; i++) {
+	      key = keys[i];
+	      if (predicate(obj[key], key, obj)) return key;
+	    }
+	  };
+
+	  // Return a copy of the object only containing the whitelisted properties.
+	  _.pick = function(object, oiteratee, context) {
+	    var result = {}, obj = object, iteratee, keys;
+	    if (obj == null) return result;
+	    if (_.isFunction(oiteratee)) {
+	      keys = _.allKeys(obj);
+	      iteratee = optimizeCb(oiteratee, context);
+	    } else {
+	      keys = flatten(arguments, false, false, 1);
+	      iteratee = function(value, key, obj) { return key in obj; };
+	      obj = Object(obj);
+	    }
+	    for (var i = 0, length = keys.length; i < length; i++) {
+	      var key = keys[i];
+	      var value = obj[key];
+	      if (iteratee(value, key, obj)) result[key] = value;
+	    }
+	    return result;
+	  };
+
+	   // Return a copy of the object without the blacklisted properties.
+	  _.omit = function(obj, iteratee, context) {
+	    if (_.isFunction(iteratee)) {
+	      iteratee = _.negate(iteratee);
+	    } else {
+	      var keys = _.map(flatten(arguments, false, false, 1), String);
+	      iteratee = function(value, key) {
+	        return !_.contains(keys, key);
+	      };
+	    }
+	    return _.pick(obj, iteratee, context);
+	  };
+
+	  // Fill in a given object with default properties.
+	  _.defaults = createAssigner(_.allKeys, true);
+
+	  // Creates an object that inherits from the given prototype object.
+	  // If additional properties are provided then they will be added to the
+	  // created object.
+	  _.create = function(prototype, props) {
+	    var result = baseCreate(prototype);
+	    if (props) _.extendOwn(result, props);
+	    return result;
+	  };
+
+	  // Create a (shallow-cloned) duplicate of an object.
+	  _.clone = function(obj) {
+	    if (!_.isObject(obj)) return obj;
+	    return _.isArray(obj) ? obj.slice() : _.extend({}, obj);
+	  };
+
+	  // Invokes interceptor with the obj, and then returns obj.
+	  // The primary purpose of this method is to "tap into" a method chain, in
+	  // order to perform operations on intermediate results within the chain.
+	  _.tap = function(obj, interceptor) {
+	    interceptor(obj);
+	    return obj;
+	  };
+
+	  // Returns whether an object has a given set of `key:value` pairs.
+	  _.isMatch = function(object, attrs) {
+	    var keys = _.keys(attrs), length = keys.length;
+	    if (object == null) return !length;
+	    var obj = Object(object);
+	    for (var i = 0; i < length; i++) {
+	      var key = keys[i];
+	      if (attrs[key] !== obj[key] || !(key in obj)) return false;
+	    }
+	    return true;
+	  };
+
+
+	  // Internal recursive comparison function for `isEqual`.
+	  var eq = function(a, b, aStack, bStack) {
+	    // Identical objects are equal. `0 === -0`, but they aren't identical.
+	    // See the [Harmony `egal` proposal](http://wiki.ecmascript.org/doku.php?id=harmony:egal).
+	    if (a === b) return a !== 0 || 1 / a === 1 / b;
+	    // A strict comparison is necessary because `null == undefined`.
+	    if (a == null || b == null) return a === b;
+	    // Unwrap any wrapped objects.
+	    if (a instanceof _) a = a._wrapped;
+	    if (b instanceof _) b = b._wrapped;
+	    // Compare `[[Class]]` names.
+	    var className = toString.call(a);
+	    if (className !== toString.call(b)) return false;
+	    switch (className) {
+	      // Strings, numbers, regular expressions, dates, and booleans are compared by value.
+	      case '[object RegExp]':
+	      // RegExps are coerced to strings for comparison (Note: '' + /a/i === '/a/i')
+	      case '[object String]':
+	        // Primitives and their corresponding object wrappers are equivalent; thus, `"5"` is
+	        // equivalent to `new String("5")`.
+	        return '' + a === '' + b;
+	      case '[object Number]':
+	        // `NaN`s are equivalent, but non-reflexive.
+	        // Object(NaN) is equivalent to NaN
+	        if (+a !== +a) return +b !== +b;
+	        // An `egal` comparison is performed for other numeric values.
+	        return +a === 0 ? 1 / +a === 1 / b : +a === +b;
+	      case '[object Date]':
+	      case '[object Boolean]':
+	        // Coerce dates and booleans to numeric primitive values. Dates are compared by their
+	        // millisecond representations. Note that invalid dates with millisecond representations
+	        // of `NaN` are not equivalent.
+	        return +a === +b;
+	    }
+
+	    var areArrays = className === '[object Array]';
+	    if (!areArrays) {
+	      if (typeof a != 'object' || typeof b != 'object') return false;
+
+	      // Objects with different constructors are not equivalent, but `Object`s or `Array`s
+	      // from different frames are.
+	      var aCtor = a.constructor, bCtor = b.constructor;
+	      if (aCtor !== bCtor && !(_.isFunction(aCtor) && aCtor instanceof aCtor &&
+	                               _.isFunction(bCtor) && bCtor instanceof bCtor)
+	                          && ('constructor' in a && 'constructor' in b)) {
+	        return false;
+	      }
+	    }
+	    // Assume equality for cyclic structures. The algorithm for detecting cyclic
+	    // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
+
+	    // Initializing stack of traversed objects.
+	    // It's done here since we only need them for objects and arrays comparison.
+	    aStack = aStack || [];
+	    bStack = bStack || [];
+	    var length = aStack.length;
+	    while (length--) {
+	      // Linear search. Performance is inversely proportional to the number of
+	      // unique nested structures.
+	      if (aStack[length] === a) return bStack[length] === b;
+	    }
+
+	    // Add the first object to the stack of traversed objects.
+	    aStack.push(a);
+	    bStack.push(b);
+
+	    // Recursively compare objects and arrays.
+	    if (areArrays) {
+	      // Compare array lengths to determine if a deep comparison is necessary.
+	      length = a.length;
+	      if (length !== b.length) return false;
+	      // Deep compare the contents, ignoring non-numeric properties.
+	      while (length--) {
+	        if (!eq(a[length], b[length], aStack, bStack)) return false;
+	      }
+	    } else {
+	      // Deep compare objects.
+	      var keys = _.keys(a), key;
+	      length = keys.length;
+	      // Ensure that both objects contain the same number of properties before comparing deep equality.
+	      if (_.keys(b).length !== length) return false;
+	      while (length--) {
+	        // Deep compare each member
+	        key = keys[length];
+	        if (!(_.has(b, key) && eq(a[key], b[key], aStack, bStack))) return false;
+	      }
+	    }
+	    // Remove the first object from the stack of traversed objects.
+	    aStack.pop();
+	    bStack.pop();
+	    return true;
+	  };
+
+	  // Perform a deep comparison to check if two objects are equal.
+	  _.isEqual = function(a, b) {
+	    return eq(a, b);
+	  };
+
+	  // Is a given array, string, or object empty?
+	  // An "empty" object has no enumerable own-properties.
+	  _.isEmpty = function(obj) {
+	    if (obj == null) return true;
+	    if (isArrayLike(obj) && (_.isArray(obj) || _.isString(obj) || _.isArguments(obj))) return obj.length === 0;
+	    return _.keys(obj).length === 0;
+	  };
+
+	  // Is a given value a DOM element?
+	  _.isElement = function(obj) {
+	    return !!(obj && obj.nodeType === 1);
+	  };
+
+	  // Is a given value an array?
+	  // Delegates to ECMA5's native Array.isArray
+	  _.isArray = nativeIsArray || function(obj) {
+	    return toString.call(obj) === '[object Array]';
+	  };
+
+	  // Is a given variable an object?
+	  _.isObject = function(obj) {
+	    var type = typeof obj;
+	    return type === 'function' || type === 'object' && !!obj;
+	  };
+
+	  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp, isError.
+	  _.each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp', 'Error'], function(name) {
+	    _['is' + name] = function(obj) {
+	      return toString.call(obj) === '[object ' + name + ']';
+	    };
+	  });
+
+	  // Define a fallback version of the method in browsers (ahem, IE < 9), where
+	  // there isn't any inspectable "Arguments" type.
+	  if (!_.isArguments(arguments)) {
+	    _.isArguments = function(obj) {
+	      return _.has(obj, 'callee');
+	    };
+	  }
+
+	  // Optimize `isFunction` if appropriate. Work around some typeof bugs in old v8,
+	  // IE 11 (#1621), and in Safari 8 (#1929).
+	  if (typeof /./ != 'function' && typeof Int8Array != 'object') {
+	    _.isFunction = function(obj) {
+	      return typeof obj == 'function' || false;
+	    };
+	  }
+
+	  // Is a given object a finite number?
+	  _.isFinite = function(obj) {
+	    return isFinite(obj) && !isNaN(parseFloat(obj));
+	  };
+
+	  // Is the given value `NaN`? (NaN is the only number which does not equal itself).
+	  _.isNaN = function(obj) {
+	    return _.isNumber(obj) && obj !== +obj;
+	  };
+
+	  // Is a given value a boolean?
+	  _.isBoolean = function(obj) {
+	    return obj === true || obj === false || toString.call(obj) === '[object Boolean]';
+	  };
+
+	  // Is a given value equal to null?
+	  _.isNull = function(obj) {
+	    return obj === null;
+	  };
+
+	  // Is a given variable undefined?
+	  _.isUndefined = function(obj) {
+	    return obj === void 0;
+	  };
+
+	  // Shortcut function for checking if an object has a given property directly
+	  // on itself (in other words, not on a prototype).
+	  _.has = function(obj, key) {
+	    return obj != null && hasOwnProperty.call(obj, key);
+	  };
+
+	  // Utility Functions
+	  // -----------------
+
+	  // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
+	  // previous owner. Returns a reference to the Underscore object.
+	  _.noConflict = function() {
+	    root._ = previousUnderscore;
+	    return this;
+	  };
+
+	  // Keep the identity function around for default iteratees.
+	  _.identity = function(value) {
+	    return value;
+	  };
+
+	  // Predicate-generating functions. Often useful outside of Underscore.
+	  _.constant = function(value) {
+	    return function() {
+	      return value;
+	    };
+	  };
+
+	  _.noop = function(){};
+
+	  _.property = property;
+
+	  // Generates a function for a given object that returns a given property.
+	  _.propertyOf = function(obj) {
+	    return obj == null ? function(){} : function(key) {
+	      return obj[key];
+	    };
+	  };
+
+	  // Returns a predicate for checking whether an object has a given set of
+	  // `key:value` pairs.
+	  _.matcher = _.matches = function(attrs) {
+	    attrs = _.extendOwn({}, attrs);
+	    return function(obj) {
+	      return _.isMatch(obj, attrs);
+	    };
+	  };
+
+	  // Run a function **n** times.
+	  _.times = function(n, iteratee, context) {
+	    var accum = Array(Math.max(0, n));
+	    iteratee = optimizeCb(iteratee, context, 1);
+	    for (var i = 0; i < n; i++) accum[i] = iteratee(i);
+	    return accum;
+	  };
+
+	  // Return a random integer between min and max (inclusive).
+	  _.random = function(min, max) {
+	    if (max == null) {
+	      max = min;
+	      min = 0;
+	    }
+	    return min + Math.floor(Math.random() * (max - min + 1));
+	  };
+
+	  // A (possibly faster) way to get the current timestamp as an integer.
+	  _.now = Date.now || function() {
+	    return new Date().getTime();
+	  };
+
+	   // List of HTML entities for escaping.
+	  var escapeMap = {
+	    '&': '&amp;',
+	    '<': '&lt;',
+	    '>': '&gt;',
+	    '"': '&quot;',
+	    "'": '&#x27;',
+	    '`': '&#x60;'
+	  };
+	  var unescapeMap = _.invert(escapeMap);
+
+	  // Functions for escaping and unescaping strings to/from HTML interpolation.
+	  var createEscaper = function(map) {
+	    var escaper = function(match) {
+	      return map[match];
+	    };
+	    // Regexes for identifying a key that needs to be escaped
+	    var source = '(?:' + _.keys(map).join('|') + ')';
+	    var testRegexp = RegExp(source);
+	    var replaceRegexp = RegExp(source, 'g');
+	    return function(string) {
+	      string = string == null ? '' : '' + string;
+	      return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
+	    };
+	  };
+	  _.escape = createEscaper(escapeMap);
+	  _.unescape = createEscaper(unescapeMap);
+
+	  // If the value of the named `property` is a function then invoke it with the
+	  // `object` as context; otherwise, return it.
+	  _.result = function(object, property, fallback) {
+	    var value = object == null ? void 0 : object[property];
+	    if (value === void 0) {
+	      value = fallback;
+	    }
+	    return _.isFunction(value) ? value.call(object) : value;
+	  };
+
+	  // Generate a unique integer id (unique within the entire client session).
+	  // Useful for temporary DOM ids.
+	  var idCounter = 0;
+	  _.uniqueId = function(prefix) {
+	    var id = ++idCounter + '';
+	    return prefix ? prefix + id : id;
+	  };
+
+	  // By default, Underscore uses ERB-style template delimiters, change the
+	  // following template settings to use alternative delimiters.
+	  _.templateSettings = {
+	    evaluate    : /<%([\s\S]+?)%>/g,
+	    interpolate : /<%=([\s\S]+?)%>/g,
+	    escape      : /<%-([\s\S]+?)%>/g
+	  };
+
+	  // When customizing `templateSettings`, if you don't want to define an
+	  // interpolation, evaluation or escaping regex, we need one that is
+	  // guaranteed not to match.
+	  var noMatch = /(.)^/;
+
+	  // Certain characters need to be escaped so that they can be put into a
+	  // string literal.
+	  var escapes = {
+	    "'":      "'",
+	    '\\':     '\\',
+	    '\r':     'r',
+	    '\n':     'n',
+	    '\u2028': 'u2028',
+	    '\u2029': 'u2029'
+	  };
+
+	  var escaper = /\\|'|\r|\n|\u2028|\u2029/g;
+
+	  var escapeChar = function(match) {
+	    return '\\' + escapes[match];
+	  };
+
+	  // JavaScript micro-templating, similar to John Resig's implementation.
+	  // Underscore templating handles arbitrary delimiters, preserves whitespace,
+	  // and correctly escapes quotes within interpolated code.
+	  // NB: `oldSettings` only exists for backwards compatibility.
+	  _.template = function(text, settings, oldSettings) {
+	    if (!settings && oldSettings) settings = oldSettings;
+	    settings = _.defaults({}, settings, _.templateSettings);
+
+	    // Combine delimiters into one regular expression via alternation.
+	    var matcher = RegExp([
+	      (settings.escape || noMatch).source,
+	      (settings.interpolate || noMatch).source,
+	      (settings.evaluate || noMatch).source
+	    ].join('|') + '|$', 'g');
+
+	    // Compile the template source, escaping string literals appropriately.
+	    var index = 0;
+	    var source = "__p+='";
+	    text.replace(matcher, function(match, escape, interpolate, evaluate, offset) {
+	      source += text.slice(index, offset).replace(escaper, escapeChar);
+	      index = offset + match.length;
+
+	      if (escape) {
+	        source += "'+\n((__t=(" + escape + "))==null?'':_.escape(__t))+\n'";
+	      } else if (interpolate) {
+	        source += "'+\n((__t=(" + interpolate + "))==null?'':__t)+\n'";
+	      } else if (evaluate) {
+	        source += "';\n" + evaluate + "\n__p+='";
+	      }
+
+	      // Adobe VMs need the match returned to produce the correct offest.
+	      return match;
+	    });
+	    source += "';\n";
+
+	    // If a variable is not specified, place data values in local scope.
+	    if (!settings.variable) source = 'with(obj||{}){\n' + source + '}\n';
+
+	    source = "var __t,__p='',__j=Array.prototype.join," +
+	      "print=function(){__p+=__j.call(arguments,'');};\n" +
+	      source + 'return __p;\n';
+
+	    try {
+	      var render = new Function(settings.variable || 'obj', '_', source);
+	    } catch (e) {
+	      e.source = source;
+	      throw e;
+	    }
+
+	    var template = function(data) {
+	      return render.call(this, data, _);
+	    };
+
+	    // Provide the compiled source as a convenience for precompilation.
+	    var argument = settings.variable || 'obj';
+	    template.source = 'function(' + argument + '){\n' + source + '}';
+
+	    return template;
+	  };
+
+	  // Add a "chain" function. Start chaining a wrapped Underscore object.
+	  _.chain = function(obj) {
+	    var instance = _(obj);
+	    instance._chain = true;
+	    return instance;
+	  };
+
+	  // OOP
+	  // ---------------
+	  // If Underscore is called as a function, it returns a wrapped object that
+	  // can be used OO-style. This wrapper holds altered versions of all the
+	  // underscore functions. Wrapped objects may be chained.
+
+	  // Helper function to continue chaining intermediate results.
+	  var result = function(instance, obj) {
+	    return instance._chain ? _(obj).chain() : obj;
+	  };
+
+	  // Add your own custom functions to the Underscore object.
+	  _.mixin = function(obj) {
+	    _.each(_.functions(obj), function(name) {
+	      var func = _[name] = obj[name];
+	      _.prototype[name] = function() {
+	        var args = [this._wrapped];
+	        push.apply(args, arguments);
+	        return result(this, func.apply(_, args));
+	      };
+	    });
+	  };
+
+	  // Add all of the Underscore functions to the wrapper object.
+	  _.mixin(_);
+
+	  // Add all mutator Array functions to the wrapper.
+	  _.each(['pop', 'push', 'reverse', 'shift', 'sort', 'splice', 'unshift'], function(name) {
+	    var method = ArrayProto[name];
+	    _.prototype[name] = function() {
+	      var obj = this._wrapped;
+	      method.apply(obj, arguments);
+	      if ((name === 'shift' || name === 'splice') && obj.length === 0) delete obj[0];
+	      return result(this, obj);
+	    };
+	  });
+
+	  // Add all accessor Array functions to the wrapper.
+	  _.each(['concat', 'join', 'slice'], function(name) {
+	    var method = ArrayProto[name];
+	    _.prototype[name] = function() {
+	      return result(this, method.apply(this._wrapped, arguments));
+	    };
+	  });
+
+	  // Extracts the result from a wrapped and chained object.
+	  _.prototype.value = function() {
+	    return this._wrapped;
+	  };
+
+	  // Provide unwrapping proxy for some methods used in engine operations
+	  // such as arithmetic and JSON stringification.
+	  _.prototype.valueOf = _.prototype.toJSON = _.prototype.value;
+
+	  _.prototype.toString = function() {
+	    return '' + this._wrapped;
+	  };
+
+	  // AMD registration happens at the end for compatibility with AMD loaders
+	  // that may not enforce next-turn semantics on modules. Even though general
+	  // practice for AMD registration is to be anonymous, underscore registers
+	  // as a named module because, like jQuery, it is a base library that is
+	  // popular enough to be bundled in a third party lib, but not be part of
+	  // an AMD load request. Those cases could generate an error when an
+	  // anonymous define() is called outside of a loader request.
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	      return _;
+	    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  }
+	}.call(this));
+
+
+/***/ },
+/* 114 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12642,18 +14188,18 @@ module.exports =
 	}
 
 /***/ },
-/* 113 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _targetContainer = __webpack_require__(114);
+	var _targetContainer = __webpack_require__(116);
 
 	var _targetContainer2 = _interopRequireDefault(_targetContainer);
 
@@ -12686,7 +14232,7 @@ module.exports =
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: 'https://github.com/jchristman/react-context-menus/tree/master/examples/00%20Connecting Targets/Single%20Target' },
+	                        { href: 'https://github.com/jchristman/react-context-menus/tree/master/examples/00%20Connecting Targets/Multiple%20Targets' },
 	                        'Browse the Source'
 	                    )
 	                )
@@ -12694,7 +14240,7 @@ module.exports =
 	            _react2.default.createElement(
 	                'p',
 	                null,
-	                'This is a simplest example that exists. Right click in the box below to get a context menu.'
+	                'In this example, there are multiple context menu "spots" on the same component, each of which generates the same context menu.'
 	            ),
 	            _react2.default.createElement(_targetContainer2.default, null)
 	        );
@@ -12707,18 +14253,18 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 114 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _reactContextMenus = __webpack_require__(117);
+	var _reactContextMenus = __webpack_require__(22);
 
 	var _reactContextMenus2 = _interopRequireDefault(_reactContextMenus);
 
-	var _target = __webpack_require__(115);
+	var _target = __webpack_require__(117);
 
 	var _target2 = _interopRequireDefault(_target);
 
@@ -12741,273 +14287,15 @@ module.exports =
 	    }
 	}];
 
-	exports.default = (0, _reactContextMenus2.default)(menu_items)(_target2.default);
-	module.exports = exports['default'];
-
-/***/ },
-/* 115 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-
-	var _react = __webpack_require__(3);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var style = {
-	    width: 300,
-	    height: 300,
-	    backgroundColor: '#111',
-	    color: 'white'
-	};
-
-	var Target = function Target(props) {
-	    return props.connectContextMenu(_react2.default.createElement(
-	        'div',
-	        { style: style },
-	        'Right click here for a context menu'
-	    ));
-	};
-
-	exports.default = Target;
-	module.exports = exports['default'];
-
-/***/ },
-/* 116 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	exports.__esModule = true;
-
-	var _extends = Object.assign || function (target) {
-	    for (var i = 1; i < arguments.length; i++) {
-	        var source = arguments[i];for (var key in source) {
-	            if (Object.prototype.hasOwnProperty.call(source, key)) {
-	                target[key] = source[key];
-	            }
-	        }
-	    }return target;
-	};
-
-	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
-	    return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	} : function (obj) {
-	    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	};
-
-	var _react = __webpack_require__(3);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(16);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _invariant = __webpack_require__(142);
-
-	var _invariant2 = _interopRequireDefault(_invariant);
-
-	var _reactMenus = __webpack_require__(163);
-
-	var _reactMenus2 = _interopRequireDefault(_reactMenus);
-
-	function _interopRequireDefault(obj) {
-	    return obj && obj.__esModule ? obj : { default: obj };
-	}
-
-	function _classCallCheck(instance, Constructor) {
-	    if (!(instance instanceof Constructor)) {
-	        throw new TypeError("Cannot call a class as a function");
-	    }
-	}
-
-	function _possibleConstructorReturn(self, call) {
-	    if (!self) {
-	        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	    }return call && ((typeof call === "undefined" ? "undefined" : _typeof2(call)) === "object" || typeof call === "function") ? call : self;
-	}
-
-	function _inherits(subClass, superClass) {
-	    if (typeof superClass !== "function" && superClass !== null) {
-	        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof2(superClass)));
-	    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-	}
-
-	var theme = {};
-
-	var ContextMenu = function ContextMenu(menu_items) {
-	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
-
-	    // Merge themes if they exist
-	    if (options.theme && options.theme.style) {
-	        for (var attrname in options.theme.style) {
-	            theme.style[attrname] = options.theme.style[attrname];
+	var options = {
+	    theme: {
+	        style: {
+	            color: 'black'
 	        }
 	    }
-
-	    return function (ChildComponent) {
-	        var Container = function (_React$Component) {
-	            _inherits(Container, _React$Component);
-
-	            function Container(props, context) {
-	                _classCallCheck(this, Container);
-
-	                var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
-
-	                _this.state = {
-	                    showContextMenu: false,
-	                    x: 0,
-	                    y: 0
-	                };
-
-	                // needed to add and remove event listeners....
-	                _this.clickable_element = undefined;
-	                _this.force_hide = _this.force_hide.bind(_this);
-	                _this.hide = _this.hide.bind(_this);
-	                _this.show = _this.show.bind(_this);
-	                return _this;
-	            }
-
-	            Container.prototype.componentDidMount = function componentDidMount() {
-	                this.child = _reactDom2.default.findDOMNode(this);
-	                this.container = document.createElement('div');
-	                this.container.style.position = 'absolute';
-	                this.container.style.top = 0;
-	                this.container.style.left = 0;
-	                this.container.style.width = 0;
-	                this.container.style.height = 0;
-	                this.child.appendChild(this.container);
-
-	                // Note that we are not using .bind(this), because we need to remove
-	                // the listener later. The bind happens in the constructor
-	                if (document.addEventListener) {
-	                    document.addEventListener('click', this.force_hide, false);
-	                    document.addEventListener('contextmenu', this.hide, false);
-	                    this.clickable_element.addEventListener('contextmenu', this.show, false);
-	                } else {
-	                    document.attachEvent('onclick', this.force_hide);
-	                    document.attachEvent('oncontextmenu', this.hide);
-	                    this.clickable_element.attachEvent('oncontextmenu', this.show);
-	                }
-
-	                this._renderLayer();
-	            };
-
-	            Container.prototype.componentDidUpdate = function componentDidUpdate() {
-	                this._renderLayer();
-	            };
-
-	            Container.prototype.componentWillUnmount = function componentWillUnmount() {
-	                _reactDom2.default.unmountComponentAtNode(this.container);
-
-	                // Note that we are not using .bind(this), because we need to remove
-	                // the listener later. The bind happens in the constructor
-	                if (document.removeEventListener) {
-	                    document.removeEventListener('click', this.force_hide, false);
-	                    document.removeEventListener('contextmenu', this.hide, false);
-	                    this.clickable_element && this.clickable_element.removeEventListener('contextmenu', this.show, false);
-	                } else {
-	                    document.detachEvent('onclick', this.force_hide);
-	                    document.detachEvent('oncontextmenu', this.hide);
-	                    this.clickable_element && this.clickable_element.detachEvent('oncontextmenu', this.show, false);
-	                }
-	            };
-
-	            Container.prototype._renderLayer = function _renderLayer() {
-	                var _this2 = this;
-
-	                if (this.state.showContextMenu) {
-	                    // If the menu_items var is a function, let's call it with the props.
-	                    menu_items = typeof menu_items === 'function' ? menu_items(this.props) : menu_items;
-
-	                    // Then correct the items to fix their onClick methods to be useful and have the props of the clicked element
-	                    var wrapped_menu_items = menu_items.map(function (item) {
-	                        // Copy the item
-	                        var new_item = (typeof item === 'undefined' ? 'undefined' : _typeof(item)) === 'object' ? _.extend({}, item) : item;
-	                        if (new_item.onClick !== undefined) new_item.onClick = function (event, item_props, index) {
-	                            item.onClick(event, _this2.props, index);
-	                        };
-	                        return new_item;
-	                    });
-
-	                    // Finally, render it to the container
-	                    _reactDom2.default.render(_react2.default.createElement(_reactMenus2.default, { theme: theme, items: wrapped_menu_items, at: [this.state.x, this.state.y] }), this.container);
-	                } else {
-	                    _reactDom2.default.unmountComponentAtNode(this.container);
-	                }
-	            };
-
-	            Container.prototype.render = function render() {
-	                return _react2.default.createElement(ChildComponent, _extends({}, this.props, {
-	                    connectContextMenu: this.connectContextMenu.bind(this)
-	                }));
-	            };
-
-	            Container.prototype.cloneWithRef = function cloneWithRef(element, newRef) {
-	                var previousRef = element.ref;
-	                (0, _invariant2.default)(typeof previousRef !== 'string', 'Cannot connect ContextMenu to an element with an existing string ref.');
-
-	                if (!previousRef) {
-	                    return (0, _react.cloneElement)(element, { ref: newRef });
-	                }
-
-	                return (0, _react.cloneElement)(element, {
-	                    ref: function ref(node) {
-	                        newRef(node);
-	                        previousRef && previousRef(node);
-	                    }
-	                });
-	            };
-
-	            // ----- Context Menu Methods ----- //
-
-	            Container.prototype.connectContextMenu = function connectContextMenu(react_element) {
-	                var _this3 = this;
-
-	                this.clickable_react_element = react_element;
-	                this.clickable_react_element = this.cloneWithRef(this.clickable_react_element, function (node) {
-	                    return _this3.clickable_element = node;
-	                });
-	                return this.clickable_react_element;
-	            };
-
-	            Container.prototype.show = function show(event) {
-	                event.preventDefault();
-
-	                var bounds = event.target.getBoundingClientRect();
-	                var x = event.clientX - bounds.left;
-	                var y = event.clientY - bounds.top;
-
-	                var state = { x: x, y: y, showContextMenu: true };
-	                this.setState(state);
-	            };
-
-	            Container.prototype.force_hide = function force_hide(event) {
-	                this.hide(event, true);
-	            };
-
-	            Container.prototype.hide = function hide(event, force) {
-	                if (event.target !== this.clickable_element || force) {
-	                    var state = { showContextMenu: false };
-	                    this.setState(state);
-	                }
-	            };
-
-	            return Container;
-	        }(_react2.default.Component);
-
-	        return Container;
-	    };
 	};
 
-	exports.default = ContextMenu;
+	exports.default = (0, _reactContextMenus2.default)(menu_items, options)(_target2.default);
 	module.exports = exports['default'];
 
 /***/ },
@@ -13018,15 +14306,68 @@ module.exports =
 
 	exports.__esModule = true;
 
-	var _context_menu = __webpack_require__(116);
+	var _react = __webpack_require__(1);
 
-	var _context_menu2 = _interopRequireDefault(_context_menu);
+	var _react2 = _interopRequireDefault(_react);
 
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { default: obj };
-	}
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _context_menu2.default;
+	var style = {
+	    position: 'relative',
+	    width: 300,
+	    height: 300,
+	    backgroundColor: '#111',
+	    color: 'white',
+	    textAlign: 'center'
+	};
+
+	var textStyle = {
+	    pointerEvents: 'none',
+	    pointer: 'cursor'
+	};
+
+	var context_menu_styles = [{
+	    position: 'absolute',
+	    width: 50,
+	    heigh: 50,
+	    top: 40,
+	    left: 20,
+	    backgroundColor: 'red'
+	}, {
+	    position: 'absolute',
+	    width: 50,
+	    heigh: 50,
+	    top: 120,
+	    right: 40,
+	    backgroundColor: 'blue'
+	}, {
+	    position: 'absolute',
+	    width: 50,
+	    heigh: 50,
+	    bottom: 60,
+	    left: 140,
+	    backgroundColor: 'green'
+	}];
+
+	var Target = function Target(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        { style: style },
+	        context_menu_styles.map(function (box, idx) {
+	            return props.connectContextMenu(_react2.default.createElement(
+	                'div',
+	                { style: box, key: idx },
+	                _react2.default.createElement(
+	                    'div',
+	                    { style: textStyle },
+	                    'Right click here'
+	                )
+	            ));
+	        })
+	    );
+	};
+
+	exports.default = Target;
 	module.exports = exports['default'];
 
 /***/ },
@@ -13037,29 +14378,857 @@ module.exports =
 
 	exports.__esModule = true;
 
-	__webpack_require__(145);
-
-	var _Constants = __webpack_require__(29);
-
-	var _Constants2 = _interopRequireDefault(_Constants);
-
-	var _HomePage = __webpack_require__(124);
-
-	var _HomePage2 = _interopRequireDefault(_HomePage);
-
-	var _APIPage = __webpack_require__(122);
-
-	var _APIPage2 = _interopRequireDefault(_APIPage);
-
-	var _ExamplePage = __webpack_require__(123);
-
-	var _ExamplePage2 = _interopRequireDefault(_ExamplePage);
-
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _server = __webpack_require__(153);
+	var _targetContainer = __webpack_require__(119);
+
+	var _targetContainer2 = _interopRequireDefault(_targetContainer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SingleTargetApp = function (_Component) {
+	    _inherits(SingleTargetApp, _Component);
+
+	    function SingleTargetApp(props) {
+	        _classCallCheck(this, SingleTargetApp);
+
+	        return _possibleConstructorReturn(this, _Component.call(this, props));
+	    }
+
+	    SingleTargetApp.prototype.render = function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(
+	                    'b',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/jchristman/react-context-menus/tree/master/examples/00%20Connecting%20Targets/Single%20Target' },
+	                        'Browse the Source'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'This is a simplest example that exists. Right click in the box below to get a context menu.'
+	            ),
+	            _react2.default.createElement(_targetContainer2.default, null)
+	        );
+	    };
+
+	    return SingleTargetApp;
+	}(_react.Component);
+
+	exports.default = SingleTargetApp;
+	module.exports = exports['default'];
+
+/***/ },
+/* 119 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _reactContextMenus = __webpack_require__(22);
+
+	var _reactContextMenus2 = _interopRequireDefault(_reactContextMenus);
+
+	var _target = __webpack_require__(120);
+
+	var _target2 = _interopRequireDefault(_target);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var menu_items = [{
+	    label: 'Item 1',
+	    onClick: function onClick(event, props, item) {
+	        return alert('Clicked Item 1!');
+	    }
+	}, {
+	    label: 'Item 2',
+	    onClick: function onClick() {
+	        return alert('Clicked Item 2!');
+	    }
+	}, '-', {
+	    label: 'Item 3',
+	    onClick: function onClick() {
+	        return alert('Clicked Item 3 below the divider!');
+	    }
+	}];
+
+	var options = {
+	    theme: {
+	        style: {
+	            color: 'black'
+	        }
+	    }
+	};
+
+	exports.default = (0, _reactContextMenus2.default)(menu_items, options)(_target2.default);
+	module.exports = exports['default'];
+
+/***/ },
+/* 120 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var style = {
+	    position: 'relative',
+	    width: 300,
+	    height: 300,
+	    backgroundColor: '#111',
+	    color: 'white',
+	    textAlign: 'center'
+	};
+
+	var textStyle = {
+	    pointerEvents: 'none',
+	    pointer: 'cursor'
+	};
+
+	var Target = function Target(props) {
+	    return props.connectContextMenu(_react2.default.createElement(
+	        'div',
+	        { style: style },
+	        _react2.default.createElement(
+	            'div',
+	            { style: textStyle },
+	            'Right click here for a context menu'
+	        )
+	    ));
+	};
+
+	exports.default = Target;
+	module.exports = exports['default'];
+
+/***/ },
+/* 121 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _underscore = __webpack_require__(113);
+
+	var _underscore2 = _interopRequireDefault(_underscore);
+
+	var _targetContainer = __webpack_require__(123);
+
+	var _targetContainer2 = _interopRequireDefault(_targetContainer);
+
+	var _themes = __webpack_require__(125);
+
+	var _Themes = _interopRequireWildcard(_themes);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Themes = _underscore2.default.omit(_Themes, '__esModule'); // Because it gets added by default
+
+	var Body = function (_React$Component) {
+	    _inherits(Body, _React$Component);
+
+	    function Body() {
+	        _classCallCheck(this, Body);
+
+	        var _this = _possibleConstructorReturn(this, _React$Component.call(this));
+
+	        _this.state = {
+	            selected: Object.keys(Themes)[0]
+	        };
+	        return _this;
+	    }
+
+	    Body.prototype.handleChange = function handleChange(event) {
+	        this.setState({ selected: event.target.value });
+	    };
+
+	    Body.prototype.render = function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'select',
+	                {
+	                    value: this.state.selected,
+	                    onChange: this.handleChange.bind(this) },
+	                _underscore2.default.map(Themes, function (theme, key) {
+	                    return _react2.default.createElement(
+	                        'option',
+	                        { key: key, value: key },
+	                        theme.name
+	                    );
+	                })
+	            ),
+	            _react2.default.createElement(_targetContainer2.default, { theme: Themes[this.state.selected], show: true })
+	        );
+	    };
+
+	    return Body;
+	}(_react2.default.Component);
+
+	exports.default = Body;
+	module.exports = exports['default'];
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _body = __webpack_require__(121);
+
+	var _body2 = _interopRequireDefault(_body);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SingleTargetApp = function (_Component) {
+	    _inherits(SingleTargetApp, _Component);
+
+	    function SingleTargetApp(props) {
+	        _classCallCheck(this, SingleTargetApp);
+
+	        return _possibleConstructorReturn(this, _Component.call(this, props));
+	    }
+
+	    SingleTargetApp.prototype.render = function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(
+	                    'b',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/jchristman/react-context-menus/tree/master/examples/01%20Styling/Themes' },
+	                        'Browse the Source'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'This example shows how you can change the style of the context menus. The menu will automatically open when you change the selection to demonstrate the colors. You can still right click around though... See the ',
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://github.com/zippyui/react-menus#styling--advanced-usage' },
+	                    'react-menus'
+	                ),
+	                ' homepage for full stying information.'
+	            ),
+	            _react2.default.createElement(_body2.default, null)
+	        );
+	    };
+
+	    return SingleTargetApp;
+	}(_react.Component);
+
+	exports.default = SingleTargetApp;
+	module.exports = exports['default'];
+
+/***/ },
+/* 123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _reactContextMenus = __webpack_require__(22);
+
+	var _reactContextMenus2 = _interopRequireDefault(_reactContextMenus);
+
+	var _target = __webpack_require__(124);
+
+	var _target2 = _interopRequireDefault(_target);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var menu_items = [{
+	    label: 'Item 1',
+	    onClick: function onClick(event, props, item) {
+	        return alert('Clicked Item 1!');
+	    }
+	}, {
+	    label: 'Item 2',
+	    onClick: function onClick() {
+	        return alert('Clicked Item 2!');
+	    }
+	}, '-', {
+	    label: 'Item 3',
+	    onClick: function onClick() {
+	        return alert('Clicked Item 3 below the divider!');
+	    }
+	}];
+
+	var options = function options(props) {
+	    return {
+	        theme: props.theme.theme,
+	        style: props.theme.style,
+	        at: { x: 30, y: 30 },
+	        show: props.show
+	    };
+	};
+
+	exports.default = (0, _reactContextMenus2.default)(menu_items, options)(_target2.default);
+	module.exports = exports['default'];
+
+/***/ },
+/* 124 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var style = {
+	    position: 'relative',
+	    width: 300,
+	    height: 300,
+	    backgroundColor: '#111',
+	    color: 'white',
+	    textAlign: 'center'
+	};
+
+	var textStyle = {
+	    pointerEvents: 'none',
+	    pointer: 'cursor'
+	};
+
+	var Target = function Target(props) {
+	    return props.connectContextMenu(_react2.default.createElement(
+	        'div',
+	        { style: style },
+	        _react2.default.createElement(
+	            'div',
+	            { style: textStyle },
+	            'Right click here for a context menu'
+	        )
+	    ));
+	};
+
+	exports.default = Target;
+	module.exports = exports['default'];
+
+/***/ },
+/* 125 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	var AURORA_RED = exports.AURORA_RED = {
+	    name: 'Aurora Red',
+	    style: { border: '1px solid #e7ada9' },
+	    theme: {
+	        style: { background: '#b93a32', color: 'white' },
+	        overStyle: { background: '#f3d6d4', color: 'black' },
+	        activeStyle: { background: '#b93a32', color: 'white' }
+	    }
+	};
+
+	var SERENITY = exports.SERENITY = {
+	    name: 'Serenity',
+	    style: { border: '1px solid #6181bd' },
+	    theme: {
+	        style: { background: '#92a8d1', color: 'black' },
+	        overStyle: { background: '#e9eef6', color: 'black' },
+	        activeStyle: { background: '#92a8d1', color: 'black' }
+	    }
+	};
+
+	var LUSH_MEADOW = exports.LUSH_MEADOW = {
+	    name: 'Lush Meadow',
+	    style: { border: '1px solid #e7fff9' },
+	    theme: {
+	        style: { background: '#006e51', color: 'white' },
+	        overStyle: { background: '#afffea', color: 'black' },
+	        activeStyle: { background: '#006e51', color: 'white' }
+	    }
+	};
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _targetContainer = __webpack_require__(128);
+
+	var _targetContainer2 = _interopRequireDefault(_targetContainer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var items = ['Box 1', 'Box 2', 'Box 3', 'Box 4', 'Box 5', 'Box 6'];
+
+	var Body = function Body(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        items.map(function (item, idx) {
+	            return _react2.default.createElement(
+	                'div',
+	                { style: { position: 'relative', zIndex: item.length - idx }, key: idx },
+	                _react2.default.createElement(
+	                    _targetContainer2.default,
+	                    { text: item },
+	                    item
+	                )
+	            );
+	        })
+	    );
+	};
+
+	exports.default = Body;
+	module.exports = exports['default'];
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _body = __webpack_require__(126);
+
+	var _body2 = _interopRequireDefault(_body);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SingleTargetApp = function (_Component) {
+	    _inherits(SingleTargetApp, _Component);
+
+	    function SingleTargetApp(props) {
+	        _classCallCheck(this, SingleTargetApp);
+
+	        return _possibleConstructorReturn(this, _Component.call(this, props));
+	    }
+
+	    SingleTargetApp.prototype.render = function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(
+	                    'b',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/jchristman/react-context-menus/tree/master/examples/02%20Dynamic%20Menus/Dynamic%20Menus' },
+	                        'Browse the Source'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'This example shows how you can use a single function to generate unique menus based on the props of the item that was right clicked.'
+	            ),
+	            _react2.default.createElement(_body2.default, null)
+	        );
+	    };
+
+	    return SingleTargetApp;
+	}(_react.Component);
+
+	exports.default = SingleTargetApp;
+	module.exports = exports['default'];
+
+/***/ },
+/* 128 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _reactContextMenus = __webpack_require__(22);
+
+	var _reactContextMenus2 = _interopRequireDefault(_reactContextMenus);
+
+	var _target = __webpack_require__(129);
+
+	var _target2 = _interopRequireDefault(_target);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var menu_items = function menu_items(props) {
+	    return [{
+	        label: 'Item 1, ' + props.text,
+	        onClick: function onClick(event, props, item) {
+	            return alert('Clicked Item 1, ' + props.text + '!');
+	        }
+	    }, {
+	        label: 'Item 2, ' + props.text + '',
+	        onClick: function onClick() {
+	            return alert('Clicked Item 2, ' + props.text + '!');
+	        }
+	    }, '-', {
+	        label: 'Item 3, ' + props.text + '',
+	        onClick: function onClick() {
+	            return alert('Clicked Item 3, ' + props.text + ' below the divider!');
+	        }
+	    }];
+	};
+
+	var options = {
+	    theme: {
+	        style: {
+	            color: 'black'
+	        }
+	    }
+	};
+
+	exports.default = (0, _reactContextMenus2.default)(menu_items, options)(_target2.default);
+	module.exports = exports['default'];
+
+/***/ },
+/* 129 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var style = {
+	    position: 'relative',
+	    width: 200,
+	    height: 40,
+	    backgroundColor: '#111',
+	    color: 'white',
+	    textAlign: 'center',
+	    marginBottom: 5
+	};
+
+	var textStyle = {
+	    pointerEvents: 'none',
+	    pointer: 'cursor'
+	};
+
+	var Target = function Target(props) {
+	    return props.connectContextMenu(_react2.default.createElement(
+	        'div',
+	        { style: style },
+	        _react2.default.createElement(
+	            'div',
+	            { style: textStyle },
+	            props.children
+	        )
+	    ));
+	};
+
+	exports.default = Target;
+	module.exports = exports['default'];
+
+/***/ },
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _targetContainer = __webpack_require__(132);
+
+	var _targetContainer2 = _interopRequireDefault(_targetContainer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var items = ['Box 1', 'Box 2', 'Box 3', 'Box 4', 'Box 5', 'Box 6'];
+
+	var Body = function Body(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        items.map(function (item, idx) {
+	            return _react2.default.createElement(
+	                'div',
+	                { style: { position: 'relative', zIndex: item.length - idx }, key: idx },
+	                _react2.default.createElement(
+	                    _targetContainer2.default,
+	                    { text: item },
+	                    item
+	                )
+	            );
+	        })
+	    );
+	};
+
+	exports.default = Body;
+	module.exports = exports['default'];
+
+/***/ },
+/* 131 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _body = __webpack_require__(130);
+
+	var _body2 = _interopRequireDefault(_body);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SingleTargetApp = function (_Component) {
+	    _inherits(SingleTargetApp, _Component);
+
+	    function SingleTargetApp(props) {
+	        _classCallCheck(this, SingleTargetApp);
+
+	        return _possibleConstructorReturn(this, _Component.call(this, props));
+	    }
+
+	    SingleTargetApp.prototype.render = function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(
+	                    'b',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/jchristman/react-context-menus/tree/master/examples/02%20Dynamic%20Menus/Stress%20Test' },
+	                        'Browse the Source'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'This example not yet built.'
+	            )
+	        );
+	    };
+
+	    return SingleTargetApp;
+	}(_react.Component);
+
+	exports.default = SingleTargetApp;
+	module.exports = exports['default'];
+
+/***/ },
+/* 132 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _reactContextMenus = __webpack_require__(22);
+
+	var _reactContextMenus2 = _interopRequireDefault(_reactContextMenus);
+
+	var _target = __webpack_require__(133);
+
+	var _target2 = _interopRequireDefault(_target);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var menu_items = function menu_items(props) {
+	    return [{
+	        label: 'Item 1, ' + props.text,
+	        onClick: function onClick(event, props, item) {
+	            return alert('Clicked Item 1, ' + props.text + '!');
+	        }
+	    }, {
+	        label: 'Item 2, ' + props.text + '',
+	        onClick: function onClick() {
+	            return alert('Clicked Item 2, ' + props.text + '!');
+	        }
+	    }, '-', {
+	        label: 'Item 3, ' + props.text + '',
+	        onClick: function onClick() {
+	            return alert('Clicked Item 3, ' + props.text + ' below the divider!');
+	        }
+	    }];
+	};
+
+	var options = {
+	    theme: {
+	        style: {
+	            color: 'black'
+	        }
+	    }
+	};
+
+	exports.default = (0, _reactContextMenus2.default)(menu_items, options)(_target2.default);
+	module.exports = exports['default'];
+
+/***/ },
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var style = {
+	    position: 'relative',
+	    width: 200,
+	    height: 40,
+	    backgroundColor: '#111',
+	    color: 'white',
+	    textAlign: 'center',
+	    marginBottom: 5
+	};
+
+	var textStyle = {
+	    pointerEvents: 'none',
+	    pointer: 'cursor'
+	};
+
+	var Target = function Target(props) {
+	    return props.connectContextMenu(_react2.default.createElement(
+	        'div',
+	        { style: style },
+	        _react2.default.createElement(
+	            'div',
+	            { style: textStyle },
+	            props.children
+	        )
+	    ));
+	};
+
+	exports.default = Target;
+	module.exports = exports['default'];
+
+/***/ },
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	__webpack_require__(162);
+
+	var _Constants = __webpack_require__(30);
+
+	var _Constants2 = _interopRequireDefault(_Constants);
+
+	var _HomePage = __webpack_require__(140);
+
+	var _HomePage2 = _interopRequireDefault(_HomePage);
+
+	var _APIPage = __webpack_require__(138);
+
+	var _APIPage2 = _interopRequireDefault(_APIPage);
+
+	var _ExamplePage = __webpack_require__(139);
+
+	var _ExamplePage2 = _interopRequireDefault(_ExamplePage);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _server = __webpack_require__(170);
 
 	var _server2 = _interopRequireDefault(_server);
 
@@ -13072,11 +15241,15 @@ module.exports =
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var APIDocs = {
-	    OVERVIEW: __webpack_require__(140)
+	    API: __webpack_require__(157)
 	};
 
 	var Examples = {
-	    SINGLE_TARGET: __webpack_require__(113)
+	    SINGLE_TARGET: __webpack_require__(118),
+	    MULTIPLE_TARGETS: __webpack_require__(115),
+	    THEMES: __webpack_require__(122),
+	    DYNAMIC_MENUS: __webpack_require__(127),
+	    STRESS_TEST: __webpack_require__(131)
 	};
 
 	var IndexPage = function (_Component) {
@@ -13119,7 +15292,7 @@ module.exports =
 	                _react2.default.createElement(
 	                    'title',
 	                    null,
-	                    'React DnD'
+	                    'React Context Menus'
 	                ),
 	                _react2.default.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' }),
 	                _react2.default.createElement('link', { rel: 'stylesheet', type: 'text/css', href: this.props.files['main.css'] }),
@@ -13193,14 +15366,14 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 119 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -13210,11 +15383,11 @@ module.exports =
 
 	var _ReactUpdates2 = _interopRequireDefault(_ReactUpdates);
 
-	var _StaticHTMLBlock = __webpack_require__(42);
+	var _StaticHTMLBlock = __webpack_require__(43);
 
 	var _StaticHTMLBlock2 = _interopRequireDefault(_StaticHTMLBlock);
 
-	__webpack_require__(146);
+	__webpack_require__(163);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13346,18 +15519,18 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 120 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(147);
+	__webpack_require__(164);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13399,20 +15572,20 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 121 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Constants = __webpack_require__(29);
+	var _Constants = __webpack_require__(30);
 
-	__webpack_require__(149);
+	__webpack_require__(166);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13486,34 +15659,34 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 122 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(40);
+	var _Header = __webpack_require__(41);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _PageBody = __webpack_require__(41);
+	var _PageBody = __webpack_require__(42);
 
 	var _PageBody2 = _interopRequireDefault(_PageBody);
 
-	var _SideBar = __webpack_require__(66);
+	var _SideBar = __webpack_require__(67);
 
 	var _SideBar2 = _interopRequireDefault(_SideBar);
 
-	var _StaticHTMLBlock = __webpack_require__(42);
+	var _StaticHTMLBlock = __webpack_require__(43);
 
 	var _StaticHTMLBlock2 = _interopRequireDefault(_StaticHTMLBlock);
 
-	var _Constants = __webpack_require__(29);
+	var _Constants = __webpack_require__(30);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13556,30 +15729,30 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 123 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(40);
+	var _Header = __webpack_require__(41);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _PageBody = __webpack_require__(41);
+	var _PageBody = __webpack_require__(42);
 
 	var _PageBody2 = _interopRequireDefault(_PageBody);
 
-	var _SideBar = __webpack_require__(66);
+	var _SideBar = __webpack_require__(67);
 
 	var _SideBar2 = _interopRequireDefault(_SideBar);
 
-	var _Constants = __webpack_require__(29);
+	var _Constants = __webpack_require__(30);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13622,30 +15795,30 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 124 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(40);
+	var _Header = __webpack_require__(41);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _PageBody = __webpack_require__(41);
+	var _PageBody = __webpack_require__(42);
 
 	var _PageBody2 = _interopRequireDefault(_PageBody);
 
-	var _StaticHTMLBlock = __webpack_require__(42);
+	var _StaticHTMLBlock = __webpack_require__(43);
 
 	var _StaticHTMLBlock2 = _interopRequireDefault(_StaticHTMLBlock);
 
-	var _index = __webpack_require__(141);
+	var _index = __webpack_require__(158);
 
 	var _index2 = _interopRequireDefault(_index);
 
@@ -13686,7 +15859,227 @@ module.exports =
 	module.exports = exports['default'];
 
 /***/ },
-/* 125 */
+/* 141 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(16);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _invariant = __webpack_require__(159);
+
+	var _invariant2 = _interopRequireDefault(_invariant);
+
+	var _underscore = __webpack_require__(113);
+
+	var _underscore2 = _interopRequireDefault(_underscore);
+
+	var _reactMenus = __webpack_require__(180);
+
+	var _reactMenus2 = _interopRequireDefault(_reactMenus);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ContextMenu = function ContextMenu(menu_items) {
+	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+	    return function (ChildComponent) {
+	        var Container = function (_React$Component) {
+	            _inherits(Container, _React$Component);
+
+	            function Container(props, context) {
+	                _classCallCheck(this, Container);
+
+	                var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+
+	                _this.options = typeof options === 'function' ? options(props) : options;
+
+	                _this.state = {
+	                    showContextMenu: _this.options.show !== undefined && _this.options.show,
+	                    x: _this.options.at !== undefined && _this.options.at.x,
+	                    y: _this.options.at !== undefined && _this.options.at.y
+	                };
+
+	                // needed to add and remove event listeners....
+	                _this.last_clicked_element = undefined;
+	                _this.clickable_elements = [];
+	                _this.force_hide = _this.force_hide.bind(_this);
+	                _this.hide = _this.hide.bind(_this);
+	                _this.show = _this.show.bind(_this);
+	                return _this;
+	            }
+
+	            Container.prototype.componentDidMount = function componentDidMount() {
+	                var _this2 = this;
+
+	                this.child = _reactDom2.default.findDOMNode(this);
+	                this.container = document.createElement('div');
+	                this.container.style.position = 'absolute';
+	                this.container.style.top = 0;
+	                this.container.style.left = 0;
+	                this.container.style.width = 0;
+	                this.container.style.height = 0;
+	                this.child.appendChild(this.container);
+
+	                // Note that we are not using .bind(this), because we need to remove
+	                // the listener later. The bind happens in the constructor
+	                document.addEventListener('click', this.force_hide, false);
+	                document.addEventListener('contextmenu', this.hide, false);
+	                _underscore2.default.each(this.clickable_elements, function (element) {
+	                    return element.addEventListener('contextmenu', _this2.show, false);
+	                });
+
+	                this._renderLayer();
+	            };
+
+	            Container.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	                if (typeof options === 'function') this.options = options(nextProps);
+	                if (this.options.show !== undefined) this.setState({ showContextMenu: this.options.show });
+	                if (this.options.at !== undefined) this.setState(_extends({}, this.options.at));
+	            };
+
+	            Container.prototype.componentDidUpdate = function componentDidUpdate() {
+	                this._renderLayer();
+	            };
+
+	            Container.prototype.componentWillUnmount = function componentWillUnmount() {
+	                var _this3 = this;
+
+	                _reactDom2.default.unmountComponentAtNode(this.container);
+
+	                // Note that we are not using .bind(this), because we need to remove
+	                // the listener later. The bind happens in the constructor
+	                document.removeEventListener('click', this.force_hide, false);
+	                document.removeEventListener('contextmenu', this.hide, false);
+	                _underscore2.default.each(this.clickable_elements, function (element) {
+	                    return element.removeEventListener('contextmenu', _this3.show, false);
+	                });
+	            };
+
+	            Container.prototype._renderLayer = function _renderLayer() {
+	                var _this4 = this;
+
+	                if (this.state.showContextMenu) {
+	                    // If the menu_items var is a function, let's call it with the props.
+	                    var menu = typeof menu_items === 'function' ? menu_items(this.props) : menu_items;
+
+	                    // Then correct the items to fix their onClick methods to be useful and have the props of the clicked element
+	                    var wrapped_menu_items = menu.map(function (item) {
+	                        // Copy the item
+	                        var new_item = (typeof item === 'undefined' ? 'undefined' : _typeof(item)) === 'object' ? _underscore2.default.extend({}, item) : item;
+	                        if (new_item.onClick !== undefined) new_item.onClick = function (event, item_props, index) {
+	                            item.onClick(event, _this4.props, index);
+	                        };
+	                        return new_item;
+	                    });
+
+	                    var theme = this.options.theme || {};
+	                    var style = this.options.style || {};
+	                    // Finally, render it to the container
+	                    _reactDom2.default.render(_react2.default.createElement(_reactMenus2.default, {
+	                        theme: theme,
+	                        style: style,
+	                        items: wrapped_menu_items,
+	                        at: [this.state.x, this.state.y],
+	                        enableScroll: false }), this.container);
+	                } else {
+	                    _reactDom2.default.unmountComponentAtNode(this.container);
+	                }
+	            };
+
+	            Container.prototype.render = function render() {
+	                return _react2.default.createElement(ChildComponent, _extends({}, this.props, {
+	                    connectContextMenu: this.connectContextMenu.bind(this)
+	                }));
+	            };
+
+	            Container.prototype.cloneWithRef = function cloneWithRef(element, newRef) {
+	                var previousRef = element.ref;
+	                (0, _invariant2.default)(typeof previousRef !== 'string', 'Cannot connect ContextMenu to an element with an existing string ref.');
+
+	                if (!previousRef) {
+	                    return (0, _react.cloneElement)(element, { ref: newRef });
+	                }
+
+	                return (0, _react.cloneElement)(element, {
+	                    ref: function ref(node) {
+	                        newRef(node);
+	                        previousRef && previousRef(node);
+	                    }
+	                });
+	            };
+
+	            // ----- Context Menu Methods ----- //
+
+
+	            Container.prototype.connectContextMenu = function connectContextMenu(react_element) {
+	                var _this5 = this;
+
+	                this.clickable_react_element = react_element;
+	                this.clickable_react_element = this.cloneWithRef(this.clickable_react_element, function (node) {
+	                    return _this5.clickable_elements.push(node);
+	                });
+	                return this.clickable_react_element;
+	            };
+
+	            Container.prototype.show = function show(event) {
+	                event.preventDefault();
+
+	                this.last_clicked_element = event.target;
+
+	                var bounds = this.child.getBoundingClientRect();
+	                var x = event.clientX - bounds.left;
+	                var y = event.clientY - bounds.top;
+
+	                var state = { x: x, y: y, showContextMenu: true };
+	                this.setState(state);
+	            };
+
+	            Container.prototype.force_hide = function force_hide(event) {
+	                var _this6 = this;
+
+	                setTimeout(function () {
+	                    return _this6.hide(event, true);
+	                }, 0); // We do this to allow the click to register if it hasn't yet
+	            };
+
+	            Container.prototype.hide = function hide(event, force) {
+	                if (event.target !== this.last_clicked_element || force) {
+	                    var state = { showContextMenu: false };
+	                    this.setState(state);
+	                }
+	            };
+
+	            return Container;
+	        }(_react2.default.Component);
+
+	        return Container;
+	    };
+	};
+
+	exports.default = ContextMenu;
+	module.exports = exports['default'];
+
+/***/ },
+/* 142 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13728,7 +16121,7 @@ module.exports =
 	}
 
 /***/ },
-/* 126 */
+/* 143 */
 /***/ function(module, exports) {
 
 	/**
@@ -13765,7 +16158,7 @@ module.exports =
 	module.exports = camelize;
 
 /***/ },
-/* 127 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13782,7 +16175,7 @@ module.exports =
 
 	'use strict';
 
-	var camelize = __webpack_require__(126);
+	var camelize = __webpack_require__(143);
 
 	var msPattern = /^-ms-/;
 
@@ -13810,7 +16203,7 @@ module.exports =
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 128 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13827,7 +16220,7 @@ module.exports =
 
 	'use strict';
 
-	var toArray = __webpack_require__(139);
+	var toArray = __webpack_require__(156);
 
 	/**
 	 * Perform a heuristic test to determine if an object is "array-like".
@@ -13900,7 +16293,7 @@ module.exports =
 	module.exports = createArrayFromMixed;
 
 /***/ },
-/* 129 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13921,9 +16314,9 @@ module.exports =
 
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var createArrayFromMixed = __webpack_require__(128);
-	var getMarkupWrap = __webpack_require__(71);
-	var invariant = __webpack_require__(1);
+	var createArrayFromMixed = __webpack_require__(145);
+	var getMarkupWrap = __webpack_require__(72);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Dummy container used to render all markup.
@@ -13989,7 +16382,7 @@ module.exports =
 	module.exports = createNodesFromMarkup;
 
 /***/ },
-/* 130 */
+/* 147 */
 /***/ function(module, exports) {
 
 	/**
@@ -14032,7 +16425,7 @@ module.exports =
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 131 */
+/* 148 */
 /***/ function(module, exports) {
 
 	/**
@@ -14070,7 +16463,7 @@ module.exports =
 	module.exports = hyphenate;
 
 /***/ },
-/* 132 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14087,7 +16480,7 @@ module.exports =
 
 	'use strict';
 
-	var hyphenate = __webpack_require__(131);
+	var hyphenate = __webpack_require__(148);
 
 	var msPattern = /^ms-/;
 
@@ -14114,7 +16507,7 @@ module.exports =
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 133 */
+/* 150 */
 /***/ function(module, exports) {
 
 	/**
@@ -14142,7 +16535,7 @@ module.exports =
 	module.exports = isNode;
 
 /***/ },
-/* 134 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14159,7 +16552,7 @@ module.exports =
 
 	'use strict';
 
-	var isNode = __webpack_require__(133);
+	var isNode = __webpack_require__(150);
 
 	/**
 	 * @param {*} object The object to check.
@@ -14172,7 +16565,7 @@ module.exports =
 	module.exports = isTextNode;
 
 /***/ },
-/* 135 */
+/* 152 */
 /***/ function(module, exports) {
 
 	/**
@@ -14228,7 +16621,7 @@ module.exports =
 	module.exports = mapObject;
 
 /***/ },
-/* 136 */
+/* 153 */
 /***/ function(module, exports) {
 
 	/**
@@ -14264,7 +16657,7 @@ module.exports =
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 137 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14292,7 +16685,7 @@ module.exports =
 	module.exports = performance || {};
 
 /***/ },
-/* 138 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14309,7 +16702,7 @@ module.exports =
 
 	'use strict';
 
-	var performance = __webpack_require__(137);
+	var performance = __webpack_require__(154);
 
 	var performanceNow;
 
@@ -14331,7 +16724,7 @@ module.exports =
 	module.exports = performanceNow;
 
 /***/ },
-/* 139 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14348,7 +16741,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Convert array-like objects to arrays.
@@ -14393,19 +16786,19 @@ module.exports =
 	module.exports = toArray;
 
 /***/ },
-/* 140 */
+/* 157 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1>Overview<a id=\"overview\">&nbsp;</a></h1><p>React DnD is unlike most of the drag and drop libraries out there, and it can be intimidating if you&#39;ve never used it before. However, once you get a taste of a few concepts at the heart of its design, it starts to make sense. I suggest you read about these concepts before the rest of the docs.</p>\n<p>Some of these concepts may seem to have a certain resemblance to the <a href=\"http://facebook.github.io/flux/\">Flux architecture</a>.<br/>This is not a coincidence, as React DnD uses Flux internally.</p>\n<h3>Backends<a id=\"backends\">&nbsp;</a></h3><p>React DnD is built on top of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Drag_and_drop\">HTML5 drag and drop API</a>. It is a reasonable default because it screenshots the dragged DOM node and uses it as a “drag preview” out of the box. It&#39;s handy that you don&#39;t have to do any drawing as the cursor moves. This API is also the only way to handle the file drop events.</p>\n<p>Unfortunately, the HTML5 drag and drop API also has some downsides. It does not work on touch screens, and it provides less customization opportunities on IE than in other browsers.</p>\n<p>This is why <strong>the HTML5 drag and drop support is implemented in a pluggable way</strong> in React DnD. You don&#39;t have to use it. You can write a different implementation, based on touch events, mouse events, or something else entirely. Such pluggable implementations are called the <em>backends</em> in React DnD. Only the <a href=\"docs-html5-backend.html\">HTML5 backend</a> comes with the library, but more may be added in the future.</p>\n<p>The backends perform a similar role to that of React&#39;s synthetic event system: <strong>they abstract away the browser differences and process the native DOM events.</strong> Despite the similarities, React DnD backends do not have a dependency on React or its synthetic event system. Under the hood, all the backends do is translate the DOM events into the internal Flux actions that React DnD can process.</p>\n<h3>Items and Types<a id=\"items-and-types\">&nbsp;</a></h3><p>Like Flux, React DnD uses data, and not the views, as the source of truth. When you drag something across the screen, we don&#39;t say that a component, or a DOM node is being dragged. Instead, we say that an <em>item</em> of a certain <em>type</em> is being dragged.</p>\n<p>What is an item? An <em>item</em> is a plain JavaScript object <em>describing</em> what&#39;s being dragged. For example, in a Kanban board application, when you drag a card, an item might look like <code>{ cardId: 42 }</code>. In a Chess game, when you pick up a piece, the item might look like <code>{ fromCell: &#39;C5&#39;, piece: &#39;queen&#39; }</code>. <strong>Describing the dragged data as a plain object helps you keep the components decoupled and unaware of each other.</strong></p>\n<p>What is a type, then? A <em>type</em> is a string (or a <a href=\"https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol\">symbol</a>) uniquely identifying <em>a whole class of items</em> in your application. In a Kanban board app, you might have a <code>&#39;card&#39;</code> type representing the draggable cards and a <code>&#39;list&#39;</code> type for the draggable lists of those cards. In Chess, you might only have a single <code>&#39;piece&#39;</code> type.</p>\n<p>Types are useful because, as your app grows, you might want to make more things draggable, but you don&#39;t necessarily want all the existing drop targets to suddenly start reacting to the new items. <strong>The types let you specify which drag sources and drop targets are compatible.</strong> You&#39;re probably going to have an enumeration of the type constants in your application, just like you may have an enumeration of the Flux action types.</p>\n<h3>Monitors<a id=\"monitors\">&nbsp;</a></h3><p>Drag and drop is inherently stateful. Either a drag operation is in progress, or it isn&#39;t. Either there is a current type and a current item, or there isn&#39;t. This state has to live somewhere.</p>\n<p>React DnD exposes this state to your components via a few tiny wrappers over the internal state storage called the <em>monitors</em>. <strong>The monitors let you update the props of your components in response to the drag and drop state changes.</strong></p>\n<p>For each component that needs to track the drag and drop state, you can define a <em>collecting function</em> that retrieves the relevant bits of it from the monitors. React DnD then takes care of timely calling your collecting function and merging its return value into your components&#39; props.</p>\n<p>Let&#39;s say you want to highlight the Chess cells when a piece is being dragged. A collecting function for the <code>Cell</code> component might look like this:</p>\n<code class=\"codeBlock\"><span class=\"token block-keyword\" >function</span> <span class=\"token function\" >collect<span class=\"token punctuation\" >(</span></span>monitor<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n    highlighted<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >canDrop<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    hovered<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isOver<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span></code><p>It instructs React DnD to pass the up-to-date values of <code>highlighted</code> and <code>hovered</code> to all the <code>Cell</code> instances as props.</p>\n<h3>Connectors<a id=\"connectors\">&nbsp;</a></h3><p>If the backend handles the DOM events, but the components use React to describe the DOM, how does the backend know which DOM nodes to listen to? Enter the <em>connectors</em>. <strong>The connectors let you assign one of the predefined roles (a drag source, a drag preview, or a drop target) to the DOM nodes</strong> in your <code>render</code> function.</p>\n<p>In fact, a connector is passed as a second argument to the <em>collecting function</em> we described above. Let&#39;s see how we can use it to specify the drop target:</p>\n<code class=\"codeBlock\"><span class=\"token block-keyword\" >function</span> <span class=\"token function\" >collect<span class=\"token punctuation\" >(</span></span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n    highlighted<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >canDrop<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    hovered<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isOver<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    connectDropTarget<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dropTarget<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span></code><p>In the component&#39;s <code>render</code> method, we are then able to access both the data obtained from the monitor, and the function obtained from the connector:</p>\n<hr/>\n<code class=\"codeBlock\">render<span class=\"token punctuation\" >:</span> <span class=\"token block-keyword\" >function</span> <span class=\"token punctuation\" >(</span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >var</span> highlighted <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>highlighted<span class=\"token punctuation\" >;</span>\n  <span class=\"token keyword\" >var</span> hovered <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>hovered<span class=\"token punctuation\" >;</span>\n  <span class=\"token keyword\" >var</span> connectDropTarget <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>connectDropTarget<span class=\"token punctuation\" >;</span>\n\n  <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDropTarget<span class=\"token punctuation\" >(</span></span>\n    <span class=\"token operator\" >&lt;</span>div className<span class=\"token operator\" >=</span><span class=\"token punctuation\" >{</span><span class=\"token function\" >classSet<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >{</span>\n      <span class=\"token string\" >'Cell'</span><span class=\"token punctuation\" >:</span> <span class=\"token primitive\" >true</span><span class=\"token punctuation\" >,</span>\n      <span class=\"token string\" >'Cell--highlighted'</span><span class=\"token punctuation\" >:</span> highlighted<span class=\"token punctuation\" >,</span>\n      <span class=\"token string\" >'Cell--hovered'</span><span class=\"token punctuation\" >:</span> hovered\n    <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >}</span><span class=\"token operator\" >></span>\n      <span class=\"token punctuation\" >{</span><span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>children<span class=\"token punctuation\" >}</span>\n    <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n  <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token function\" >render<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> highlighted<span class=\"token punctuation\" >,</span> hovered<span class=\"token punctuation\" >,</span> connectDropTarget <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n\n  <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDropTarget<span class=\"token punctuation\" >(</span></span>\n    <span class=\"token operator\" >&lt;</span>div className<span class=\"token operator\" >=</span><span class=\"token punctuation\" >{</span><span class=\"token function\" >classSet<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >{</span>\n      <span class=\"token string\" >'Cell'</span><span class=\"token punctuation\" >:</span> <span class=\"token primitive\" >true</span><span class=\"token punctuation\" >,</span>\n      <span class=\"token string\" >'Cell--highlighted'</span><span class=\"token punctuation\" >:</span> highlighted<span class=\"token punctuation\" >,</span>\n      <span class=\"token string\" >'Cell--hovered'</span><span class=\"token punctuation\" >:</span> hovered\n    <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >}</span><span class=\"token operator\" >></span>\n      <span class=\"token punctuation\" >{</span><span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>children<span class=\"token punctuation\" >}</span>\n    <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n  <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n<hr/>\n<p>The <code>connectDropTarget</code> call tells React DnD that the root DOM node of our component is a valid drop target, and that its hover and drop events should be handled by the backend. Internally it works by attaching a <a href=\"https://facebook.github.io/react/docs/more-about-refs.html#the-ref-callback-attribute\">callback ref</a> to the React element you gave it. The function returned by the connector is memoized, so it doesn&#39;t break the <code>shouldComponentUpdate</code> optimizations.</p>\n<h3>Drag Sources and Drop Targets<a id=\"drag-sources-and-drop-targets\">&nbsp;</a></h3><p>So far we have covered the backends which work with the DOM, the data, as represented by the items and types, and the collecting functions that, thanks to the monitors and the connectors, let you describe what props React DnD should inject into your components.</p>\n<p>But how do we configure our components to actually have those props injected? How do we perform the side effects in response to the drag and drop events? Meet the <em>drag sources</em> and the <em>drop targets</em>, the primary abstraction units of React DnD. <strong>They really tie the types, the items, the side effects, and the collecting functions together with your components.</strong></p>\n<p>Whenever you want to make a component or some part of it draggable, you need to wrap that component into a <em>drag source</em> declaration. Every drag source is registered for a certain <em>type</em>, and has to implement a method producing an <em>item</em> from the component&#39;s props. It can also optionally specify a few other methods for handling the drag and drop events. The drag source declaration also lets you specify the <em>collecting function</em> for the given component.</p>\n<p>The <em>drop targets</em> are very similar to the drag sources. The only difference is that a single drop target may register for several item types at once, and instead of producing an item, it may handle its hover or drop.</p>\n<h3>Higher-Order Components and ES7 decorators<a id=\"higher-order-components-and-es7-decorators\">&nbsp;</a></h3><p>How do you wrap your components? What does wrapping even mean? If you have not worked with higher-order components before, go ahead and read <a href=\"https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750\">this article</a>, as it explains the concept in detail.</p>\n<p><strong>A higher-order component is just a function that takes a React component class, and returns another React component class.</strong> The wrapping component provided by the library renders <em>your</em> component in its <code>render</code> method and forwards the props to it, but also adds some useful behavior.</p>\n<p>In React DnD, <a href=\"docs-drag-source.html\"><code>DragSource</code></a> and <a href=\"docs-drop-target.html\"><code>DropTarget</code></a>, as well as a few other top-level exported functions, are in fact higher-order components. They breathe the drag and drop magic into your components.</p>\n<p>One caveat of using them is that they require <em>two</em> function applications. For example, here&#39;s how to wrap <code>YourComponent</code> in a <a href=\"docs-drag-source.html\"><code>DragSource</code></a>:</p>\n<hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Your</span><span class=\"token qualifier\" >Component</span> <span class=\"token operator\" >=</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >createClass<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n\nmodule<span class=\"token punctuation\" >.</span>exports <span class=\"token operator\" >=</span> <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Your</span><span class=\"token qualifier\" >Component</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >class</span> <span class=\"token class-name\" >YourComponent</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Your</span><span class=\"token qualifier\" >Component</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<hr/>\n<p>Notice how, after specifying the <a href=\"docs-drag-source.html\"><code>DragSource</code></a> parameters in the first function call, there is a <em>second</em> function call, where you finally pass your class. This is called <a href=\"http://en.wikipedia.org/wiki/Currying\">currying</a>, or <a href=\"http://en.wikipedia.org/wiki/Partial_application\">partial application</a>, and is necessary for the <a href=\"http://github.com/wycats/javascript-decorators\">ES7 decorator syntax</a> to work out of the box:</p>\n<hr/>\n<hr/>\n<hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n\n@<span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span>\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token keyword\" >class</span> <span class=\"token class-name\" >YourComponent</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n<p>You don&#39;t have to use this syntax, but if you like it, you can enable it by transpiling your code with <a href=\"http://babeljs.io\">Babel</a>, and putting <code>{ &quot;stage&quot;: 1 }</code> into your <a href=\"https://babeljs.io/docs/usage/babelrc/\">.babelrc file</a>.</p>\n<p>Even if you don&#39;t plan to use ES7, the partial application can still be handy, because you can combine several <a href=\"docs-drag-source.html\"><code>DragSource</code></a> and <a href=\"docs-drop-target.html\"><code>DropTarget</code></a> declarations in ES5 or ES6 using a functional composition helper such as <a href=\"https://lodash.com/docs#flow\"><code>_.flow</code></a>. In ES7, you can just stack the decorators to achieve the same effect.</p>\n<hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Drop</span><span class=\"token qualifier\" >Target</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Drop</span><span class=\"token qualifier\" >Target</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> flow <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'lodash/flow'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Your</span><span class=\"token qualifier\" >Component</span> <span class=\"token operator\" >=</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >createClass<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n\nmodule<span class=\"token punctuation\" >.</span>exports <span class=\"token operator\" >=</span> <span class=\"token function\" >flow<span class=\"token punctuation\" >(</span></span>\n  <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n  <span class=\"token function\" >DropTarget<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span>\n<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Your</span><span class=\"token qualifier\" >Component</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> flow from <span class=\"token string\" >'lodash/flow'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >class</span> <span class=\"token class-name\" >YourComponent</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token function\" >flow<span class=\"token punctuation\" >(</span></span>\n  <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span>\n  <span class=\"token function\" >DropTarget<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span>\n<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Your</span><span class=\"token qualifier\" >Component</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n\n@<span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span>\n@<span class=\"token function\" >DropTarget<span class=\"token punctuation\" >(</span></span><span class=\"token comment\" spellcheck=\"true\">/* ... */</span><span class=\"token punctuation\" >)</span>\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token keyword\" >class</span> <span class=\"token class-name\" >YourComponent</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n<h3>Putting It All Together<a id=\"putting-it-all-together\">&nbsp;</a></h3><p>Below is an example of wrapping an existing <code>Card</code> component into a drag source.</p>\n<hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >React</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Drag sources and drop targets only interact\n</span><span class=\"token comment\" spellcheck=\"true\">// if they have the same string type.\n</span><span class=\"token comment\" spellcheck=\"true\">// You want to keep types in a separate file with\n</span><span class=\"token comment\" spellcheck=\"true\">// the rest of your app's constants.\n</span><span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Types</span> <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  CARD<span class=\"token punctuation\" >:</span> <span class=\"token string\" >'card'</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies the drag source contract.\n * Only `beginDrag` function is required.\n */</span>\n<span class=\"token keyword\" >var</span> cardSource <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  beginDrag<span class=\"token punctuation\" >:</span> <span class=\"token block-keyword\" >function</span> <span class=\"token punctuation\" >(</span>props<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Return the data describing the dragged item\n</span>    <span class=\"token keyword\" >var</span> item <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span> id<span class=\"token punctuation\" >:</span> props<span class=\"token punctuation\" >.</span>id <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >return</span> item<span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >,</span>\n\n  endDrag<span class=\"token punctuation\" >:</span> <span class=\"token block-keyword\" >function</span> <span class=\"token punctuation\" >(</span>props<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >,</span> component<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token block-keyword\" >if</span> <span class=\"token punctuation\" >(</span><span class=\"token operator\" >!</span>monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >didDrop<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n      <span class=\"token keyword\" >return</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token punctuation\" >}</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// When dropped on a compatible target, do something\n</span>    <span class=\"token keyword\" >var</span> item <span class=\"token operator\" >=</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >getItem<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >var</span> dropResult <span class=\"token operator\" >=</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >getDropResult<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token qualifier\" >Card</span><span class=\"token qualifier\" >Actions</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >moveCardToList<span class=\"token punctuation\" >(</span></span>item<span class=\"token punctuation\" >.</span>id<span class=\"token punctuation\" >,</span> dropResult<span class=\"token punctuation\" >.</span>listId<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies which props to inject into your component.\n */</span>\n<span class=\"token block-keyword\" >function</span> <span class=\"token function\" >collect<span class=\"token punctuation\" >(</span></span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Call this function inside render()\n</span>    <span class=\"token comment\" spellcheck=\"true\">// to let React DnD handle the drag events:\n</span>    connectDragSource<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dragSource<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    <span class=\"token comment\" spellcheck=\"true\">// You can ask the monitor about the current drag state:\n</span>    isDragging<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isDragging<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Card</span> <span class=\"token operator\" >=</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >createClass<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >{</span>\n  render<span class=\"token punctuation\" >:</span> <span class=\"token block-keyword\" >function</span> <span class=\"token punctuation\" >(</span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Your component receives its own props as usual\n</span>    <span class=\"token keyword\" >var</span> id <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>id<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// These two props are injected by React DnD,\n</span>    <span class=\"token comment\" spellcheck=\"true\">// as defined by your `collect` function above:\n</span>    <span class=\"token keyword\" >var</span> isDragging <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>isDragging<span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >var</span> connectDragSource <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>connectDragSource<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDragSource<span class=\"token punctuation\" >(</span></span>\n      <span class=\"token operator\" >&lt;</span>div<span class=\"token operator\" >></span>\n        I am a draggable card number <span class=\"token punctuation\" >{</span>id<span class=\"token punctuation\" >}</span>\n        <span class=\"token punctuation\" >{</span>isDragging <span class=\"token operator\" >&amp;&amp;</span> <span class=\"token string\" >' (and I am being dragged now)'</span><span class=\"token punctuation\" >}</span>\n      <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n    <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Export the wrapped version\n</span>module<span class=\"token punctuation\" >.</span>exports <span class=\"token operator\" >=</span> <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>CARD<span class=\"token punctuation\" >,</span> cardSource<span class=\"token punctuation\" >,</span> collect<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Card</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >React</span> from <span class=\"token string\" >'react'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Drag sources and drop targets only interact\n</span><span class=\"token comment\" spellcheck=\"true\">// if they have the same string type.\n</span><span class=\"token comment\" spellcheck=\"true\">// You want to keep types in a separate file with\n</span><span class=\"token comment\" spellcheck=\"true\">// the rest of your app's constants.\n</span><span class=\"token keyword\" >const</span> <span class=\"token qualifier\" >Types</span> <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  CARD<span class=\"token punctuation\" >:</span> <span class=\"token string\" >'card'</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies the drag source contract.\n * Only `beginDrag` function is required.\n */</span>\n<span class=\"token keyword\" >const</span> cardSource <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >beginDrag<span class=\"token punctuation\" >(</span></span>props<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Return the data describing the dragged item\n</span>    <span class=\"token keyword\" >const</span> item <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span> id<span class=\"token punctuation\" >:</span> props<span class=\"token punctuation\" >.</span>id <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >return</span> item<span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >,</span>\n\n  <span class=\"token function\" >endDrag<span class=\"token punctuation\" >(</span></span>props<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >,</span> component<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token block-keyword\" >if</span> <span class=\"token punctuation\" >(</span><span class=\"token operator\" >!</span>monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >didDrop<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n      <span class=\"token keyword\" >return</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token punctuation\" >}</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// When dropped on a compatible target, do something\n</span>    <span class=\"token keyword\" >const</span> item <span class=\"token operator\" >=</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >getItem<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >const</span> dropResult <span class=\"token operator\" >=</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >getDropResult<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token qualifier\" >Card</span><span class=\"token qualifier\" >Actions</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >moveCardToList<span class=\"token punctuation\" >(</span></span>item<span class=\"token punctuation\" >.</span>id<span class=\"token punctuation\" >,</span> dropResult<span class=\"token punctuation\" >.</span>listId<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies which props to inject into your component.\n */</span>\n<span class=\"token block-keyword\" >function</span> <span class=\"token function\" >collect<span class=\"token punctuation\" >(</span></span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Call this function inside render()\n</span>    <span class=\"token comment\" spellcheck=\"true\">// to let React DnD handle the drag events:\n</span>    connectDragSource<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dragSource<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    <span class=\"token comment\" spellcheck=\"true\">// You can ask the monitor about the current drag state:\n</span>    isDragging<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isDragging<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token keyword\" >class</span> <span class=\"token class-name\" >Card</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >render<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Your component receives its own props as usual\n</span>    <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> id <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// These two props are injected by React DnD,\n</span>    <span class=\"token comment\" spellcheck=\"true\">// as defined by your `collect` function above:\n</span>    <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> isDragging<span class=\"token punctuation\" >,</span> connectDragSource <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDragSource<span class=\"token punctuation\" >(</span></span>\n      <span class=\"token operator\" >&lt;</span>div<span class=\"token operator\" >></span>\n        I am a draggable card number <span class=\"token punctuation\" >{</span>id<span class=\"token punctuation\" >}</span>\n        <span class=\"token punctuation\" >{</span>isDragging <span class=\"token operator\" >&amp;&amp;</span> <span class=\"token string\" >' (and I am being dragged now)'</span><span class=\"token punctuation\" >}</span>\n      <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n    <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Export the wrapped version\n</span><span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>CARD<span class=\"token punctuation\" >,</span> cardSource<span class=\"token punctuation\" >,</span> collect<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Card</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >React</span> from <span class=\"token string\" >'react'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Drag sources and drop targets only interact\n</span><span class=\"token comment\" spellcheck=\"true\">// if they have the same string type.\n</span><span class=\"token comment\" spellcheck=\"true\">// You want to keep types in a separate file with\n</span><span class=\"token comment\" spellcheck=\"true\">// the rest of your app's constants.\n</span><span class=\"token keyword\" >const</span> <span class=\"token qualifier\" >Types</span> <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  CARD<span class=\"token punctuation\" >:</span> <span class=\"token string\" >'card'</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies the drag source contract.\n * Only `beginDrag` function is required.\n */</span>\n<span class=\"token keyword\" >const</span> cardSource <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >beginDrag<span class=\"token punctuation\" >(</span></span>props<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Return the data describing the dragged item\n</span>    <span class=\"token keyword\" >const</span> item <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span> id<span class=\"token punctuation\" >:</span> props<span class=\"token punctuation\" >.</span>id <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >return</span> item<span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >,</span>\n\n  <span class=\"token function\" >endDrag<span class=\"token punctuation\" >(</span></span>props<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >,</span> component<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token block-keyword\" >if</span> <span class=\"token punctuation\" >(</span><span class=\"token operator\" >!</span>monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >didDrop<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n      <span class=\"token keyword\" >return</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token punctuation\" >}</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// When dropped on a compatible target, do something\n</span>    <span class=\"token keyword\" >const</span> item <span class=\"token operator\" >=</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >getItem<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >const</span> dropResult <span class=\"token operator\" >=</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >getDropResult<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n    <span class=\"token qualifier\" >Card</span><span class=\"token qualifier\" >Actions</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >moveCardToList<span class=\"token punctuation\" >(</span></span>item<span class=\"token punctuation\" >.</span>id<span class=\"token punctuation\" >,</span> dropResult<span class=\"token punctuation\" >.</span>listId<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Use the decorator syntax\n</span>@<span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>CARD<span class=\"token punctuation\" >,</span> cardSource<span class=\"token punctuation\" >,</span> <span class=\"token punctuation\" >(</span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token operator\" >=</span><span class=\"token operator\" >></span> <span class=\"token punctuation\" >(</span><span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">// Call this function inside render()\n</span>  <span class=\"token comment\" spellcheck=\"true\">// to let React DnD handle the drag events:\n</span>  connectDragSource<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dragSource<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n  <span class=\"token comment\" spellcheck=\"true\">// You can ask the monitor about the current drag state:\n</span>  isDragging<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isDragging<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >)</span>\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token keyword\" >class</span> <span class=\"token class-name\" >Card</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >render<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token comment\" spellcheck=\"true\">// Your component receives its own props as usual\n</span>    <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> id <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// These two props are injected by React DnD,\n</span>    <span class=\"token comment\" spellcheck=\"true\">// as defined by your `collect` function above:\n</span>    <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> isDragging<span class=\"token punctuation\" >,</span> connectDragSource <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDragSource<span class=\"token punctuation\" >(</span></span>\n      <span class=\"token operator\" >&lt;</span>div<span class=\"token operator\" >></span>\n        I am a draggable card number <span class=\"token punctuation\" >{</span>id<span class=\"token punctuation\" >}</span>\n        <span class=\"token punctuation\" >{</span>isDragging <span class=\"token operator\" >&amp;&amp;</span> <span class=\"token string\" >' (and I am being dragged now)'</span><span class=\"token punctuation\" >}</span>\n      <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n    <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n<p>Now you know enough about React DnD to explore the rest of the documentation!<br/>The <a href=\"docs-tutorial.html\">tutorial</a> is a great place to start.</p>\n";
+	module.exports = "<h1>Overview<a id=\"overview\">&nbsp;</a></h1><p>React Context Menus is a library that aims to simplify the process of getting right click menus into your application. After searching for a long time, I was unsatisfied with the libraries that existed. The aim with this library is to simplify the API while providing control over the functionality and display of the menu to the developer.</p>\n<h1>Installation<a id=\"installation\">&nbsp;</a></h1><p>As easy as it gets:</p>\n<code class=\"codeBlock\">npm install <span class=\"token operator\" >--</span>save react<span class=\"token operator\" >-</span>context<span class=\"token operator\" >-</span>menus</code><h1>Usage<a id=\"usage\">&nbsp;</a></h1><p>This library is meant to be used as a Container, and is</p>\n<hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react-context-menus'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Component</span><span class=\"token qualifier\" >To</span><span class=\"token qualifier\" >Receive</span><span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'./component_to_receive_context_menu.js'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >var</span> menu_items <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >[</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >]</span><span class=\"token punctuation\" >;</span>\n\nmodule<span class=\"token punctuation\" >.</span>exports <span class=\"token operator\" >=</span> <span class=\"token function\" >ContextMenu<span class=\"token punctuation\" >(</span></span>menu_items<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Component</span><span class=\"token qualifier\" >To</span><span class=\"token qualifier\" >Receive</span><span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span> from <span class=\"token string\" >'react-context-menus'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >Component</span><span class=\"token qualifier\" >To</span><span class=\"token qualifier\" >Receive</span><span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span> from <span class=\"token string\" >'./component_to_receive_context_menu.js'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >const</span> menu_items <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >[</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >]</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token function\" >ContextMenu<span class=\"token punctuation\" >(</span></span>menu_items<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Component</span><span class=\"token qualifier\" >To</span><span class=\"token qualifier\" >Receive</span><span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >Context</span><span class=\"token qualifier\" >Menu</span> from <span class=\"token string\" >'react-context-menus'</span><span class=\"token punctuation\" >;</span>\n\n@<span class=\"token function\" >ContextMenu<span class=\"token punctuation\" >(</span></span>menu_items<span class=\"token punctuation\" >)</span>\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token keyword\" >class</span> <span class=\"token class-name\" >ComponentToReceiveContextMenu</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token comment\" spellcheck=\"true\">/* ... */</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n";
 
 /***/ },
-/* 141 */
+/* 158 */
 /***/ function(module, exports) {
 
-	module.exports = "<p>React DnD is a set of React <a href=\"https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750\">higher-order</a> components to help you build complex drag and drop interfaces while keeping your components decoupled. It is a perfect fit for apps like Trello and Storify, where dragging transfers data between different parts of the application, and the components change their appearance and the application state in response to the drag and drop events.</p>\n<h2>Installation<a id=\"installation\">&nbsp;</a></h2><code class=\"codeBlock\">npm install <span class=\"token operator\" >--</span>save react<span class=\"token operator\" >-</span>dnd\nnpm install <span class=\"token operator\" >--</span>save react<span class=\"token operator\" >-</span>dnd<span class=\"token operator\" >-</span>html5<span class=\"token operator\" >-</span>backend</code><p>The second package instructs React DnD to use <a href=\"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Drag_and_drop\">the HTML5 drag and drop API</a> under the hood. You may choose to use a third-party backend instead, such as <a href=\"https://github.com/yahoo/react-dnd-touch-backend\">the touch backend</a>.</p>\n<h2>What&#39;s It Look Like?<a id=\"what-39-s-it-look-like-\">&nbsp;</a></h2><hr/>\n<code class=\"codeBlock\"><span class=\"token comment\" spellcheck=\"true\">// Let's make &lt;Card text='Write the docs' /> draggable!\n</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >React</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span> <span class=\"token operator\" >=</span> <span class=\"token function\" >require<span class=\"token punctuation\" >(</span></span><span class=\"token string\" >'./Constants'</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span> <span class=\"token operator\" >=</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >.</span><span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Implements the drag source contract.\n */</span>\n<span class=\"token keyword\" >var</span> cardSource <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  beginDrag<span class=\"token punctuation\" >:</span> <span class=\"token block-keyword\" >function</span> <span class=\"token punctuation\" >(</span>props<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n      text<span class=\"token punctuation\" >:</span> props<span class=\"token punctuation\" >.</span>text\n    <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies the props to inject into your component.\n */</span>\n<span class=\"token block-keyword\" >function</span> <span class=\"token function\" >collect<span class=\"token punctuation\" >(</span></span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n    connectDragSource<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dragSource<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    isDragging<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isDragging<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token keyword\" >var</span> <span class=\"token qualifier\" >Card</span> <span class=\"token operator\" >=</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >.</span><span class=\"token function\" >createClass<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >{</span>\n  propTypes<span class=\"token punctuation\" >:</span> <span class=\"token punctuation\" >{</span>\n    text<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>string<span class=\"token punctuation\" >.</span>isRequired<span class=\"token punctuation\" >,</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// Injected by React DnD:\n</span>    isDragging<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>bool<span class=\"token punctuation\" >.</span>isRequired<span class=\"token punctuation\" >,</span>\n    connectDragSource<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>func<span class=\"token punctuation\" >.</span>isRequired\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >,</span>\n\n  render<span class=\"token punctuation\" >:</span> <span class=\"token block-keyword\" >function</span> <span class=\"token punctuation\" >(</span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token keyword\" >var</span> isDragging <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>isDragging<span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >var</span> connectDragSource <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>connectDragSource<span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >var</span> text <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >.</span>text<span class=\"token punctuation\" >;</span>\n\n    <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDragSource<span class=\"token punctuation\" >(</span></span>\n      <span class=\"token operator\" >&lt;</span>div style<span class=\"token operator\" >=</span><span class=\"token punctuation\" >{</span><span class=\"token punctuation\" >{</span> opacity<span class=\"token punctuation\" >:</span> isDragging <span class=\"token operator\" >?</span> <span class=\"token number\" >0.5</span> <span class=\"token punctuation\" >:</span> <span class=\"token number\" >1</span> <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >}</span><span class=\"token operator\" >></span>\n        <span class=\"token punctuation\" >{</span>text<span class=\"token punctuation\" >}</span>\n      <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n    <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Export the wrapped component:\n</span>module<span class=\"token punctuation\" >.</span>exports <span class=\"token operator\" >=</span> <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>CARD<span class=\"token punctuation\" >,</span> cardSource<span class=\"token punctuation\" >,</span> collect<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Card</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token comment\" spellcheck=\"true\">// Let's make &lt;Card text='Write the docs' /> draggable!\n</span>\n<span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >,</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'./Constants'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Implements the drag source contract.\n */</span>\n<span class=\"token keyword\" >const</span> cardSource <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >beginDrag<span class=\"token punctuation\" >(</span></span>props<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n      text<span class=\"token punctuation\" >:</span> props<span class=\"token punctuation\" >.</span>text\n    <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Specifies the props to inject into your component.\n */</span>\n<span class=\"token block-keyword\" >function</span> <span class=\"token function\" >collect<span class=\"token punctuation\" >(</span></span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n    connectDragSource<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dragSource<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n    isDragging<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isDragging<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token keyword\" >const</span> propTypes <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  text<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>string<span class=\"token punctuation\" >.</span>isRequired<span class=\"token punctuation\" >,</span>\n\n  <span class=\"token comment\" spellcheck=\"true\">// Injected by React DnD:\n</span>  isDragging<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>bool<span class=\"token punctuation\" >.</span>isRequired<span class=\"token punctuation\" >,</span>\n  connectDragSource<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>func<span class=\"token punctuation\" >.</span>isRequired\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token keyword\" >class</span> <span class=\"token class-name\" >Card</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >render<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> isDragging<span class=\"token punctuation\" >,</span> connectDragSource<span class=\"token punctuation\" >,</span> text <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDragSource<span class=\"token punctuation\" >(</span></span>\n      <span class=\"token operator\" >&lt;</span>div style<span class=\"token operator\" >=</span><span class=\"token punctuation\" >{</span><span class=\"token punctuation\" >{</span> opacity<span class=\"token punctuation\" >:</span> isDragging <span class=\"token operator\" >?</span> <span class=\"token number\" >0.5</span> <span class=\"token punctuation\" >:</span> <span class=\"token number\" >1</span> <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >}</span><span class=\"token operator\" >></span>\n        <span class=\"token punctuation\" >{</span>text<span class=\"token punctuation\" >}</span>\n      <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n    <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span>\n\n<span class=\"token qualifier\" >Card</span><span class=\"token punctuation\" >.</span>propTypes <span class=\"token operator\" >=</span> propTypes<span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">// Export the wrapped component:\n</span><span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>CARD<span class=\"token punctuation\" >,</span> cardSource<span class=\"token punctuation\" >,</span> collect<span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >(</span><span class=\"token qualifier\" >Card</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span></code><hr/>\n<code class=\"codeBlock\"><span class=\"token comment\" spellcheck=\"true\">// Let's make &lt;Card text='Write the docs' /> draggable!\n</span>\n<span class=\"token keyword\" >import</span> <span class=\"token qualifier\" >React</span><span class=\"token punctuation\" >,</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Drag</span><span class=\"token qualifier\" >Source</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'react-dnd'</span><span class=\"token punctuation\" >;</span>\n<span class=\"token keyword\" >import</span> <span class=\"token punctuation\" >{</span> <span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span> <span class=\"token punctuation\" >}</span> from <span class=\"token string\" >'./Constants'</span><span class=\"token punctuation\" >;</span>\n\n<span class=\"token comment\" spellcheck=\"true\">/**\n * Implements the drag source contract.\n */</span>\n<span class=\"token keyword\" >const</span> cardSource <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token function\" >beginDrag<span class=\"token punctuation\" >(</span></span>props<span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token keyword\" >return</span> <span class=\"token punctuation\" >{</span>\n      text<span class=\"token punctuation\" >:</span> props<span class=\"token punctuation\" >.</span>text\n    <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n@<span class=\"token function\" >DragSource<span class=\"token punctuation\" >(</span></span><span class=\"token qualifier\" >Item</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>CARD<span class=\"token punctuation\" >,</span> cardSource<span class=\"token punctuation\" >,</span> <span class=\"token punctuation\" >(</span>connect<span class=\"token punctuation\" >,</span> monitor<span class=\"token punctuation\" >)</span> <span class=\"token operator\" >=</span><span class=\"token operator\" >></span> <span class=\"token punctuation\" >(</span><span class=\"token punctuation\" >{</span>\n  connectDragSource<span class=\"token punctuation\" >:</span> connect<span class=\"token punctuation\" >.</span><span class=\"token function\" >dragSource<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >,</span>\n  isDragging<span class=\"token punctuation\" >:</span> monitor<span class=\"token punctuation\" >.</span><span class=\"token function\" >isDragging<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span>\n<span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >)</span>\n<span class=\"token keyword\" >export</span> <span class=\"token keyword\" >default</span> <span class=\"token keyword\" >class</span> <span class=\"token class-name\" >Card</span> <span class=\"token punctuation\" >{</span>\n  <span class=\"token keyword\" >static</span> propTypes <span class=\"token operator\" >=</span> <span class=\"token punctuation\" >{</span>\n    text<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>string<span class=\"token punctuation\" >.</span>isRequired<span class=\"token punctuation\" >,</span>\n\n    <span class=\"token comment\" spellcheck=\"true\">// Injected by React DnD:\n</span>    connectDragSource<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>func<span class=\"token punctuation\" >.</span>isRequired<span class=\"token punctuation\" >,</span>\n    isDragging<span class=\"token punctuation\" >:</span> <span class=\"token qualifier\" >Prop</span><span class=\"token qualifier\" >Types</span><span class=\"token punctuation\" >.</span>bool<span class=\"token punctuation\" >.</span>isRequired\n  <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >;</span>\n\n  <span class=\"token function\" >render<span class=\"token punctuation\" >(</span></span><span class=\"token punctuation\" >)</span> <span class=\"token punctuation\" >{</span>\n    <span class=\"token keyword\" >const</span> <span class=\"token punctuation\" >{</span> isDragging<span class=\"token punctuation\" >,</span> connectDragSource<span class=\"token punctuation\" >,</span> text <span class=\"token punctuation\" >}</span> <span class=\"token operator\" >=</span> <span class=\"token var\" >this</span><span class=\"token punctuation\" >.</span>props<span class=\"token punctuation\" >;</span>\n    <span class=\"token keyword\" >return</span> <span class=\"token function\" >connectDragSource<span class=\"token punctuation\" >(</span></span>\n      <span class=\"token operator\" >&lt;</span>div style<span class=\"token operator\" >=</span><span class=\"token punctuation\" >{</span><span class=\"token punctuation\" >{</span> opacity<span class=\"token punctuation\" >:</span> isDragging <span class=\"token operator\" >?</span> <span class=\"token number\" >0.5</span> <span class=\"token punctuation\" >:</span> <span class=\"token number\" >1</span> <span class=\"token punctuation\" >}</span><span class=\"token punctuation\" >}</span><span class=\"token operator\" >></span>\n        <span class=\"token punctuation\" >{</span>text<span class=\"token punctuation\" >}</span>\n      <span class=\"token operator\" >&lt;</span><span class=\"token operator\" >/</span>div<span class=\"token operator\" >></span>\n    <span class=\"token punctuation\" >)</span><span class=\"token punctuation\" >;</span>\n  <span class=\"token punctuation\" >}</span>\n<span class=\"token punctuation\" >}</span></code><hr/>\n<h2>Features<a id=\"features\">&nbsp;</a></h2><h3>It works with your components<a id=\"it-works-with-your-components\">&nbsp;</a></h3><p>Instead of providing readymade widgets, React DnD wraps your components and injects props into them. If you use React Router or Flummox, you already know this pattern.</p>\n<h3>It embraces unidirectional data flow<a id=\"it-embraces-unidirectional-data-flow\">&nbsp;</a></h3><p>React DnD fully embraces the declarative rendering paradigm of React and doesn&#39;t mutate the DOM. It is a great complement to Flux and other architectures with the unidirectional data flow. In fact it is built on Flux.</p>\n<h3>It hides the platform quirks<a id=\"it-hides-the-platform-quirks\">&nbsp;</a></h3><p>HTML5 drag and drop has an awkward API full of pitfalls and browser inconsistencies. React DnD handles them internally for you, so you can focus on developing your application instead of working around the browser bugs.</p>\n<h3>It is extensible and testable<a id=\"it-is-extensible-and-testable\">&nbsp;</a></h3><p>React DnD uses the HTML5 drag and drop under the hood, but it also lets you supply a custom “backend”. You can create a custom DnD backend based on the touch events, the mouse events, or something else entirely. For example, a built-in simulation backend lets you test drag and drop interaction of your components in a Node environment.</p>\n<h3>It is ready for the future<a id=\"it-is-ready-for-the-future\">&nbsp;</a></h3><p>React DnD does not export mixins, and works equally great with any components, whether they are created using ES6 classes, <code>createClass</code> or alternative React frameworks such as Omniscient. Its API shines with ES7 decorators if you like to be on the bleeding edge, but it also feels natural in both ES5 and ES6.</p>\n<h2>Touch Support<a id=\"touch-support\">&nbsp;</a></h2><p>For touch support, use React DnD with <a href=\"https://github.com/yahoo/react-dnd-touch-backend\">the touch backend</a> instead of the HTML5 backend.</p>\n<h2>Non-Goals<a id=\"non-goals\">&nbsp;</a></h2><p>React DnD gives you a set of powerful primitives, but it does not contain any readymade components. It&#39;s lower level than <a href=\"https://jqueryui.com/\">jQuery UI</a> or <a href=\"http://interactjs.io/\">interact.js</a> and is focused on getting the drag and drop interaction right, leaving its visual aspects such as axis constraints or snapping to you. For example, React DnD doesn&#39;t plan to provide a <code>Sortable</code> component. Instead it makes it easy for you to build your own, with any rendering customizations that you need.</p>\n<h2>Support and Contributions<a id=\"support-and-contributions\">&nbsp;</a></h2><p>Issues and potential improvements are discussed on <a href=\"https://github.com/gaearon/react-dnd/issues\">Github</a>.<br/>The <a href=\"https://gitter.im/gaearon/react-dnd\">Gitter room</a> is another good place to get support.</p>\n<h2>Thanks<a id=\"thanks\">&nbsp;</a></h2><p>Big thanks to <a href=\"https://www.browserstack.com\">BrowserStack</a> for letting the maintainers use their service to debug browser issues.</p>\n<h2>License<a id=\"license\">&nbsp;</a></h2><p>React DnD is licensed as MIT. Use it as you will.</p>\n";
+	module.exports = "<h1>React Context Menu<a id=\"react-context-menu\">&nbsp;</a></h1><p>None</p>\n";
 
 /***/ },
-/* 142 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14464,7 +16857,7 @@ module.exports =
 
 
 /***/ },
-/* 143 */
+/* 160 */
 /***/ function(module, exports) {
 
 	module.exports = function(){
@@ -14497,59 +16890,59 @@ module.exports =
 	}()
 
 /***/ },
-/* 144 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getInstantiatorFunction = __webpack_require__(143)
+	var getInstantiatorFunction = __webpack_require__(160)
 
 	module.exports = function(fn, args){
 		return getInstantiatorFunction(args.length)(fn, args)
 	}
 
 /***/ },
-/* 145 */
+/* 162 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 146 */
+/* 163 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 147 */
+/* 164 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 148 */
+/* 165 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 149 */
+/* 166 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 150 */
+/* 167 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 151 */
+/* 168 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 152 */
+/* 169 */
 /***/ function(module, exports) {
 
 	//http://www.blackpawn.com/texts/pointinpoly/
@@ -14575,21 +16968,21 @@ module.exports =
 	}
 
 /***/ },
-/* 153 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(90);
+	module.exports = __webpack_require__(91);
 
 
 /***/ },
-/* 154 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(73)?
+	module.exports = __webpack_require__(74)?
 		{
 			onMouseDown: 'onTouchStart',
 			onMouseUp  : 'onTouchEnd',
@@ -14602,19 +16995,19 @@ module.exports =
 		}
 
 /***/ },
-/* 155 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
-	var React = __webpack_require__(3);
-	var Menu = __webpack_require__(31);
-	var MenuItemCell = __webpack_require__(23);
-	var renderCell = __webpack_require__(75);
+	var React = __webpack_require__(1);
+	var Menu = __webpack_require__(32);
+	var MenuItemCell = __webpack_require__(24);
+	var renderCell = __webpack_require__(76);
 
 	module.exports = function (props) {
 
@@ -14658,19 +17051,19 @@ module.exports =
 	};
 
 /***/ },
-/* 156 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var renderCell = __webpack_require__(75);
+	var renderCell = __webpack_require__(76);
 
 	module.exports = function (props) {
 	    return props.columns.map(renderCell.bind(null, props));
 	};
 
 /***/ },
-/* 157 */
+/* 174 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14703,18 +17096,18 @@ module.exports =
 	};
 
 /***/ },
-/* 158 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _reactDom = __webpack_require__(16);
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
-	var buffer = __webpack_require__(125);
+	var buffer = __webpack_require__(142);
 
-	var Scroller = __webpack_require__(159);
+	var Scroller = __webpack_require__(176);
 
 	function stop(event) {
 	    event.preventDefault();
@@ -14949,14 +17342,14 @@ module.exports =
 	});
 
 /***/ },
-/* 159 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
-	var getArrowStyle = __webpack_require__(112);
+	var getArrowStyle = __webpack_require__(114);
 
 	function emptyFn() {}
 
@@ -15145,13 +17538,13 @@ module.exports =
 	module.exports = Scroller;
 
 /***/ },
-/* 160 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var Region = __webpack_require__(21);
-	var getConstrainRegion = __webpack_require__(77);
+	var getConstrainRegion = __webpack_require__(78);
 
 	module.exports = function (props, subMenuRegion, targetAlignRegion, constrainTo) {
 	    var constrainRegion = getConstrainRegion.call(this, constrainTo);
@@ -15180,7 +17573,7 @@ module.exports =
 	};
 
 /***/ },
-/* 161 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15207,7 +17600,7 @@ module.exports =
 	};
 
 /***/ },
-/* 162 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15216,7 +17609,7 @@ module.exports =
 
 	var Region = __webpack_require__(21);
 	var assign = __webpack_require__(8);
-	var align = __webpack_require__(160);
+	var align = __webpack_require__(177);
 
 	module.exports = function getPositionStyle(props, state) {
 	    if (!state.menu || !this.didMount) {
@@ -15322,16 +17715,16 @@ module.exports =
 	};
 
 /***/ },
-/* 163 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var MenuClass = __webpack_require__(31);
+	var MenuClass = __webpack_require__(32);
 
-	var MenuItem = __webpack_require__(43);
-	var MenuItemCell = __webpack_require__(23);
-	var MenuSeparator = __webpack_require__(76);
+	var MenuItem = __webpack_require__(44);
+	var MenuItemCell = __webpack_require__(24);
+	var MenuSeparator = __webpack_require__(77);
 
 	MenuClass.Item = MenuItem;
 	MenuClass.Item.Cell = MenuItemCell;
@@ -15341,18 +17734,18 @@ module.exports =
 	module.exports = MenuClass;
 
 /***/ },
-/* 164 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var assign = __webpack_require__(8);
 
-	var renderCells = __webpack_require__(156);
-	var MenuItem = __webpack_require__(43);
+	var renderCells = __webpack_require__(173);
+	var MenuItem = __webpack_require__(44);
 	var MenuItemFactory = React.createFactory(MenuItem);
-	var MenuSeparator = __webpack_require__(76);
+	var MenuSeparator = __webpack_require__(77);
 
 	module.exports = function (props, state, item, index) {
 
@@ -15379,7 +17772,7 @@ module.exports =
 	    itemProps.children = renderCells(itemProps);
 
 	    if (item.items) {
-	        var Menu = __webpack_require__(31);
+	        var Menu = __webpack_require__(32);
 	        itemProps.children.push(React.createElement(Menu, { items: item.items }));
 	    }
 
@@ -15387,12 +17780,12 @@ module.exports =
 	};
 
 /***/ },
-/* 165 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 
 	module.exports = {
 	    items: React.PropTypes.array,
@@ -15411,13 +17804,13 @@ module.exports =
 	};
 
 /***/ },
-/* 166 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
-	var MenuItemCell = __webpack_require__(23)
+	var React = __webpack_require__(1);
+	var MenuItemCell = __webpack_require__(24)
 
 	var cloneElement = React.cloneElement;
 	var assign = __webpack_require__(8);
@@ -15509,16 +17902,16 @@ module.exports =
 	};
 
 /***/ },
-/* 167 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var Region = __webpack_require__(21);
 	var assign = __webpack_require__(8);
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var cloneElement = React.cloneElement;
-	var getPositionStyle = __webpack_require__(162);
+	var getPositionStyle = __webpack_require__(179);
 
 	module.exports = function (props, state) {
 	    var menu = state.menu;
@@ -15553,14 +17946,14 @@ module.exports =
 	};
 
 /***/ },
-/* 168 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var toUpperFirst = __webpack_require__(46)
-	var getPrefix    = __webpack_require__(45)
-	var properties   = __webpack_require__(80)
+	var toUpperFirst = __webpack_require__(47)
+	var getPrefix    = __webpack_require__(46)
+	var properties   = __webpack_require__(81)
 
 	/**
 	 * Returns the given key prefixed, if the property is found in the prefixProps map.
@@ -15582,14 +17975,14 @@ module.exports =
 	}
 
 /***/ },
-/* 169 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getPrefix     = __webpack_require__(45)
-	var forcePrefixed = __webpack_require__(168)
-	var el            = __webpack_require__(44)
+	var getPrefix     = __webpack_require__(46)
+	var forcePrefixed = __webpack_require__(185)
+	var el            = __webpack_require__(45)
 
 	var MEMORY = {}
 	var STYLE
@@ -15636,13 +18029,13 @@ module.exports =
 	}
 
 /***/ },
-/* 170 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getStylePrefixed = __webpack_require__(171)
-	var properties       = __webpack_require__(80)
+	var getStylePrefixed = __webpack_require__(188)
+	var properties       = __webpack_require__(81)
 
 	module.exports = function(key, value){
 
@@ -15654,14 +18047,14 @@ module.exports =
 	}
 
 /***/ },
-/* 171 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var toUpperFirst = __webpack_require__(46)
-	var getPrefix    = __webpack_require__(45)
-	var el           = __webpack_require__(44)
+	var toUpperFirst = __webpack_require__(47)
+	var getPrefix    = __webpack_require__(46)
+	var el           = __webpack_require__(45)
 
 	var MEMORY = {}
 	var STYLE
@@ -15710,7 +18103,7 @@ module.exports =
 	}
 
 /***/ },
-/* 172 */
+/* 189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15721,7 +18114,7 @@ module.exports =
 
 
 /***/ },
-/* 173 */
+/* 190 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15742,12 +18135,12 @@ module.exports =
 	}
 
 /***/ },
-/* 174 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getCssPrefixedValue = __webpack_require__(169)
+	var getCssPrefixedValue = __webpack_require__(186)
 
 	module.exports = function(target){
 		target.plugins = target.plugins || [
@@ -15778,7 +18171,7 @@ module.exports =
 	}
 
 /***/ },
-/* 175 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15797,8 +18190,8 @@ module.exports =
 
 	var ReactMount = __webpack_require__(6);
 
-	var findDOMNode = __webpack_require__(55);
-	var focusNode = __webpack_require__(69);
+	var findDOMNode = __webpack_require__(56);
+	var focusNode = __webpack_require__(70);
 
 	var Mixin = {
 	  componentDidMount: function () {
@@ -15819,7 +18212,7 @@ module.exports =
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 176 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15837,11 +18230,11 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventPropagators = __webpack_require__(25);
+	var EventPropagators = __webpack_require__(26);
 	var ExecutionEnvironment = __webpack_require__(5);
-	var FallbackCompositionState = __webpack_require__(184);
-	var SyntheticCompositionEvent = __webpack_require__(215);
-	var SyntheticInputEvent = __webpack_require__(218);
+	var FallbackCompositionState = __webpack_require__(201);
+	var SyntheticCompositionEvent = __webpack_require__(232);
+	var SyntheticInputEvent = __webpack_require__(235);
 
 	var keyOf = __webpack_require__(14);
 
@@ -16229,7 +18622,7 @@ module.exports =
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 177 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16246,14 +18639,14 @@ module.exports =
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(81);
+	var CSSProperty = __webpack_require__(82);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var ReactPerf = __webpack_require__(9);
 
-	var camelizeStyleName = __webpack_require__(127);
-	var dangerousStyleValue = __webpack_require__(223);
-	var hyphenateStyleName = __webpack_require__(132);
-	var memoizeStringOnly = __webpack_require__(136);
+	var camelizeStyleName = __webpack_require__(144);
+	var dangerousStyleValue = __webpack_require__(240);
+	var hyphenateStyleName = __webpack_require__(149);
+	var memoizeStringOnly = __webpack_require__(153);
 	var warning = __webpack_require__(4);
 
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -16409,7 +18802,7 @@ module.exports =
 	module.exports = CSSPropertyOperations;
 
 /***/ },
-/* 178 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16426,15 +18819,15 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventPluginHub = __webpack_require__(24);
-	var EventPropagators = __webpack_require__(25);
+	var EventPluginHub = __webpack_require__(25);
+	var EventPropagators = __webpack_require__(26);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var ReactUpdates = __webpack_require__(10);
 	var SyntheticEvent = __webpack_require__(19);
 
-	var getEventTarget = __webpack_require__(58);
-	var isEventSupported = __webpack_require__(61);
-	var isTextInputElement = __webpack_require__(109);
+	var getEventTarget = __webpack_require__(59);
+	var isEventSupported = __webpack_require__(62);
+	var isTextInputElement = __webpack_require__(110);
 	var keyOf = __webpack_require__(14);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -16735,7 +19128,7 @@ module.exports =
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 179 */
+/* 196 */
 /***/ function(module, exports) {
 
 	/**
@@ -16763,7 +19156,7 @@ module.exports =
 	module.exports = ClientReactRootIndex;
 
 /***/ },
-/* 180 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16782,10 +19175,10 @@ module.exports =
 
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var createNodesFromMarkup = __webpack_require__(129);
+	var createNodesFromMarkup = __webpack_require__(146);
 	var emptyFunction = __webpack_require__(11);
-	var getMarkupWrap = __webpack_require__(71);
-	var invariant = __webpack_require__(1);
+	var getMarkupWrap = __webpack_require__(72);
+	var invariant = __webpack_require__(2);
 
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
 	var RESULT_INDEX_ATTR = 'data-danger-index';
@@ -16913,7 +19306,7 @@ module.exports =
 	module.exports = Danger;
 
 /***/ },
-/* 181 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16945,7 +19338,7 @@ module.exports =
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 182 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16963,8 +19356,8 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventPropagators = __webpack_require__(25);
-	var SyntheticMouseEvent = __webpack_require__(35);
+	var EventPropagators = __webpack_require__(26);
+	var SyntheticMouseEvent = __webpack_require__(36);
 
 	var ReactMount = __webpack_require__(6);
 	var keyOf = __webpack_require__(14);
@@ -17074,7 +19467,7 @@ module.exports =
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 183 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17091,9 +19484,9 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var ReactErrorUtils = __webpack_require__(97);
+	var ReactErrorUtils = __webpack_require__(98);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	/**
@@ -17281,7 +19674,7 @@ module.exports =
 	module.exports = EventPluginUtils;
 
 /***/ },
-/* 184 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17300,8 +19693,8 @@ module.exports =
 
 	var PooledClass = __webpack_require__(15);
 
-	var assign = __webpack_require__(2);
-	var getTextContentAccessor = __webpack_require__(108);
+	var assign = __webpack_require__(3);
+	var getTextContentAccessor = __webpack_require__(109);
 
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -17381,7 +19774,7 @@ module.exports =
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 185 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17616,7 +20009,7 @@ module.exports =
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 186 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17632,12 +20025,12 @@ module.exports =
 
 	'use strict';
 
-	var ReactDOM = __webpack_require__(87);
-	var ReactDOMServer = __webpack_require__(90);
-	var ReactIsomorphic = __webpack_require__(202);
+	var ReactDOM = __webpack_require__(88);
+	var ReactDOMServer = __webpack_require__(91);
+	var ReactIsomorphic = __webpack_require__(219);
 
-	var assign = __webpack_require__(2);
-	var deprecated = __webpack_require__(224);
+	var assign = __webpack_require__(3);
+	var deprecated = __webpack_require__(241);
 
 	// `version` will be added here by ReactIsomorphic.
 	var React = {};
@@ -17661,7 +20054,7 @@ module.exports =
 	module.exports = React;
 
 /***/ },
-/* 187 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17677,9 +20070,9 @@ module.exports =
 
 	'use strict';
 
-	var ReactInstanceMap = __webpack_require__(26);
+	var ReactInstanceMap = __webpack_require__(27);
 
-	var findDOMNode = __webpack_require__(55);
+	var findDOMNode = __webpack_require__(56);
 	var warning = __webpack_require__(4);
 
 	var didWarnKey = '_getDOMNodeDidWarn';
@@ -17702,7 +20095,7 @@ module.exports =
 	module.exports = ReactBrowserComponentMixin;
 
 /***/ },
-/* 188 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17721,9 +20114,9 @@ module.exports =
 
 	var ReactReconciler = __webpack_require__(18);
 
-	var instantiateReactComponent = __webpack_require__(60);
-	var shouldUpdateReactComponent = __webpack_require__(63);
-	var traverseAllChildren = __webpack_require__(64);
+	var instantiateReactComponent = __webpack_require__(61);
+	var shouldUpdateReactComponent = __webpack_require__(64);
+	var traverseAllChildren = __webpack_require__(65);
 	var warning = __webpack_require__(4);
 
 	function instantiateChild(childInstances, child, name) {
@@ -17829,7 +20222,7 @@ module.exports =
 	module.exports = ReactChildReconciler;
 
 /***/ },
-/* 189 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17845,20 +20238,20 @@ module.exports =
 
 	'use strict';
 
-	var ReactComponentEnvironment = __webpack_require__(51);
+	var ReactComponentEnvironment = __webpack_require__(52);
 	var ReactCurrentOwner = __webpack_require__(13);
 	var ReactElement = __webpack_require__(7);
-	var ReactInstanceMap = __webpack_require__(26);
+	var ReactInstanceMap = __webpack_require__(27);
 	var ReactPerf = __webpack_require__(9);
-	var ReactPropTypeLocations = __webpack_require__(34);
-	var ReactPropTypeLocationNames = __webpack_require__(33);
+	var ReactPropTypeLocations = __webpack_require__(35);
+	var ReactPropTypeLocationNames = __webpack_require__(34);
 	var ReactReconciler = __webpack_require__(18);
-	var ReactUpdateQueue = __webpack_require__(53);
+	var ReactUpdateQueue = __webpack_require__(54);
 
-	var assign = __webpack_require__(2);
-	var emptyObject = __webpack_require__(22);
-	var invariant = __webpack_require__(1);
-	var shouldUpdateReactComponent = __webpack_require__(63);
+	var assign = __webpack_require__(3);
+	var emptyObject = __webpack_require__(23);
+	var invariant = __webpack_require__(2);
+	var shouldUpdateReactComponent = __webpack_require__(64);
 	var warning = __webpack_require__(4);
 
 	function getDeclarationErrorAddendum(component) {
@@ -18528,7 +20921,7 @@ module.exports =
 	module.exports = ReactCompositeComponent;
 
 /***/ },
-/* 190 */
+/* 207 */
 /***/ function(module, exports) {
 
 	/**
@@ -18583,7 +20976,7 @@ module.exports =
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 191 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18602,33 +20995,33 @@ module.exports =
 
 	'use strict';
 
-	var AutoFocusUtils = __webpack_require__(175);
-	var CSSPropertyOperations = __webpack_require__(177);
+	var AutoFocusUtils = __webpack_require__(192);
+	var CSSPropertyOperations = __webpack_require__(194);
 	var DOMProperty = __webpack_require__(17);
-	var DOMPropertyOperations = __webpack_require__(48);
+	var DOMPropertyOperations = __webpack_require__(49);
 	var EventConstants = __webpack_require__(12);
-	var ReactBrowserEventEmitter = __webpack_require__(32);
-	var ReactComponentBrowserEnvironment = __webpack_require__(50);
-	var ReactDOMButton = __webpack_require__(190);
-	var ReactDOMInput = __webpack_require__(193);
-	var ReactDOMOption = __webpack_require__(194);
-	var ReactDOMSelect = __webpack_require__(89);
-	var ReactDOMTextarea = __webpack_require__(196);
+	var ReactBrowserEventEmitter = __webpack_require__(33);
+	var ReactComponentBrowserEnvironment = __webpack_require__(51);
+	var ReactDOMButton = __webpack_require__(207);
+	var ReactDOMInput = __webpack_require__(210);
+	var ReactDOMOption = __webpack_require__(211);
+	var ReactDOMSelect = __webpack_require__(90);
+	var ReactDOMTextarea = __webpack_require__(213);
 	var ReactMount = __webpack_require__(6);
-	var ReactMultiChild = __webpack_require__(203);
+	var ReactMultiChild = __webpack_require__(220);
 	var ReactPerf = __webpack_require__(9);
-	var ReactUpdateQueue = __webpack_require__(53);
+	var ReactUpdateQueue = __webpack_require__(54);
 
-	var assign = __webpack_require__(2);
-	var canDefineProperty = __webpack_require__(37);
-	var escapeTextContentForBrowser = __webpack_require__(38);
-	var invariant = __webpack_require__(1);
-	var isEventSupported = __webpack_require__(61);
+	var assign = __webpack_require__(3);
+	var canDefineProperty = __webpack_require__(38);
+	var escapeTextContentForBrowser = __webpack_require__(39);
+	var invariant = __webpack_require__(2);
+	var isEventSupported = __webpack_require__(62);
 	var keyOf = __webpack_require__(14);
-	var setInnerHTML = __webpack_require__(39);
-	var setTextContent = __webpack_require__(62);
-	var shallowEqual = __webpack_require__(72);
-	var validateDOMNesting = __webpack_require__(65);
+	var setInnerHTML = __webpack_require__(40);
+	var setTextContent = __webpack_require__(63);
+	var shallowEqual = __webpack_require__(73);
+	var validateDOMNesting = __webpack_require__(66);
 	var warning = __webpack_require__(4);
 
 	var deleteListener = ReactBrowserEventEmitter.deleteListener;
@@ -19550,7 +21943,7 @@ module.exports =
 	module.exports = ReactDOMComponent;
 
 /***/ },
-/* 192 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19568,9 +21961,9 @@ module.exports =
 	'use strict';
 
 	var ReactElement = __webpack_require__(7);
-	var ReactElementValidator = __webpack_require__(94);
+	var ReactElementValidator = __webpack_require__(95);
 
-	var mapObject = __webpack_require__(135);
+	var mapObject = __webpack_require__(152);
 
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -19732,7 +22125,7 @@ module.exports =
 	module.exports = ReactDOMFactories;
 
 /***/ },
-/* 193 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19748,13 +22141,13 @@ module.exports =
 
 	'use strict';
 
-	var ReactDOMIDOperations = __webpack_require__(52);
-	var LinkedValueUtils = __webpack_require__(49);
+	var ReactDOMIDOperations = __webpack_require__(53);
+	var LinkedValueUtils = __webpack_require__(50);
 	var ReactMount = __webpack_require__(6);
 	var ReactUpdates = __webpack_require__(10);
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 
 	var instancesByReactID = {};
 
@@ -19890,7 +22283,7 @@ module.exports =
 	module.exports = ReactDOMInput;
 
 /***/ },
-/* 194 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19906,10 +22299,10 @@ module.exports =
 
 	'use strict';
 
-	var ReactChildren = __webpack_require__(84);
-	var ReactDOMSelect = __webpack_require__(89);
+	var ReactChildren = __webpack_require__(85);
+	var ReactDOMSelect = __webpack_require__(90);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var warning = __webpack_require__(4);
 
 	var valueContextKey = ReactDOMSelect.valueContextKey;
@@ -19984,7 +22377,7 @@ module.exports =
 	module.exports = ReactDOMOption;
 
 /***/ },
-/* 195 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20002,8 +22395,8 @@ module.exports =
 
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var getNodeForCharacterOffset = __webpack_require__(227);
-	var getTextContentAccessor = __webpack_require__(108);
+	var getNodeForCharacterOffset = __webpack_require__(244);
+	var getTextContentAccessor = __webpack_require__(109);
 
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -20201,7 +22594,7 @@ module.exports =
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 196 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20217,12 +22610,12 @@ module.exports =
 
 	'use strict';
 
-	var LinkedValueUtils = __webpack_require__(49);
-	var ReactDOMIDOperations = __webpack_require__(52);
+	var LinkedValueUtils = __webpack_require__(50);
+	var ReactDOMIDOperations = __webpack_require__(53);
 	var ReactUpdates = __webpack_require__(10);
 
-	var assign = __webpack_require__(2);
-	var invariant = __webpack_require__(1);
+	var assign = __webpack_require__(3);
+	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 
 	function forceUpdateIfMounted() {
@@ -20319,7 +22712,7 @@ module.exports =
 	module.exports = ReactDOMTextarea;
 
 /***/ },
-/* 197 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20337,11 +22730,11 @@ module.exports =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(17);
-	var ReactDefaultPerfAnalysis = __webpack_require__(198);
+	var ReactDefaultPerfAnalysis = __webpack_require__(215);
 	var ReactMount = __webpack_require__(6);
 	var ReactPerf = __webpack_require__(9);
 
-	var performanceNow = __webpack_require__(138);
+	var performanceNow = __webpack_require__(155);
 
 	function roundFloat(val) {
 	  return Math.floor(val * 100) / 100;
@@ -20561,7 +22954,7 @@ module.exports =
 	module.exports = ReactDefaultPerf;
 
 /***/ },
-/* 198 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20577,7 +22970,7 @@ module.exports =
 
 	'use strict';
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 
 	// Don't try to save users less than 1.2ms (a number I made up)
 	var DONT_CARE_THRESHOLD = 1.2;
@@ -20767,7 +23160,7 @@ module.exports =
 	module.exports = ReactDefaultPerfAnalysis;
 
 /***/ },
-/* 199 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20783,7 +23176,7 @@ module.exports =
 
 	'use strict';
 
-	var EventPluginHub = __webpack_require__(24);
+	var EventPluginHub = __webpack_require__(25);
 
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -20810,7 +23203,7 @@ module.exports =
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 200 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20827,16 +23220,16 @@ module.exports =
 
 	'use strict';
 
-	var EventListener = __webpack_require__(67);
+	var EventListener = __webpack_require__(68);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var PooledClass = __webpack_require__(15);
 	var ReactInstanceHandles = __webpack_require__(20);
 	var ReactMount = __webpack_require__(6);
 	var ReactUpdates = __webpack_require__(10);
 
-	var assign = __webpack_require__(2);
-	var getEventTarget = __webpack_require__(58);
-	var getUnboundedScrollPosition = __webpack_require__(130);
+	var assign = __webpack_require__(3);
+	var getEventTarget = __webpack_require__(59);
+	var getUnboundedScrollPosition = __webpack_require__(147);
 
 	var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
 
@@ -21026,7 +23419,7 @@ module.exports =
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 201 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21043,14 +23436,14 @@ module.exports =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(17);
-	var EventPluginHub = __webpack_require__(24);
-	var ReactComponentEnvironment = __webpack_require__(51);
-	var ReactClass = __webpack_require__(85);
-	var ReactEmptyComponent = __webpack_require__(95);
-	var ReactBrowserEventEmitter = __webpack_require__(32);
-	var ReactNativeComponent = __webpack_require__(101);
+	var EventPluginHub = __webpack_require__(25);
+	var ReactComponentEnvironment = __webpack_require__(52);
+	var ReactClass = __webpack_require__(86);
+	var ReactEmptyComponent = __webpack_require__(96);
+	var ReactBrowserEventEmitter = __webpack_require__(33);
+	var ReactNativeComponent = __webpack_require__(102);
 	var ReactPerf = __webpack_require__(9);
-	var ReactRootIndex = __webpack_require__(104);
+	var ReactRootIndex = __webpack_require__(105);
 	var ReactUpdates = __webpack_require__(10);
 
 	var ReactInjection = {
@@ -21069,7 +23462,7 @@ module.exports =
 	module.exports = ReactInjection;
 
 /***/ },
-/* 202 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21085,17 +23478,17 @@ module.exports =
 
 	'use strict';
 
-	var ReactChildren = __webpack_require__(84);
-	var ReactComponent = __webpack_require__(86);
-	var ReactClass = __webpack_require__(85);
-	var ReactDOMFactories = __webpack_require__(192);
+	var ReactChildren = __webpack_require__(85);
+	var ReactComponent = __webpack_require__(87);
+	var ReactClass = __webpack_require__(86);
+	var ReactDOMFactories = __webpack_require__(209);
 	var ReactElement = __webpack_require__(7);
-	var ReactElementValidator = __webpack_require__(94);
-	var ReactPropTypes = __webpack_require__(103);
-	var ReactVersion = __webpack_require__(54);
+	var ReactElementValidator = __webpack_require__(95);
+	var ReactPropTypes = __webpack_require__(104);
+	var ReactVersion = __webpack_require__(55);
 
-	var assign = __webpack_require__(2);
-	var onlyChild = __webpack_require__(228);
+	var assign = __webpack_require__(3);
+	var onlyChild = __webpack_require__(245);
 
 	var createElement = ReactElement.createElement;
 	var createFactory = ReactElement.createFactory;
@@ -21148,7 +23541,7 @@ module.exports =
 	module.exports = React;
 
 /***/ },
-/* 203 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21165,14 +23558,14 @@ module.exports =
 
 	'use strict';
 
-	var ReactComponentEnvironment = __webpack_require__(51);
-	var ReactMultiChildUpdateTypes = __webpack_require__(100);
+	var ReactComponentEnvironment = __webpack_require__(52);
+	var ReactMultiChildUpdateTypes = __webpack_require__(101);
 
 	var ReactCurrentOwner = __webpack_require__(13);
 	var ReactReconciler = __webpack_require__(18);
-	var ReactChildReconciler = __webpack_require__(188);
+	var ReactChildReconciler = __webpack_require__(205);
 
-	var flattenChildren = __webpack_require__(225);
+	var flattenChildren = __webpack_require__(242);
 
 	/**
 	 * Updating children of a component may trigger recursive updates. The depth is
@@ -21649,7 +24042,7 @@ module.exports =
 	module.exports = ReactMultiChild;
 
 /***/ },
-/* 204 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21665,7 +24058,7 @@ module.exports =
 
 	'use strict';
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * ReactOwners are capable of storing references to owned components.
@@ -21745,7 +24138,7 @@ module.exports =
 	module.exports = ReactOwner;
 
 /***/ },
-/* 205 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21762,14 +24155,14 @@ module.exports =
 
 	'use strict';
 
-	var CallbackQueue = __webpack_require__(47);
+	var CallbackQueue = __webpack_require__(48);
 	var PooledClass = __webpack_require__(15);
-	var ReactBrowserEventEmitter = __webpack_require__(32);
-	var ReactDOMFeatureFlags = __webpack_require__(88);
-	var ReactInputSelection = __webpack_require__(98);
-	var Transaction = __webpack_require__(36);
+	var ReactBrowserEventEmitter = __webpack_require__(33);
+	var ReactDOMFeatureFlags = __webpack_require__(89);
+	var ReactInputSelection = __webpack_require__(99);
+	var Transaction = __webpack_require__(37);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -21901,7 +24294,7 @@ module.exports =
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 206 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21917,7 +24310,7 @@ module.exports =
 
 	'use strict';
 
-	var ReactOwner = __webpack_require__(204);
+	var ReactOwner = __webpack_require__(221);
 
 	var ReactRef = {};
 
@@ -21984,7 +24377,7 @@ module.exports =
 	module.exports = ReactRef;
 
 /***/ },
-/* 207 */
+/* 224 */
 /***/ function(module, exports) {
 
 	/**
@@ -22012,7 +24405,7 @@ module.exports =
 	module.exports = ReactServerBatchingStrategy;
 
 /***/ },
-/* 208 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22028,17 +24421,17 @@ module.exports =
 	 */
 	'use strict';
 
-	var ReactDefaultBatchingStrategy = __webpack_require__(92);
+	var ReactDefaultBatchingStrategy = __webpack_require__(93);
 	var ReactElement = __webpack_require__(7);
 	var ReactInstanceHandles = __webpack_require__(20);
-	var ReactMarkupChecksum = __webpack_require__(99);
-	var ReactServerBatchingStrategy = __webpack_require__(207);
-	var ReactServerRenderingTransaction = __webpack_require__(209);
+	var ReactMarkupChecksum = __webpack_require__(100);
+	var ReactServerBatchingStrategy = __webpack_require__(224);
+	var ReactServerRenderingTransaction = __webpack_require__(226);
 	var ReactUpdates = __webpack_require__(10);
 
-	var emptyObject = __webpack_require__(22);
-	var instantiateReactComponent = __webpack_require__(60);
-	var invariant = __webpack_require__(1);
+	var emptyObject = __webpack_require__(23);
+	var instantiateReactComponent = __webpack_require__(61);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * @param {ReactElement} element
@@ -22100,7 +24493,7 @@ module.exports =
 	};
 
 /***/ },
-/* 209 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22118,10 +24511,10 @@ module.exports =
 	'use strict';
 
 	var PooledClass = __webpack_require__(15);
-	var CallbackQueue = __webpack_require__(47);
-	var Transaction = __webpack_require__(36);
+	var CallbackQueue = __webpack_require__(48);
+	var Transaction = __webpack_require__(37);
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var emptyFunction = __webpack_require__(11);
 
 	/**
@@ -22192,7 +24585,7 @@ module.exports =
 	module.exports = ReactServerRenderingTransaction;
 
 /***/ },
-/* 210 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22324,7 +24717,7 @@ module.exports =
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 211 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22341,15 +24734,15 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventPropagators = __webpack_require__(25);
+	var EventPropagators = __webpack_require__(26);
 	var ExecutionEnvironment = __webpack_require__(5);
-	var ReactInputSelection = __webpack_require__(98);
+	var ReactInputSelection = __webpack_require__(99);
 	var SyntheticEvent = __webpack_require__(19);
 
-	var getActiveElement = __webpack_require__(70);
-	var isTextInputElement = __webpack_require__(109);
+	var getActiveElement = __webpack_require__(71);
+	var isTextInputElement = __webpack_require__(110);
 	var keyOf = __webpack_require__(14);
-	var shallowEqual = __webpack_require__(72);
+	var shallowEqual = __webpack_require__(73);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -22530,7 +24923,7 @@ module.exports =
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 212 */
+/* 229 */
 /***/ function(module, exports) {
 
 	/**
@@ -22564,7 +24957,7 @@ module.exports =
 	module.exports = ServerReactRootIndex;
 
 /***/ },
-/* 213 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22581,22 +24974,22 @@ module.exports =
 	'use strict';
 
 	var EventConstants = __webpack_require__(12);
-	var EventListener = __webpack_require__(67);
-	var EventPropagators = __webpack_require__(25);
+	var EventListener = __webpack_require__(68);
+	var EventPropagators = __webpack_require__(26);
 	var ReactMount = __webpack_require__(6);
-	var SyntheticClipboardEvent = __webpack_require__(214);
+	var SyntheticClipboardEvent = __webpack_require__(231);
 	var SyntheticEvent = __webpack_require__(19);
-	var SyntheticFocusEvent = __webpack_require__(217);
-	var SyntheticKeyboardEvent = __webpack_require__(219);
-	var SyntheticMouseEvent = __webpack_require__(35);
-	var SyntheticDragEvent = __webpack_require__(216);
-	var SyntheticTouchEvent = __webpack_require__(220);
-	var SyntheticUIEvent = __webpack_require__(27);
-	var SyntheticWheelEvent = __webpack_require__(221);
+	var SyntheticFocusEvent = __webpack_require__(234);
+	var SyntheticKeyboardEvent = __webpack_require__(236);
+	var SyntheticMouseEvent = __webpack_require__(36);
+	var SyntheticDragEvent = __webpack_require__(233);
+	var SyntheticTouchEvent = __webpack_require__(237);
+	var SyntheticUIEvent = __webpack_require__(28);
+	var SyntheticWheelEvent = __webpack_require__(238);
 
 	var emptyFunction = __webpack_require__(11);
-	var getEventCharCode = __webpack_require__(56);
-	var invariant = __webpack_require__(1);
+	var getEventCharCode = __webpack_require__(57);
+	var invariant = __webpack_require__(2);
 	var keyOf = __webpack_require__(14);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -23156,7 +25549,7 @@ module.exports =
 	module.exports = SimpleEventPlugin;
 
 /***/ },
-/* 214 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23200,7 +25593,7 @@ module.exports =
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 215 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23242,7 +25635,7 @@ module.exports =
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 216 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23259,7 +25652,7 @@ module.exports =
 
 	'use strict';
 
-	var SyntheticMouseEvent = __webpack_require__(35);
+	var SyntheticMouseEvent = __webpack_require__(36);
 
 	/**
 	 * @interface DragEvent
@@ -23284,7 +25677,7 @@ module.exports =
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 217 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23301,7 +25694,7 @@ module.exports =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(27);
+	var SyntheticUIEvent = __webpack_require__(28);
 
 	/**
 	 * @interface FocusEvent
@@ -23326,7 +25719,7 @@ module.exports =
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 218 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23369,7 +25762,7 @@ module.exports =
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 219 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23386,11 +25779,11 @@ module.exports =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(27);
+	var SyntheticUIEvent = __webpack_require__(28);
 
-	var getEventCharCode = __webpack_require__(56);
-	var getEventKey = __webpack_require__(226);
-	var getEventModifierState = __webpack_require__(57);
+	var getEventCharCode = __webpack_require__(57);
+	var getEventKey = __webpack_require__(243);
+	var getEventModifierState = __webpack_require__(58);
 
 	/**
 	 * @interface KeyboardEvent
@@ -23459,7 +25852,7 @@ module.exports =
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 220 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23476,9 +25869,9 @@ module.exports =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(27);
+	var SyntheticUIEvent = __webpack_require__(28);
 
-	var getEventModifierState = __webpack_require__(57);
+	var getEventModifierState = __webpack_require__(58);
 
 	/**
 	 * @interface TouchEvent
@@ -23510,7 +25903,7 @@ module.exports =
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 221 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23527,7 +25920,7 @@ module.exports =
 
 	'use strict';
 
-	var SyntheticMouseEvent = __webpack_require__(35);
+	var SyntheticMouseEvent = __webpack_require__(36);
 
 	/**
 	 * @interface WheelEvent
@@ -23570,7 +25963,7 @@ module.exports =
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 222 */
+/* 239 */
 /***/ function(module, exports) {
 
 	/**
@@ -23617,7 +26010,7 @@ module.exports =
 	module.exports = adler32;
 
 /***/ },
-/* 223 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23634,7 +26027,7 @@ module.exports =
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(81);
+	var CSSProperty = __webpack_require__(82);
 
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 
@@ -23677,7 +26070,7 @@ module.exports =
 	module.exports = dangerousStyleValue;
 
 /***/ },
-/* 224 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23693,7 +26086,7 @@ module.exports =
 
 	'use strict';
 
-	var assign = __webpack_require__(2);
+	var assign = __webpack_require__(3);
 	var warning = __webpack_require__(4);
 
 	/**
@@ -23730,7 +26123,7 @@ module.exports =
 	module.exports = deprecated;
 
 /***/ },
-/* 225 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23746,7 +26139,7 @@ module.exports =
 
 	'use strict';
 
-	var traverseAllChildren = __webpack_require__(64);
+	var traverseAllChildren = __webpack_require__(65);
 	var warning = __webpack_require__(4);
 
 	/**
@@ -23783,7 +26176,7 @@ module.exports =
 	module.exports = flattenChildren;
 
 /***/ },
-/* 226 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23800,7 +26193,7 @@ module.exports =
 
 	'use strict';
 
-	var getEventCharCode = __webpack_require__(56);
+	var getEventCharCode = __webpack_require__(57);
 
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -23891,7 +26284,7 @@ module.exports =
 	module.exports = getEventKey;
 
 /***/ },
-/* 227 */
+/* 244 */
 /***/ function(module, exports) {
 
 	/**
@@ -23969,7 +26362,7 @@ module.exports =
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 228 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23986,7 +26379,7 @@ module.exports =
 
 	var ReactElement = __webpack_require__(7);
 
-	var invariant = __webpack_require__(1);
+	var invariant = __webpack_require__(2);
 
 	/**
 	 * Returns the first child in a collection of children and verifies that there
@@ -24007,7 +26400,7 @@ module.exports =
 	module.exports = onlyChild;
 
 /***/ },
-/* 229 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24023,7 +26416,7 @@ module.exports =
 
 	'use strict';
 
-	var escapeTextContentForBrowser = __webpack_require__(38);
+	var escapeTextContentForBrowser = __webpack_require__(39);
 
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -24038,7 +26431,7 @@ module.exports =
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 230 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24059,12 +26452,12 @@ module.exports =
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 231 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Region = __webpack_require__(28)
+	var Region = __webpack_require__(29)
 
 	/**
 	 *
@@ -24101,12 +26494,12 @@ module.exports =
 	}
 
 /***/ },
-/* 232 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 
-	var Region = __webpack_require__(28)
+	var Region = __webpack_require__(29)
 
 	/**
 	 * @static
@@ -24222,12 +26615,12 @@ module.exports =
 	}
 
 /***/ },
-/* 233 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 
-	var Region = __webpack_require__(28)
+	var Region = __webpack_require__(29)
 
 	/**
 	 *
@@ -24404,14 +26797,14 @@ module.exports =
 	module.exports = ALIGN_TO_NORMALIZED
 
 /***/ },
-/* 234 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 
-	var ALIGN_TO_NORMALIZED = __webpack_require__(233)
+	var ALIGN_TO_NORMALIZED = __webpack_require__(250)
 
-	var Region = __webpack_require__(28)
+	var Region = __webpack_require__(29)
 
 	/**
 	 * @localdoc Given source and target regions, and the given alignments required, returns a region that is the resulting allignment.
@@ -24485,7 +26878,7 @@ module.exports =
 	module.exports = COMPUTE_ALIGN_REGION
 
 /***/ },
-/* 235 */
+/* 252 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24517,19 +26910,19 @@ module.exports =
 
 
 /***/ },
-/* 236 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var hasOwn    = __webpack_require__(74)
-	var newify    = __webpack_require__(144)
+	var hasOwn    = __webpack_require__(75)
+	var newify    = __webpack_require__(161)
 
-	var assign      = __webpack_require__(235);
-	var EventEmitter = __webpack_require__(241).EventEmitter
+	var assign      = __webpack_require__(252);
+	var EventEmitter = __webpack_require__(258).EventEmitter
 
-	var inherits = __webpack_require__(237)
-	var VALIDATE = __webpack_require__(110)
+	var inherits = __webpack_require__(254)
+	var VALIDATE = __webpack_require__(111)
 
 	var objectToString = Object.prototype.toString
 
@@ -25568,12 +27961,12 @@ module.exports =
 	    }
 	})
 
-	__webpack_require__(238)(REGION)
+	__webpack_require__(255)(REGION)
 
 	module.exports = REGION
 
 /***/ },
-/* 237 */
+/* 254 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25591,13 +27984,13 @@ module.exports =
 	}
 
 /***/ },
-/* 238 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var hasOwn   = __webpack_require__(74)
-	var VALIDATE = __webpack_require__(110)
+	var hasOwn   = __webpack_require__(75)
+	var VALIDATE = __webpack_require__(111)
 
 	module.exports = function(REGION){
 
@@ -25810,7 +28203,7 @@ module.exports =
 	}
 
 /***/ },
-/* 239 */
+/* 256 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25848,7 +28241,7 @@ module.exports =
 	module.exports = curry
 
 /***/ },
-/* 240 */
+/* 257 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25865,7 +28258,7 @@ module.exports =
 
 
 /***/ },
-/* 241 */
+/* 258 */
 /***/ function(module, exports) {
 
 	module.exports = require("events");

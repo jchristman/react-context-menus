@@ -4,28 +4,23 @@ import invariant from 'invariant';
 import _ from 'underscore';
 import Menu from 'react-menus';
 
-const theme = { style: {} };
-
 const ContextMenu = (menu_items, options = {}) => {
-    // Merge themes if they exist
-    if (options.theme && options.theme.style) {
-        for (let attrname in options.theme.style) {
-            theme.style[attrname] = options.theme.style[attrname];
-        }
-    }
-
     return (ChildComponent) => {
         const Container = class extends React.Component {
             constructor(props, context) {
                 super(props, context);
+
+                this.options = typeof options === 'function' ? options(props) : options;
+
                 this.state = {
-                    showContextMenu: false,
-                    x: 0,
-                    y: 0
+                    showContextMenu: this.options.show !== undefined && this.options.show,
+                    x: this.options.at !== undefined && this.options.at.x,
+                    y: this.options.at !== undefined && this.options.at.y
                 };
 
                 // needed to add and remove event listeners....
-                this.clickable_element = undefined;
+                this.last_clicked_element = undefined;
+                this.clickable_elements = [];
                 this.force_hide = this.force_hide.bind(this);
                 this.hide = this.hide.bind(this);
                 this.show = this.show.bind(this);
@@ -43,17 +38,17 @@ const ContextMenu = (menu_items, options = {}) => {
 
                 // Note that we are not using .bind(this), because we need to remove
                 // the listener later. The bind happens in the constructor
-                if (document.addEventListener) {
-                    document.addEventListener('click', this.force_hide, false);
-                    document.addEventListener('contextmenu', this.hide, false);
-                    this.clickable_element.addEventListener('contextmenu', this.show, false);
-                } else {
-                    document.attachEvent('onclick', this.force_hide);
-                    document.attachEvent('oncontextmenu', this.hide);
-                    this.clickable_element.attachEvent('oncontextmenu', this.show);
-                }
+                document.addEventListener('click', this.force_hide, false);
+                document.addEventListener('contextmenu', this.hide, false);
+                _.each(this.clickable_elements, (element) => element.addEventListener('contextmenu', this.show, false));
 
                 this._renderLayer();
+            }
+
+            componentWillReceiveProps(nextProps) {
+                if (typeof options === 'function') this.options = options(nextProps);
+                if (this.options.show !== undefined) this.setState({ showContextMenu: this.options.show })
+                if (this.options.at !== undefined) this.setState({ ...this.options.at })
             }
 
             componentDidUpdate() {
@@ -65,32 +60,34 @@ const ContextMenu = (menu_items, options = {}) => {
 
                 // Note that we are not using .bind(this), because we need to remove
                 // the listener later. The bind happens in the constructor
-                if (document.removeEventListener) {
-                    document.removeEventListener('click', this.force_hide, false);
-                    document.removeEventListener('contextmenu', this.hide, false);
-                    this.clickable_element && this.clickable_element.removeEventListener('contextmenu', this.show, false);
-                } else {
-                    document.detachEvent('onclick', this.force_hide);
-                    document.detachEvent('oncontextmenu', this.hide);
-                    this.clickable_element && this.clickable_element.detachEvent('oncontextmenu', this.show, false);
-                }
+                document.removeEventListener('click', this.force_hide, false);
+                document.removeEventListener('contextmenu', this.hide, false);
+                _.each(this.clickable_elements, (element) => element.removeEventListener('contextmenu', this.show, false));
             }
 
             _renderLayer() {
                 if (this.state.showContextMenu) {
                     // If the menu_items var is a function, let's call it with the props.
-                    menu_items = typeof(menu_items) === 'function' ? menu_items(this.props) : menu_items;
+                    const menu = typeof menu_items === 'function' ? menu_items(this.props) : menu_items;
 
                     // Then correct the items to fix their onClick methods to be useful and have the props of the clicked element
-                    let wrapped_menu_items = menu_items.map((item) => {
+                    let wrapped_menu_items = menu.map((item) => {
                         // Copy the item
                         let new_item = typeof item === 'object' ? _.extend({}, item) : item;
                         if (new_item.onClick !== undefined) new_item.onClick = (event, item_props, index) => { item.onClick(event, this.props, index) };
                         return new_item;
                     });
 
+                    const theme = this.options.theme || {};
+                    const style = this.options.style || {};
                     // Finally, render it to the container
-                    ReactDOM.render(<Menu theme={theme} items={wrapped_menu_items} at={[this.state.x, this.state.y]}/>, this.container);
+                    ReactDOM.render(<Menu 
+                                        theme={theme}
+                                        style={style}
+                                        items={wrapped_menu_items}
+                                        at={[this.state.x, this.state.y]}
+                                        enableScroll={false}/>,
+                                    this.container);
                 } else {
                     ReactDOM.unmountComponentAtNode(this.container);
                 }
@@ -126,14 +123,16 @@ const ContextMenu = (menu_items, options = {}) => {
             // ----- Context Menu Methods ----- //
             connectContextMenu(react_element) {
                 this.clickable_react_element = react_element;
-                this.clickable_react_element = this.cloneWithRef(this.clickable_react_element, (node) => this.clickable_element = node);
+                this.clickable_react_element = this.cloneWithRef(this.clickable_react_element, (node) => this.clickable_elements.push(node));
                 return this.clickable_react_element;
             }
 
             show(event) {
                 event.preventDefault();
                 
-                let bounds = event.target.getBoundingClientRect();
+                this.last_clicked_element = event.target;
+
+                let bounds = this.child.getBoundingClientRect();
                 let x = event.clientX - bounds.left;
                 let y = event.clientY - bounds.top;
 
@@ -142,11 +141,11 @@ const ContextMenu = (menu_items, options = {}) => {
             }
 
             force_hide(event) {
-                this.hide(event, true);
+                setTimeout(() => this.hide(event, true), 0); // We do this to allow the click to register if it hasn't yet
             }
 
             hide(event, force) {
-                if (event.target !== this.clickable_element || force) {
+                if (event.target !== this.last_clicked_element || force) {
                     const state = { showContextMenu: false };
                     this.setState(state);
                 }

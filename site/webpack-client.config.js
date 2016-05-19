@@ -59,8 +59,8 @@ module.exports = {
 
   resolve: {
     alias: {
-      'react-context-menus/modules': path.join(__dirname, '../lib'),
-      'react-context-menus': path.join(__dirname, '../lib')
+      'react-context-menus/modules': path.join(__dirname, '../src'),
+      'react-context-menus': path.join(__dirname, '../src')
     }
   },
 

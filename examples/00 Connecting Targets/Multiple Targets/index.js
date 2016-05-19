@@ -11,10 +11,10 @@ export default class SingleTargetApp extends Component {
         return (
             <div>
                 <p>
-                    <b><a href='https://github.com/jchristman/react-context-menus/tree/master/examples/00%20Connecting Targets/Single%20Target'>Browse the Source</a></b>
+                    <b><a href='https://github.com/jchristman/react-context-menus/tree/master/examples/00%20Connecting Targets/Multiple%20Targets'>Browse the Source</a></b>
                 </p>
                 <p>
-                    This is a simplest example that exists. Right click in the box below to get a context menu.
+                    In this example, there are multiple context menu "spots" on the same component, each of which generates the same context menu.
                 </p>
                 <Target/>
             </div>

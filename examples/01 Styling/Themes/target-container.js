@@ -4,7 +4,7 @@ import Target from './target.js';
 const menu_items = [
     {
         label: 'Item 1',
-        onClick: () => alert('Clicked Item 1!')
+        onClick: (event, props, item) => alert('Clicked Item 1!')
     },
     {
         label: 'Item 2',
@@ -17,11 +17,12 @@ const menu_items = [
     }
 ];
 
-const options = {
-    theme: {
-        style: {
-            color: 'black'
-        }
+const options = (props) => {
+    return {
+        theme: props.theme.theme,
+        style: props.theme.style,
+        at: { x: 30, y: 30 },
+        show: props.show
     }
 }
 

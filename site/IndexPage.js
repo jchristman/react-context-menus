@@ -7,11 +7,15 @@ import React, { Component } from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 const APIDocs = {
-    OVERVIEW: require('../docs/00 Quick Start/Overview.md'),
+    API: require('../docs/00 Documentation/Documentation.md'),
 };
 
 const Examples = {
     SINGLE_TARGET: require('../examples/00 Connecting Targets/Single Target'),
+    MULTIPLE_TARGETS: require('../examples/00 Connecting Targets/Multiple Targets'),
+    THEMES: require('../examples/01 Styling/Themes'),
+    DYNAMIC_MENUS: require('../examples/02 Dynamic Menus/Dynamic Menus'),
+    STRESS_TEST: require('../examples/02 Dynamic Menus/Stress Test')
 };
 
 export default class IndexPage extends Component {
@@ -43,7 +47,7 @@ export default class IndexPage extends Component {
             <html>
             <head>
             <meta charSet="utf-8" />
-            <title>React DnD</title>
+            <title>React Context Menus</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
             <link rel="stylesheet" type="text/css" href={this.props.files['main.css']} />
             <base target="_blank" />

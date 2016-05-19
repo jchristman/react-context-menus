@@ -4,7 +4,7 @@ import Target from './target.js';
 const menu_items = [
     {
         label: 'Item 1',
-        onClick: () => alert('Clicked Item 1!')
+        onClick: (event, props, item) => alert('Clicked Item 1!')
     },
     {
         label: 'Item 2',
@@ -17,10 +17,12 @@ const menu_items = [
     }
 ];
 
-const theme = {
-    style: {
-        color: 'black'
+const options = {
+    theme: {
+        style: {
+            color: 'black'
+        }
     }
 }
 
-export default ContextMenu(menu_items, { theme })(Target);
+export default ContextMenu(menu_items, options)(Target);

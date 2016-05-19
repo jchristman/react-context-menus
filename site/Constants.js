@@ -6,38 +6,14 @@ export const Pages = {
 };
 
 export const APIPages = [{
-    title: 'Quick Start',
+    title: 'Documentation',
     pages: {
-        OVERVIEW: {
-            location: 'docs-overview.html',
-            title: 'Overview'
-        },
-        TUTORIAL: {
-            location: 'docs-tutorial.html',
-            title: 'Tutorial'
-        },
-        TESTING: {
-            location: 'docs-testing.html',
-            title: 'Testing'
-        },
-        FAQ: {
-            location: 'docs-faq.html',
-            title: 'FAQ'
-        },
-        TROUBLESHOOTING: {
-            location: 'docs-troubleshooting.html',
-            title: 'Troubleshooting'
+        API: {
+            location: 'docs-api.html',
+            title: 'API'
         }
     }
-}/*, {
-    title: 'Top-Level API',
-    pages: {
-        CONTEXT_MENU: {
-            location: 'context-menu.html',
-            title: 'ContextMenu'
-        }
-    }
-}*/
+}
 ];
 
 export const ExamplePages = [
@@ -64,7 +40,7 @@ export const ExamplePages = [
 }, {
     title: 'Dynamic Menus',
     pages: {
-        DYNAMIC: {
+        DYNAMIC_MENUS: {
             location: 'examples-dynamic-menus.html',
             title: 'Dynamic Menus'
         },
@@ -76,5 +52,5 @@ export const ExamplePages = [
 }
 ];
 
-export const DOCS_DEFAULT = APIPages[0].pages.OVERVIEW;
+export const DOCS_DEFAULT = APIPages[0].pages.API;
 export const EXAMPLES_DEFAULT = ExamplePages[0].pages.SINGLE_TARGET;
