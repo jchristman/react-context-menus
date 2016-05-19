@@ -1,6 +1,6 @@
 {
     "name": "react-context-menus",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Better context menus for React",
     "main": "lib/context_menu.js",
     "scripts": {
@@ -32,7 +32,6 @@
     },
     "homepage": "https://github.com/jchristman/react-context-menus",
     "devDependencies": {
-        "babel": "^6.5.2",
         "babel-cli": "^6.9.0",
         "babel-core": "6.x.x",
         "babel-loader": "^6.2.4",

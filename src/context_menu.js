@@ -56,13 +56,16 @@ const ContextMenu = (menu_items, options = {}) => {
             }
 
             componentWillUnmount() {
-                ReactDOM.unmountComponentAtNode(this.container);
+                if (this.container !== null)
+                    ReactDOM.unmountComponentAtNode(this.container);
 
                 // Note that we are not using .bind(this), because we need to remove
                 // the listener later. The bind happens in the constructor
                 document.removeEventListener('click', this.force_hide, false);
                 document.removeEventListener('contextmenu', this.hide, false);
-                _.each(this.clickable_elements, (element) => element.removeEventListener('contextmenu', this.show, false));
+                _.each(this.clickable_elements, (element) => {
+                       if (element !== null) element.removeEventListener('contextmenu', this.show, false)
+                });
             }
 
             _renderLayer() {
