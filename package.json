@@ -1,6 +1,6 @@
 {
     "name": "react-context-menus",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Better context menus for React",
     "main": "lib/context_menu.js",
     "scripts": {
@@ -9,7 +9,7 @@
         "publish-site": "./scripts/publishStaticSite.sh",
         "build": "./scripts/build.sh",
         "lint": "eslint .",
-        "prepublish": "npm run lint && npm run build"
+        "prepublish": "npm run build"
     },
     "repository": {
         "type": "git",

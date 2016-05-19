@@ -141,7 +141,9 @@ const ContextMenu = (menu_items, options = {}) => {
             }
 
             force_hide(event) {
-                setTimeout(() => this.hide(event, true), 0); // We do this to allow the click to register if it hasn't yet
+                let button = event.which || event.button;
+                if (button === 1)
+                    setTimeout(() => this.hide(event, true), 0); // We do this to allow the click to register if it hasn't yet
             }
 
             hide(event, force) {
