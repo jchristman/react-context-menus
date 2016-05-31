@@ -40,11 +40,24 @@ const ContextMenu = (menu_items, options = {}) => {
                 // the listener later. The bind happens in the constructor
                 document.addEventListener('click', this.force_hide, false);
                 document.addEventListener('contextmenu', this.hide, false);
-                _.each(this.clickable_elements, (element) => element.addEventListener('contextmenu', this.show, false));
+                this.rebind();
 
                 this._renderLayer();
 
                 this._mounted = true;
+            }
+
+            clean() {
+                this.clickable_elements = _.filter(this.clickable_elements, (element) => element !== null);
+            }
+
+            rebind() {
+                _.each(this.clickable_elements, (element) => element.addEventListener('contextmenu', this.show, false));
+            }
+
+            cleanAndRebind() {
+                this.clean();
+                this.rebind();
             }
 
             componentWillReceiveProps(nextProps) {
@@ -128,9 +141,14 @@ const ContextMenu = (menu_items, options = {}) => {
             }
 
             // ----- Context Menu Methods ----- //
+            // This will almost certainly happen before we mount (the first time).
+            // but since this will likely happen a lot if things are rerendering and
+            // the component is not changing its mounted state, we call clean and rebind
+            // from here.
             connectContextMenu(react_element) {
                 this.clickable_react_element = react_element;
                 this.clickable_react_element = this.cloneWithRef(this.clickable_react_element, (node) => this.clickable_elements.push(node));
+                this.cleanAndRebind();
                 return this.clickable_react_element;
             }
 
