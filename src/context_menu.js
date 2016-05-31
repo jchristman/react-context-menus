@@ -43,12 +43,14 @@ const ContextMenu = (menu_items, options = {}) => {
                 _.each(this.clickable_elements, (element) => element.addEventListener('contextmenu', this.show, false));
 
                 this._renderLayer();
+
+                this._mounted = true;
             }
 
             componentWillReceiveProps(nextProps) {
                 if (typeof options === 'function') this.options = options(nextProps);
-                if (this.options.show !== undefined) this.setState({ showContextMenu: this.options.show })
-                if (this.options.at !== undefined) this.setState({ ...this.options.at })
+                if (this.options.show !== undefined) this._mounted && this.setState({ showContextMenu: this.options.show })
+                if (this.options.at !== undefined) this._mounted && this.setState({ ...this.options.at })
             }
 
             componentDidUpdate() {
@@ -66,6 +68,8 @@ const ContextMenu = (menu_items, options = {}) => {
                 _.each(this.clickable_elements, (element) => {
                        if (element !== null) element.removeEventListener('contextmenu', this.show, false)
                 });
+
+                this._mounted = false;
             }
 
             _renderLayer() {
@@ -140,7 +144,7 @@ const ContextMenu = (menu_items, options = {}) => {
                 let y = event.clientY - bounds.top;
 
                 const state = { x, y, showContextMenu: true };
-                this.setState(state);
+                this._mounted && this.setState(state);
             }
 
             force_hide(event) {
@@ -152,7 +156,7 @@ const ContextMenu = (menu_items, options = {}) => {
             hide(event, force) {
                 if (event.target !== this.last_clicked_element || force) {
                     const state = { showContextMenu: false };
-                    this.setState(state);
+                    this._mounted && this.setState(state);
                 }
             }
         }
