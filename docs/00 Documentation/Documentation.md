@@ -105,6 +105,8 @@ const options = (props) => {
         style: props.theme.style,           // The style object is applied to the overall menu
         at: { x: 30, y: 30 },               // The at object positions the menu (if you want to do it manually)
         show: props.show                    // The show property will determine whether to show the menu (if you want to do it manually)
+        container: { zIndex: 1 }            // The container property will adjust the menu container (the fixed element that's attached to your component).
+                                            //     Current, the only option is to adjust its zIndex if needed.
     }
 }
 ```

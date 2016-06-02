@@ -4,18 +4,19 @@ import invariant from 'invariant';
 import _ from 'underscore';
 import Menu from 'react-menus';
 
-const ContextMenu = (menu_items, options = {}) => {
+const ContextMenu = (menu_items, _options = {}) => {
     return (ChildComponent) => {
         const Container = class extends React.Component {
             constructor(props, context) {
                 super(props, context);
 
-                this.options = typeof options === 'function' ? options(props) : options;
+                this.options = typeof _options === 'function' ? (_props) => _options(_props) : (_props) => _options;
+                const options = this.options(props);
 
                 this.state = {
-                    showContextMenu: this.options.show !== undefined && this.options.show,
-                    x: this.options.at !== undefined && this.options.at.x,
-                    y: this.options.at !== undefined && this.options.at.y
+                    showContextMenu: options.show !== undefined && options.show,
+                    x: options.at !== undefined && options.at.x,
+                    y: options.at !== undefined && options.at.y
                 };
 
                 // needed to add and remove event listeners....
@@ -27,6 +28,8 @@ const ContextMenu = (menu_items, options = {}) => {
             }
 
             componentDidMount() {
+                const options = this.options(this.props);
+
                 this.child = ReactDOM.findDOMNode(this);
                 this.container = document.createElement('div');
                 this.container.style.position = 'fixed';
@@ -34,6 +37,7 @@ const ContextMenu = (menu_items, options = {}) => {
                 this.container.style.left = 0;
                 this.container.style.width = 0;
                 this.container.style.height = 0;
+                this.updateContainer(options);
                 this.child.appendChild(this.container);
 
                 // Note that we are not using .bind(this), because we need to remove
@@ -60,10 +64,17 @@ const ContextMenu = (menu_items, options = {}) => {
                 this.rebind();
             }
 
+            updateContainer(options) {
+                if (options.container !== undefined && this.container !== undefined) {
+                    if (options.container.zIndex !== undefined) this.container.style.zIndex = options.container.zIndex;
+                }
+            }
+
             componentWillReceiveProps(nextProps) {
-                if (typeof options === 'function') this.options = options(nextProps);
-                if (this.options.show !== undefined) this._mounted && this.setState({ showContextMenu: this.options.show })
-                if (this.options.at !== undefined) this._mounted && this.setState({ ...this.options.at })
+                const options = this.options(nextProps);
+                if (options.show !== undefined) this._mounted && this.setState({ showContextMenu: options.show })
+                if (options.at !== undefined) this._mounted && this.setState({ ...options.at })
+                this.updateContainer(options);
             }
 
             componentDidUpdate() {
@@ -97,9 +108,11 @@ const ContextMenu = (menu_items, options = {}) => {
                         if (new_item.onClick !== undefined) new_item.onClick = (event, item_props, index) => { item.onClick(event, this.props, index) };
                         return new_item;
                     });
-
-                    const theme = this.options.theme || {};
-                    const style = this.options.style || {};
+                    
+                    const options = this.options(this.props);
+                    console.log(options);
+                    const theme = options.theme || {};
+                    const style = options.style || {};
                     // Finally, render it to the container
                     ReactDOM.render(<Menu 
                                         theme={theme}

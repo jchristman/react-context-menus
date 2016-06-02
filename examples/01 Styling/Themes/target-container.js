@@ -20,7 +20,10 @@ const menu_items = [
 const options = (props) => {
     return {
         theme: props.theme.theme,
-        style: props.theme.style
+        style: props.theme.style,
+        container: {
+            zIndex: 1
+        }
     }
 }
 
