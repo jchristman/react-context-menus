@@ -46,7 +46,6 @@ var locations = flatten([
     Constants.ExamplePages.map(function (group) {
         return group.pages;
     }),
-    Constants.Pages
 ]).reduce(function(paths, pages) {
     return paths.concat(
         Object.keys(pages).map(function(key) {
