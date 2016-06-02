@@ -110,7 +110,6 @@ const ContextMenu = (menu_items, _options = {}) => {
                     });
                     
                     const options = this.options(this.props);
-                    console.log(options);
                     const theme = options.theme || {};
                     const style = options.style || {};
                     // Finally, render it to the container
