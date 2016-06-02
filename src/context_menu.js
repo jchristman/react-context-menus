@@ -29,7 +29,7 @@ const ContextMenu = (menu_items, options = {}) => {
             componentDidMount() {
                 this.child = ReactDOM.findDOMNode(this);
                 this.container = document.createElement('div');
-                this.container.style.position = 'absolute';
+                this.container.style.position = 'fixed';
                 this.container.style.top = 0;
                 this.container.style.left = 0;
                 this.container.style.width = 0;
@@ -158,8 +158,10 @@ const ContextMenu = (menu_items, options = {}) => {
                 this.last_clicked_element = event.target;
 
                 let bounds = this.child.getBoundingClientRect();
-                let x = event.clientX - bounds.left;
-                let y = event.clientY - bounds.top;
+                //let x = event.clientX - bounds.left;
+                //let y = event.clientY - bounds.top;
+                let x = event.clientX;
+                let y = event.clientY;
 
                 const state = { x, y, showContextMenu: true };
                 this._mounted && this.setState(state);

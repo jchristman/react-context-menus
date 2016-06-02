@@ -20,9 +20,7 @@ const menu_items = [
 const options = (props) => {
     return {
         theme: props.theme.theme,
-        style: props.theme.style,
-        at: { x: 30, y: 30 },
-        show: props.show
+        style: props.theme.style
     }
 }
 

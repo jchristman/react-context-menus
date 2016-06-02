@@ -16,7 +16,7 @@ const textStyle = {
 
 const Target = (props) => {
     return props.connectContextMenu(
-        <div style={style}>
+        <div style={style} id='container'>
             <div style={textStyle}>
                 Right click here for a context menu
             </div>
