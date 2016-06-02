@@ -158,8 +158,6 @@ const ContextMenu = (menu_items, options = {}) => {
                 this.last_clicked_element = event.target;
 
                 let bounds = this.child.getBoundingClientRect();
-                //let x = event.clientX - bounds.left;
-                //let y = event.clientY - bounds.top;
                 let x = event.clientX;
                 let y = event.clientY;
 
