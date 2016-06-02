@@ -1,10 +1,3 @@
-export const Pages = {
-    HOME: {
-        location: 'index.html',
-        title: 'Home'
-    }
-};
-
 export const APIPages = [{
     title: 'Documentation',
     pages: {
@@ -21,7 +14,7 @@ export const ExamplePages = [
     title: 'Connecting Targets',
     pages: {
         SINGLE_TARGET: {
-            location: 'examples-single-target.html',
+            location: 'index.html',
             title: 'Single Target'
         },
         MULTIPLE_TARGETS: {

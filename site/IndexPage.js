@@ -1,6 +1,5 @@
 import './base.less';
-import Constants, { APIPages, ExamplePages, Pages } from './Constants';
-import HomePage from './pages/HomePage';
+import Constants, { APIPages, ExamplePages } from './Constants';
 import APIPage from './pages/APIPage';
 import ExamplePage from './pages/ExamplePage';
 import React, { Component } from 'react';
@@ -63,11 +62,6 @@ export default class IndexPage extends Component {
     }
 
     renderPage() {
-        switch (this.props.location) {
-            case Pages.HOME.location:
-                return <HomePage />;
-        }
-
         for (let groupIndex in APIPages) {
             const group = APIPages[groupIndex];
             const pageKeys = Object.keys(group.pages);
