@@ -74,7 +74,7 @@ export default class ComponentToReceiveContextMenu extends React.Component {
 Arguments To ContextMenu
 ========================
 
-The ContextMenu container can receive two arguments - a menu_items and an options argument. The menu_items argument must be an array or a function that receives the props of the item being wrapped and returns an array. The options argument must be an object or a function taht receives the props of the item being wrapped and returns an object.
+The ContextMenu container can receive two arguments - a menu_items and an options argument. The menu_items argument must be an array or a function that receives the props of the item being wrapped and returns an array. The options argument must be an object or a function that receives the props of the item being wrapped and returns an object.
 
 Menu items are defined below. See [react-menus](https://github.com/zippyui/react-menus) for more info.
 
