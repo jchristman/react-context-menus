@@ -1,10 +1,11 @@
 var path = require('path');
 var webpack = require('webpack');
-var resolvers = require('../scripts/resolvers');
+//var resolvers = require('../scripts/resolvers');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var isDev = process.env.NODE_ENV !== 'production';
 
+ console.log(process.cwd() + '/__site__/');
 module.exports = {
 
   devtool: isDev ? 'cheap-eval-source-map' : 'source-map',
@@ -15,9 +16,8 @@ module.exports = {
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server'
   ] : []),
-
   output: {
-    path: '__site__/',
+    path: process.cwd() + '/__site__/',
     filename: isDev ? '[name].js' : '[name]-[hash].js',
     publicPath: ''
   },
@@ -29,7 +29,7 @@ module.exports = {
       {
         test: /\.md$/,
         loader: [
-          'html?{"minimize":false}',
+          'html-loader?{"minimize":false}',
           path.join(__dirname, '../scripts/markdownLoader')
         ].join('!')
       },
@@ -41,12 +41,10 @@ module.exports = {
       {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
-          'style-loader',
-          [
-            'css-loader',
-            path.join(__dirname, '../scripts/cssTransformLoader'),
-            'less-loader'
-          ].join('!')
+          {
+            fallback: 'style-loader',
+            use: ['css-loader','less-loader']
+          }
         )
       },
       {
@@ -68,12 +66,12 @@ module.exports = {
     new ExtractTextPlugin(
       isDev ? '[name].css' : '[name]-[hash].css'
     ),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       '__DEV__': JSON.stringify(isDev || true)
     }),
-    resolvers.resolveHasteDefines,
+    //resolvers.resolveHasteDefines,
   ]
 };
 

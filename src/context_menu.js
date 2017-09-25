@@ -113,13 +113,17 @@ const ContextMenu = (menu_items, _options = {}) => {
                     const theme = options.theme || {};
                     const style = options.style || {};
                     // Finally, render it to the container
-                    ReactDOM.render(<Menu 
-                                        theme={theme}
-                                        style={style}
-                                        items={wrapped_menu_items}
-                                        at={[this.state.x, this.state.y]}
-                                        enableScroll={false}/>,
-                                    this.container);
+                    try {
+                        ReactDOM.render(<Menu 
+                                            theme={theme}
+                                            style={style}
+                                            items={wrapped_menu_items}
+                                            at={[this.state.x, this.state.y]}
+                                            enableScroll={false}/>,
+                                        this.container);
+                    } catch (e) {
+
+                    }
                 } else {
                     ReactDOM.unmountComponentAtNode(this.container);
                 }
