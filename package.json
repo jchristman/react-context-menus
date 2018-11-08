@@ -1,6 +1,6 @@
 {
   "name": "react-context-menus",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Better context menus for React",
   "main": "lib/context_menu.js",
   "scripts": {
@@ -56,14 +56,14 @@
     "invariant": "2.x.x",
     "react": ">=0.14.x",
     "react-dom": ">=0.14.x",
-    "react-menus": "2.x.x",
+    "react-menus2": "3.0.0",
     "underscore": "^1.8.3"
   },
   "peerDependencies": {
     "invariant": "2.x.x",
     "react": ">=0.14.x",
     "react-dom": ">=0.14.x",
-    "react-menus": "2.x.x",
+    "react-menus2": "3.0.0",
     "underscore": "^1.8.3"
   }
 }
